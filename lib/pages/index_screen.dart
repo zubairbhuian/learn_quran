@@ -8,7 +8,11 @@ class IndexScreen extends StatelessWidget {
     return const SafeArea(
         child: Scaffold(
       body: Center(
-        child: Text('this is index Screen'),
+        child: Text(
+          'This is index Screen',
+          style: TextStyle(
+              fontFamily: "Poppins", fontWeight: FontWeight.bold, fontSize: 22),
+        ),
       ),
     ));
   }
