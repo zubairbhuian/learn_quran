@@ -10,18 +10,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: ScreenUtil.defaultSize,
-      splitScreenMode :true,
-      minTextAdapt:true,
-      builder: (() => MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          primaryColor: Colors.red,
-          appBarTheme: const AppBarTheme(
-              backgroundColor: Colors.red,
-              iconTheme: IconThemeData(color: Colors.black))),
-      home: const SplashScreen(),
-    ))
-      );
+        designSize: ScreenUtil.defaultSize,
+        splitScreenMode: true,
+        minTextAdapt: true,
+        builder: (() => MaterialApp(
+              debugShowCheckedModeBanner: false,
+              theme: ThemeData(
+                  primaryColor: Colors.red,
+                  appBarTheme: const AppBarTheme(
+                      backgroundColor: Colors.red,
+                      iconTheme: IconThemeData(color: Colors.black))),
+              home: const SplashScreen(),
+            )));
   }
 }
