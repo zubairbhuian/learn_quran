@@ -9,6 +9,7 @@ class SplashScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(title: const Text('Learn Quran')),
         body: const Center(child: Text('This is splash Screen')),
+        drawer: const Drawer(),
       ),
     );
   }
