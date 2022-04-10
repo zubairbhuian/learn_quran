@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/pages/splash_screen.dart';
 
 void main() => runApp(const MyApp());
@@ -8,7 +9,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return ScreenUtilInit(
+      designSize: ScreenUtil.defaultSize,
+      splitScreenMode :true,
+      minTextAdapt:true,
+      builder: (() => MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primaryColor: Colors.red,
@@ -16,6 +21,7 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.red,
               iconTheme: IconThemeData(color: Colors.black))),
       home: const SplashScreen(),
-    );
+    ))
+      );
   }
 }
