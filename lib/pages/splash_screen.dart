@@ -1,5 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'index_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -9,14 +13,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  // @override
-  // void initState() {
-  //   Timer(
-  //       const Duration(seconds: 3),
-  //       (() => Navigator.pushReplacement(
-  //           context, MaterialPageRoute(builder: (_) => const IndexScreen()))));
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    Timer(
+        const Duration(seconds: 3),
+        (() => Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (_) => const IndexScreen()))));
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
