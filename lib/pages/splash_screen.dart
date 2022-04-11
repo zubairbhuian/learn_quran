@@ -30,12 +30,10 @@ class _SplashScreenState extends State<SplashScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               SizedBox(
-                height: 200.h,
+                height: 167.h,
               ),
               Container(
-                height: 230,
-                width: 250,
-                color: const Color.fromARGB(0, 254, 254, 254),
+                color: const Color.fromARGB(0, 231, 15, 15),
                 child: Column(
                   children: [
                     Container(
@@ -45,9 +43,9 @@ class _SplashScreenState extends State<SplashScreen> {
                           image: DecorationImage(
                               image: AssetImage("images/quran.png"))),
                     ),
-                    const SizedBox(
-                      height: 13,
-                    ),
+                    // const SizedBox(
+                    //   height: 13,
+                    // ),
                     const Text(
                       'LEARN QURAN',
                       style: TextStyle(
@@ -58,8 +56,41 @@ class _SplashScreenState extends State<SplashScreen> {
                     )
                   ],
                 ),
+              ),
+              Flexible(
+                fit: FlexFit.tight,
+                flex: 1,
+                child: Container(
+                  child:
+                      Stack(alignment: AlignmentDirectional.center, children: [
+                    const Positioned(top: 100, child: Text("Powerd by")),
+                    Container(
+                      padding: EdgeInsets.all(9.w),
+                      height: 50,
+                      width: 230,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(color: Colors.white, width: 1)),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 40.h,
+                            width: 40.w,
+                            decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage('images/logo.png'))),
+                          ),
+                          Text(
+                            "MASTER-ACADEMY",
+                            style:
+                                TextStyle(fontSize: 15.w, color: Colors.white),
+                          )
+                        ],
+                      ),
+                    ),
+                  ]),
+                ),
               )
-              
             ],
           ),
         ),
