@@ -1,8 +1,8 @@
-      import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class IndexScreen extends StatelessWidget {
-  const IndexScreen({Key? key}) : super(key: key);
+class ArabicWord extends StatelessWidget {
+  const ArabicWord({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +21,7 @@ class IndexScreen extends StatelessWidget {
                 EdgeInsets.only(top: 35, bottom: 30, left: 20.h, right: 20.h),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-               
-              ],
+              children: const [],
             ),
           )
         ]),
