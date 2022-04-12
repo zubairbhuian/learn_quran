@@ -27,14 +27,138 @@ class ArabicWord extends StatelessWidget {
                         top: 16, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [
-                        Center(child: Text("আরবি ভাষার বর্ণ ২৯ টি")),
-                        Center(child: Text("আরবি বর্ণ সঠিকভাবে জানার জন্য ৩ টি বিষয় জানা জরুরী")),
-                        Center(child: Text("প্রতিটি অক্ষরের সঠিক নাম জানা")),
-                        Center(child: Text("প্রতিটি অক্ষরের বিশুদ্ধ উচ্চারণ জানা")),
-                        Center(child: Text("অক্ষরগুলোর মাঝের পার্থক্য জানা")),
+                      children: [
+                        Center(
+                            child: Text(
+                          "আরবি ভাষার বর্ণ ২৯ টি",
+                          style:
+                              TextStyle(fontSize: 20.sp, color: Colors.white),
+                        )),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        Center(
+                            child: Text(
+                                "আরবি বর্ণ সঠিকভাবে জানার জন্য ৩ টি বিষয় জানা জরুরী",
+                                style: TextStyle(
+                                    fontSize: 13.sp, color: Colors.white))),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        //  ! center
+                        Center(
+                          child: Container(
+                            height: 100,
+                            width: 250,
+                            color: const Color.fromARGB(0, 244, 67, 54),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 24.w,
+                                      height: 24.h,
+                                      decoration: BoxDecoration(
+                                          color: const Color(0xffC4C4C4),
+                                          borderRadius:
+                                              BorderRadius.circular(360)),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 3, left: 10),
+                                      child: Text(
+                                          "প্রতিটি অক্ষরের সঠিক নাম জানা",
+                                          style: TextStyle(
+                                              fontSize: 12.sp,
+                                              color: Colors.white)),
+                                    )
+                                  ],
+                                ),
+                                const SizedBox(
+                                  height: 7,
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 24.w,
+                                      height: 24.h,
+                                      decoration: BoxDecoration(
+                                          color: const Color(0xffC4C4C4),
+                                          borderRadius:
+                                              BorderRadius.circular(360)),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 3, left: 10),
+                                      child: Text(
+                                          "প্রতিটি অক্ষরের বিশুদ্ধ উচ্চারণ জানা",
+                                          style: TextStyle(
+                                              fontSize: 12.sp,
+                                              color: Colors.white)),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(
+                                  height: 7,
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 24.w,
+                                      height: 24.h,
+                                      decoration: BoxDecoration(
+                                          color: const Color(0xffC4C4C4),
+                                          borderRadius:
+                                              BorderRadius.circular(360)),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 3, left: 10),
+                                      child: Text(
+                                          "অক্ষরগুলোর মাঝের পার্থক্য জানা",
+                                          style: TextStyle(
+                                              fontSize: 12.sp,
+                                              color: Colors.white)),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
                         // !Container
-                        Center(child: Text("আরবি বর্ণের মধ্যে যেসব বর্ণে নুকতা নাই")),
+                        const SizedBox(height: 10),
+                        Center(
+                          child: Container(
+                              color: Colors.amber,
+                              padding: const EdgeInsets.only(
+                                  top: 12, bottom: 12, left: 20, right: 20),
+                              child: const Text("নুকতা যুক্ত বর্ণ",
+                                  style:
+                                      TextStyle(fontWeight: FontWeight.w600))),
+                        ),
+                        const SizedBox(height: 5),
+                        Center(
+                            child: Text(
+                                "নুকতা যুক্ত বর্ণ আরবি বর্ণের মধ্যে যেসব বর্ণে নুকতা আছে",
+                                style: TextStyle(
+                                    fontSize: 12.sp, color: Colors.white))),
+                        const SizedBox(height: 14),
+                        Center(
+                          child: Container(
+                              color: const Color(0xff4EBFD7),
+                              padding: const EdgeInsets.only(
+                                  top: 12, bottom: 12, left: 20, right: 20),
+                              child: const Text("নুকতা যুক্ত বর্ণ",
+                                  style:
+                                      TextStyle(fontWeight: FontWeight.w600))),
+                        ),
+                        const SizedBox(height: 5),
+                        Center(
+                            child: Text(
+                                "আরবি বর্ণের মধ্যে যেসব বর্ণে নুকতা নাই",
+                                style: TextStyle(
+                                    fontSize: 12.sp, color: Colors.white))),
                       ],
                     ),
                   )
