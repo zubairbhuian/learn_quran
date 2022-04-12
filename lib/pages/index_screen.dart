@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/pages/arabic_word.dart';
 
 class IndexScreen extends StatelessWidget {
   const IndexScreen({Key? key}) : super(key: key);
@@ -38,7 +40,10 @@ class IndexScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(
                             top: 16, bottom: 16, left: 10, right: 10)),
                     onPressed: () {
-                      
+                      Navigator.push(
+                          context,
+                          CupertinoPageRoute(
+                              builder: (_) => const ArabicWord()));
                     },
                     child: const Text(
                       "আরবি ভাষার বর্ণ",

@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
               theme: ThemeData(
                   primaryColor: Colors.red,
                   appBarTheme: const AppBarTheme(
-                      backgroundColor: Colors.red,
-                      iconTheme: IconThemeData(color: Colors.black))),
+                      backgroundColor: Colors.white,
+                      iconTheme: IconThemeData(color: Colors.blue))),
               home: const SplashScreen(),
             )));
   }
