@@ -161,8 +161,11 @@ class ArabicWord extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 12.sp, color: Colors.white))),
 
-                        // !
-                        SizedBox(height: 300, child: WordData())
+                        // !Word
+                        const SizedBox(
+                          height: 25,
+                        ),
+                        SizedBox(height: 900, child: WordData())
                       ],
                     ),
                   ),

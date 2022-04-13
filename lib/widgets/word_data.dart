@@ -1,12 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class WordData extends StatelessWidget {
   WordData({Key? key}) : super(key: key);
   final List node = [
-    {'color': const Color.fromARGB(255, 221, 87, 58), 'text': "A"},
-    {'color': const Color.fromARGB(255, 245, 200, 15), 'text': "B"},
-    {'color': const Color.fromARGB(255, 190, 243, 9), 'text': "C"},
-    {'color': const Color.fromARGB(255, 19, 209, 107), 'text': "D"},
+    {
+      'word': 'A',
+      'text': 'sdsa',
+      'color': const Color.fromARGB(255, 221, 87, 58),
+      'path': 'asa'
+    },
+    {
+      'word': "B",
+      'text': 'sdsa',
+      'color': const Color.fromARGB(255, 245, 200, 15),
+      'path': 'asa'
+    },
+    {
+      'word': "C",
+      'text': 'sdsa',
+      'color': const Color.fromARGB(255, 190, 243, 9),
+      'path': 'asa'
+    },
+    {
+      'word': "ا",
+      'text': 'sdsa',
+      'color': const Color(0xff4EBFD7),
+      'path': 'আলিফ'
+    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -15,21 +36,36 @@ class WordData extends StatelessWidget {
       gridDelegate:
           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
       itemBuilder: (_, index) {
-        return Padding(
-          padding: const EdgeInsets.all(4.0),
-          child: Container(
-            height: 100,
-            width: 100,
-            color: node[index]['color'],
-            child: Center(
-                child: Text(
-              "${node[index]['text']}",
-              style: const TextStyle(
-                  color: Color.fromARGB(255, 0, 0, 0),
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold),
-            )),
+        return InkWell(
+          child: SizedBox(
+            height: 70,
+            child: Column(
+              children: [
+                Padding(
+                  padding:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 4),
+                  child: Container(
+                    padding: const EdgeInsets.only(top: 23, bottom: 23),
+                    color: node[index]['color'],
+                    child: Center(
+                      child: Text(
+                        "${node[index]['word']}",
+                        style: const TextStyle(
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                ),
+                Text("${node[index]['text']}",
+                    style: TextStyle(fontSize: 12.sp, color: Colors.white)),
+              ],
+            ),
           ),
+          onTap: () {
+            print("object");
+          },
         );
       },
     );
