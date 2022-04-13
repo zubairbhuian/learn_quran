@@ -15,15 +15,20 @@ class WordData extends StatelessWidget {
       'word': "ث",
       'text': 'তাা’',
       'color': AppsColor.lightYellow,
-      'path': 'asa'
+      'path': 'asaaaaaaaaaaaa'
     },
     {
       'word': "ب",
       'text': 'বাা’',
       'color': AppsColor.lightYellow,
-      'path': 'asa'
+      'path': 'asaaaaaa'
     },
-    {'word': "ا", 'text': 'আলিফ', 'color': AppsColor.skyBlue, 'path': 'fdfg'},
+    {
+      'word': "ا",
+      'text': 'আলিফ',
+      'color': AppsColor.skyBlue,
+      'path': 'fdfgaaaaaaaa'
+    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -41,14 +46,14 @@ class WordData extends StatelessWidget {
                   padding:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 4),
                   child: Container(
-                    padding: const EdgeInsets.only(top: 15, bottom: 15),
+                    padding: const EdgeInsets.only(top: 10, bottom: 10),
                     color: node[index]['color'],
                     child: Center(
                       child: Text(
                         "${node[index]['word']}",
                         style: const TextStyle(
                             color: Color.fromARGB(255, 0, 0, 0),
-                            fontSize: 16,
+                            fontSize: 25,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
