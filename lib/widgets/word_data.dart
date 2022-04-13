@@ -1,33 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/const/apps_color.dart';
 
 class WordData extends StatelessWidget {
   WordData({Key? key}) : super(key: key);
   final List node = [
     {
       'word': 'ث',
-      'text': 'ছাা',
-      'color': const Color(0xffFCBC4E),
-      'path': 'asa'
+      'text': 'ছাা’',
+      'color': AppsColor.lightYellow,
+      'path': 'asagdfg'
     },
     {
       'word': "ث",
       'text': 'তাা’',
-      'color': const Color(0xffFCBC4E),
+      'color': AppsColor.lightYellow,
       'path': 'asa'
     },
     {
       'word': "ب",
       'text': 'বাা’',
-      'color': const Color(0xffFCBC4E),
+      'color': AppsColor.lightYellow,
       'path': 'asa'
     },
-    {
-      'word': "ا",
-      'text': 'আলিফ',
-      'color': const Color(0xff4EBFD7),
-      'path': 'fdfg'
-    },
+    {'word': "ا", 'text': 'আলিফ', 'color': AppsColor.skyBlue, 'path': 'fdfg'},
   ];
   @override
   Widget build(BuildContext context) {

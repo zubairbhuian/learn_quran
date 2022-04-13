@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/widgets/word_data.dart';
 
 // ignore: must_be_immutable
@@ -131,7 +132,7 @@ class ArabicWord extends StatelessWidget {
                         const SizedBox(height: 10),
                         Center(
                           child: Container(
-                              color: const Color(0xffFCBC4E),
+                              color: AppsColor.lightYellow,
                               padding: const EdgeInsets.only(
                                   top: 12, bottom: 12, left: 20, right: 20),
                               child: const Text("নুকতা যুক্ত বর্ণ",
@@ -147,7 +148,7 @@ class ArabicWord extends StatelessWidget {
                         const SizedBox(height: 14),
                         Center(
                           child: Container(
-                              color: const Color(0xff4EBFD7),
+                              color: AppsColor.skyBlue,
                               padding: const EdgeInsets.only(
                                   top: 12, bottom: 12, left: 20, right: 20),
                               child: const Text("নুকতা যুক্ত বর্ণ",
