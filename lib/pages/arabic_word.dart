@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+// ignore: must_be_immutable
 class ArabicWord extends StatelessWidget {
-  const ArabicWord({Key? key}) : super(key: key);
+  List node = [
+    // {'color':Color(0xfffDD573A ) ,'text':"A"},
+    // {'color':Color(0xfffF5C80F  ) ,'text':"B"},
+    // {'color':Color(0xfffBEF309 ) ,'text':"C"},
+    // {'color':Color(0xfff13D16B ) ,'text':"D"},
+    'A',
+    'b',
+    'c',
+    'd',
+    'e'
+  ];
 
+  ArabicWord({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    List node = [];
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
@@ -159,7 +172,37 @@ class ArabicWord extends StatelessWidget {
                                 "আরবি বর্ণের মধ্যে যেসব বর্ণে নুকতা নাই",
                                 style: TextStyle(
                                     fontSize: 12.sp, color: Colors.white))),
+
+                        // !
                       ],
+                    ),
+                  ),
+                  SizedBox(
+                    // color: Colors.red,
+                    height: 500,
+                    child: GridView.builder(
+                      itemCount: node.length,
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 4),
+                      itemBuilder: (_, index) {
+                        return Padding(
+                          padding: const EdgeInsets.all(4.0),
+                          child: Container(
+                            height: 100,
+                            width: 100,
+                            color: const Color.fromARGB(255, 7, 142, 252),
+                            child: Center(
+                                child: Text(
+                              "${node[index]}",
+                              style: const TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                          ),
+                        );
+                      },
                     ),
                   )
                 ]),

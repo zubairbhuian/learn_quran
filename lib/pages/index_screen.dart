@@ -40,10 +40,8 @@ class IndexScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(
                             top: 16, bottom: 16, left: 10, right: 10)),
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          CupertinoPageRoute(
-                              builder: (_) => const ArabicWord()));
+                      Navigator.push(context,
+                          CupertinoPageRoute(builder: (_) => ArabicWord()));
                     },
                     child: const Text(
                       "আরবি ভাষার বর্ণ",
