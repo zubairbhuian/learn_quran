@@ -12,27 +12,185 @@ class WordData extends StatelessWidget {
       'path': 'asagdfg'
     },
     {
-      'word': "ث",
+      'word': 'ث',
       'text': 'তাা’',
       'color': AppsColor.lightYellow,
       'path': 'asaaaaaaaaaaaa'
     },
     {
-      'word': "ب",
+      'word': 'ب',
       'text': 'বাা’',
       'color': AppsColor.lightYellow,
       'path': 'asaaaaaa'
     },
+
     {
-      'word': "ا",
+      'word': ' ا ',
       'text': 'আলিফ',
       'color': AppsColor.skyBlue,
       'path': 'fdfgaaaaaaaa'
+    },
+    // !5
+    {
+      'word': 'د',
+      'text': 'দাাল',
+      'color': AppsColor.skyBlue,
+      'path': 'asagdfg'
+    },
+    {
+      'word': 'خ',
+      'text': 'খ',
+      'color': AppsColor.lightYellow,
+      'path': 'asaaaaaaaaaaaa'
+    },
+    {
+      'word': 'ح',
+      'text': 'হাা’',
+      'color': AppsColor.skyBlue,
+      'path': 'asaaaaaa'
+    },
+
+    {
+      'word': 'ج',
+      'text': 'জীম',
+      'color': AppsColor.lightYellow,
+      'path': 'fdfgaaaaaasasasaaa'
+    },
+    // !5
+    {
+      'word': 'س',
+      'text': 'সীন',
+      'color': AppsColor.skyBlue,
+      'path': 'asagdsasasasfg'
+    },
+    {
+      'word': 'ز',
+      'text': 'ঝা',
+      'color': AppsColor.lightYellow,
+      'path': 'asaaaaaaaaaaaa'
+    },
+    {
+      'word': 'ر',
+      'text': 'র',
+      'color': AppsColor.skyBlue,
+      'path': 'sassaaaaaaaaaasasa'
+    },
+
+    {
+      'word': 'ذ',
+      'text': 'যাাল',
+      'color': AppsColor.lightYellow,
+      'path': 'fdfgaaaaaaasasaaa'
+    },
+    // !5
+    {
+      'word': 'ط',
+      'text': 'ত্ব-',
+      'color': AppsColor.skyBlue,
+      'path': 'asagdsasasasfg'
+    },
+    {
+      'word': 'ض',
+      'text': 'দ্বদ',
+      'color': AppsColor.lightYellow,
+      'path': 'asaaaaaaaaaaaa'
+    },
+    {
+      'word': 'ص',
+      'text': 'স্বদ',
+      'color': AppsColor.skyBlue,
+      'path': 'sassaaaaaaaaaasasa'
+    },
+
+    {
+      'word': 'ش',
+      'text': 'শীন',
+      'color': AppsColor.lightYellow,
+      'path': 'fdfgaaaaaaasasaaa'
+    },
+    // !5
+    {
+      'word': 'ف',
+      'text': 'ফা',
+      'color': AppsColor.lightYellow,
+      'path': 'asagdsasasasfg'
+    },
+    {
+      'word': 'غ',
+      'text': 'গইন',
+      'color': AppsColor.lightYellow,
+      'path': 'asaaaaaaaaaaaa'
+    },
+    {
+      'word': 'ع',
+      'text': '‘আইন',
+      'color': AppsColor.skyBlue,
+      'path': 'sassaaaaaaaaaasasa'
+    },
+
+    {
+      'word': 'ظ',
+      'text': 'য-',
+      'color': AppsColor.lightYellow,
+      'path': 'fdfgaaaaaaasasaaa'
+    },
+    // !5
+    {
+      'word': 'م',
+      'text': 'মিম',
+      'color': AppsColor.skyBlue,
+      'path': 'asagdsasasasfg'
+    },
+    {
+      'word': 'ل',
+      'text': 'লাম',
+      'color': AppsColor.skyBlue,
+      'path': 'asaaaaaaaaaaaa'
+    },
+    {
+      'word': 'ك',
+      'text': 'কাফ',
+      'color': AppsColor.skyBlue,
+      'path': 'sassaaaaaaaaaasasa'
+    },
+
+    {
+      'word': 'ق',
+      'text': 'ক্বফ',
+      'color': AppsColor.lightYellow,
+      'path': 'fdfgaaaaaaasasaaa'
+    },
+    // !5
+    {
+      'word': 'ء',
+      'text': 'হামজা',
+      'color': AppsColor.lightYellow,
+      'path': 'asagdsasasasfg'
+    },
+    {
+      'word': 'ه',
+      'text': 'হা',
+      'color': AppsColor.skyBlue,
+      'path': 'asaaaaaaaaaaaa'
+    },
+    {
+      'word': 'و',
+      'text': 'ওয়াও',
+      'color': AppsColor.skyBlue,
+      'path': 'sassaaaaaaaaaasasa'
+    },
+
+    {
+      'word': 'ن',
+      'text': 'নুন',
+      'color': AppsColor.lightYellow,
+      'path': 'fdfgaaaaaaasasaaa'
     },
   ];
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      controller: ScrollController(keepScrollOffset: false),
       itemCount: node.length,
       gridDelegate:
           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
@@ -65,7 +223,6 @@ class WordData extends StatelessWidget {
             ),
           ),
           onTap: () {
-            print(index);
           },
         );
       },
