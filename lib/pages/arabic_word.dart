@@ -131,7 +131,7 @@ class ArabicWord extends StatelessWidget {
                         const SizedBox(height: 10),
                         Center(
                           child: Container(
-                              color: Colors.amber,
+                              color: const Color(0xffFCBC4E),
                               padding: const EdgeInsets.only(
                                   top: 12, bottom: 12, left: 20, right: 20),
                               child: const Text("নুকতা যুক্ত বর্ণ",

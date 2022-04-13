@@ -5,28 +5,28 @@ class WordData extends StatelessWidget {
   WordData({Key? key}) : super(key: key);
   final List node = [
     {
-      'word': 'A',
-      'text': 'sdsa',
-      'color': const Color.fromARGB(255, 221, 87, 58),
+      'word': 'ث',
+      'text': 'ছাা',
+      'color': const Color(0xffFCBC4E),
       'path': 'asa'
     },
     {
-      'word': "B",
-      'text': 'sdsa',
-      'color': const Color.fromARGB(255, 245, 200, 15),
+      'word': "ث",
+      'text': 'তাা’',
+      'color': const Color(0xffFCBC4E),
       'path': 'asa'
     },
     {
-      'word': "C",
-      'text': 'sdsa',
-      'color': const Color.fromARGB(255, 190, 243, 9),
+      'word': "ب",
+      'text': 'বাা’',
+      'color': const Color(0xffFCBC4E),
       'path': 'asa'
     },
     {
       'word': "ا",
-      'text': 'sdsa',
+      'text': 'আলিফ',
       'color': const Color(0xff4EBFD7),
-      'path': 'আলিফ'
+      'path': 'fdfg'
     },
   ];
   @override
@@ -45,7 +45,7 @@ class WordData extends StatelessWidget {
                   padding:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 4),
                   child: Container(
-                    padding: const EdgeInsets.only(top: 23, bottom: 23),
+                    padding: const EdgeInsets.only(top: 15, bottom: 15),
                     color: node[index]['color'],
                     child: Center(
                       child: Text(
@@ -64,7 +64,7 @@ class WordData extends StatelessWidget {
             ),
           ),
           onTap: () {
-            print("object");
+            print(index);
           },
         );
       },
