@@ -25,7 +25,7 @@ class WordData extends StatelessWidget {
     },
 
     {
-      'word': ' ا ',
+      'word': 'ا',
       'text': 'আলিফ',
       'color': AppsColor.skyBlue,
       'path': 'fdfgaaaaaaaa'
@@ -197,7 +197,8 @@ class WordData extends StatelessWidget {
       itemBuilder: (_, index) {
         return InkWell(
           child: SizedBox(
-            height: 70,
+            width: 80,
+            height: 80,
             child: Column(
               children: [
                 Padding(
@@ -218,12 +219,14 @@ class WordData extends StatelessWidget {
                   ),
                 ),
                 Text("${node[index]['text']}",
-                    style: TextStyle(fontSize: 12.sp, color: Colors.white)),
+                    style: TextStyle(
+                        fontSize: 12.sp,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500)),
               ],
             ),
           ),
-          onTap: () {
-          },
+          onTap: () {},
         );
       },
     );

@@ -166,7 +166,7 @@ class ArabicWord extends StatelessWidget {
                         const SizedBox(
                           height: 25,
                         ),
-                        SizedBox(height: 900, child: WordData()),
+                        SizedBox(height: 700, child: WordData()),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
