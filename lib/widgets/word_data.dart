@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
@@ -187,6 +188,8 @@ class WordData extends StatelessWidget {
       'path': 'fdfgaaaaaaasasaaa'
     },
   ];
+
+
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
