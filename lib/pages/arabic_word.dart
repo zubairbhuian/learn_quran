@@ -218,8 +218,7 @@ class _ArabicWordState extends State<ArabicWord> {
                               onTap: () async {
                                 audioPlayer.setReleaseMode(ReleaseMode.RELEASE);
                                 final player = AudioCache(prefix: 'wordaudio/');
-                                final url =
-                                    await player.load('alif.mp3');
+                                final url = await player.load('ya.mp3');
                                 audioPlayer.setUrl(url.path, isLocal: true);
                                 await audioPlayer.resume();
                               },
