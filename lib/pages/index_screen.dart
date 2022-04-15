@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
+import 'package:learn_quran/widgets/index_button.dart';
 
 class IndexScreen extends StatelessWidget {
   const IndexScreen({Key? key}) : super(key: key);
@@ -34,33 +34,9 @@ class IndexScreen extends StatelessWidget {
                 ),
                 // !Index 1
                 const SizedBox(height: 15),
-                InkWell(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                        color: AppsColor.lightYellow,
-                        borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(44),
-                            topRight: Radius.circular(10),
-                            bottomLeft: Radius.circular(44),
-                            bottomRight: Radius.circular(10))),
-                    height: 70,
-                    child: Row(
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.only(top: 5, right: 16),
-                          width: 83,
-                          child: Image.asset('images/index_icon.png'),
-                        ),
-                        const Flexible(
-                            child: Text('আরবি ভাষার বর্ণ',
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w500)))
-                      ],
-                    ),
-                  ),
-                  onTap: (){},
+                IndexButton(
+                  title: 'আরবি ভাষার বর্ণ',
+                  navigateWidget: const ArabicWord(),
                 ),
                 const SizedBox(height: 15),
                 ElevatedButton.icon(
