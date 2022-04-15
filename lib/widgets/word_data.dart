@@ -37,12 +37,12 @@ class _WordDataState extends State<WordData> {
       'color': AppsColor.skyBlue,
       'path': 'alif.mp3'
     },
-    // !5
+    // 5
     {
       'word': 'د',
       'text': 'দাাল',
       'color': AppsColor.skyBlue,
-      'path': 'dal.mp3'
+      'path': 'dal1.mp3'
     },
     {
       'word': 'خ',
@@ -63,7 +63,7 @@ class _WordDataState extends State<WordData> {
       'word': 'س',
       'text': 'সীন',
       'color': AppsColor.skyBlue,
-      'path': 'asagdsasasasfg'
+      'path': 'asdsdsdsdsd'
     },
     {
       'word': 'ز',
