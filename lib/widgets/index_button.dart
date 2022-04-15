@@ -1,18 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/pages/not_ready_page.dart';
 
 // ignore: must_be_immutable
 class IndexButton extends StatelessWidget {
   IndexButton({
     // required this.onTab,
     required this.title,
-    required this.navigateWidget,
+    this.navigateWidget,
     Key? key,
   }) : super(key: key);
   // VoidCallback onTab;
   String title;
-  Widget navigateWidget;
+  Widget? navigateWidget;
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,9 @@ class IndexButton extends StatelessWidget {
       ),
       onTap: () {
         Navigator.push(
-            context, CupertinoPageRoute(builder: (_) => navigateWidget));
+            context,
+            CupertinoPageRoute(
+                builder: (_) => navigateWidget ?? const NotReadyPage()));
       },
     );
   }

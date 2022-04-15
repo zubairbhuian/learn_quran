@@ -2,6 +2,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/word_data.dart';
 
 // ignore: must_be_immutable
@@ -236,19 +237,7 @@ class _ArabicWordState extends State<ArabicWord> {
                         const SizedBox(
                           height: 30,
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            ElevatedButton.icon(
-                                onPressed: () {},
-                                icon: const Icon(Icons.arrow_back),
-                                label: const Text('Previous')),
-                            ElevatedButton.icon(
-                                onPressed: () {},
-                                icon: const Text('Next'),
-                                label: const Icon(Icons.arrow_forward))
-                          ],
-                        )
+                        PreviousNextNavigations()
                       ],
                     ),
                   ),

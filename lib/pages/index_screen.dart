@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
@@ -39,137 +38,26 @@ class IndexScreen extends StatelessWidget {
                   navigateWidget: const ArabicWord(),
                 ),
                 const SizedBox(height: 15),
-                ElevatedButton.icon(
-                  style: ElevatedButton.styleFrom(
-                      primary: const Color(0xffE5E5E5),
-                      onPrimary: Colors.blue,
-                      padding: const EdgeInsets.only(
-                          top: 16, bottom: 16, left: 10, right: 10)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        CupertinoPageRoute(builder: (_) => const ArabicWord()));
-                  },
-                  label: const Text(
-                    "আরবি ভাষার বর্ণ",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500),
-                  ),
-                  icon: const Icon(Icons.mail),
-                ),
                 // !Index 2
-                const SizedBox(height: 15),
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        primary: const Color(0xffE5E5E5),
-                        onPrimary: Colors.blue,
-                        padding: const EdgeInsets.only(
-                            top: 16, bottom: 16, left: 10, right: 10)),
-                    onPressed: () {},
-                    child: const Text(
-                      "তামীযে হরফ",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                    )),
+                IndexButton(title: 'তামীযে হরফ'),
                 // !Index 3
                 const SizedBox(height: 15),
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        primary: const Color(0xffE5E5E5),
-                        onPrimary: Colors.blue,
-                        padding: const EdgeInsets.only(
-                            top: 16, bottom: 16, left: 10, right: 10)),
-                    onPressed: () {},
-                    child: const Text(
-                      "চিহ্ন দিয়ে হরফ শিক্ষা",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                    )),
+                IndexButton(title: 'চিহ্ন দিয়ে হরফ শিক্ষা'),
                 // !Index 4
                 const SizedBox(height: 15),
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        primary: const Color(0xffE5E5E5),
-                        onPrimary: Colors.blue,
-                        padding: const EdgeInsets.only(
-                            top: 16, bottom: 16, left: 10, right: 10)),
-                    onPressed: () {},
-                    child: const Text(
-                      "স্থান ভেদে প্রতিটি হরফের রুপ আকৃতি",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                    )),
+                IndexButton(title: 'স্থান ভেদে প্রতিটি হরফের রুপ আকৃতি'),
                 // !Index 5
                 const SizedBox(height: 15),
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        primary: const Color(0xffE5E5E5),
-                        onPrimary: Colors.blue,
-                        padding: const EdgeInsets.only(
-                            top: 16, bottom: 16, left: 10, right: 10)),
-                    onPressed: () {},
-                    child: const Text(
-                      "হরকত",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                    )),
+                IndexButton(title: 'হরকত'),
                 // !Index 6
                 const SizedBox(height: 15),
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        primary: const Color(0xffE5E5E5),
-                        onPrimary: Colors.blue,
-                        padding: const EdgeInsets.only(
-                            top: 16, bottom: 16, left: 10, right: 10)),
-                    onPressed: () {},
-                    child: const Text(
-                      "জযম শিক্ষা",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                    )),
+                IndexButton(title: 'জযম শিক্ষা'),
                 // !Index 7
                 const SizedBox(height: 15),
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        primary: const Color(0xffE5E5E5),
-                        onPrimary: Colors.blue,
-                        padding: const EdgeInsets.only(
-                            top: 16, bottom: 16, left: 10, right: 10)),
-                    onPressed: () {},
-                    child: const Text(
-                      "তানওয়ীন শিক্ষা",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                    )),
+                IndexButton(title: 'তানওয়ীন শিক্ষা'),
                 // !Index 8
                 const SizedBox(height: 15),
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        primary: const Color(0xffE5E5E5),
-                        onPrimary: Colors.blue,
-                        padding: const EdgeInsets.only(
-                            top: 16, bottom: 16, left: 10, right: 10)),
-                    onPressed: () {},
-                    child: const Text(
-                      "তানওয়ীন শিক্ষা",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                    )),
+                IndexButton(title: 'তানওয়ীন শিক্ষা'),
               ],
             ),
           )
