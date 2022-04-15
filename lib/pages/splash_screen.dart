@@ -1,5 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'index_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -9,14 +13,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  // @override
-  // void initState() {
-  //   Timer(
-  //       const Duration(seconds: 4),
-  //       (() => Navigator.pushReplacement(
-  //           context, MaterialPageRoute(builder: (_) => const IndexScreen()))));
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    Timer(
+        const Duration(seconds: 4),
+        (() => Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (_) => const IndexScreen()))));
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               SizedBox(
-                height: 167.h,
+                height: 150.h,
               ),
               Container(
                 color: const Color.fromARGB(0, 231, 15, 15),
@@ -43,14 +47,14 @@ class _SplashScreenState extends State<SplashScreen> {
                           image: DecorationImage(
                               image: AssetImage("images/quran.png"))),
                     ),
-                    // const SizedBox(
-                    //   height: 13,
-                    // ),
+                    const SizedBox(
+                      height: 13,
+                    ),
                     const Text(
                       'LEARN QURAN',
                       style: TextStyle(
                           fontFamily: 'Poppins',
-                          fontSize: 20,
+                          fontSize: 24,
                           fontWeight: FontWeight.w600,
                           color: Colors.white),
                     ),
@@ -70,26 +74,23 @@ class _SplashScreenState extends State<SplashScreen> {
                 flex: 1,
                 child: Stack(alignment: AlignmentDirectional.center, children: [
                   Positioned(
-                      bottom: 120,
+                      bottom: 130,
                       child: Text("Powered by",
                           style: TextStyle(
-                              fontSize: 18.w,
+                              fontSize: 20.w,
                               color: Colors.white,
                               fontWeight: FontWeight.w300))),
                   Positioned(
                     bottom: 60,
                     child: Container(
                       padding: EdgeInsets.all(9.w),
-                      height: 50,
-                      width: 230,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: Colors.white, width: 1)),
+                      height: 70,
+                      width: 250,
                       child: Row(
                         children: [
                           Container(
-                            height: 40.h,
-                            width: 40.w,
+                            height: 60.h,
+                            width: 60.w,
                             decoration: const BoxDecoration(
                                 image: DecorationImage(
                                     image: AssetImage('images/logo.png'))),
@@ -97,7 +98,7 @@ class _SplashScreenState extends State<SplashScreen> {
                           Text(
                             "MASTER-ACADEMY",
                             style:
-                                TextStyle(fontSize: 15.w, color: Colors.white),
+                                TextStyle(fontSize: 14.w, color: Colors.white),
                           )
                         ],
                       ),
