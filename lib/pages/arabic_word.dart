@@ -1,11 +1,27 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/widgets/word_data.dart';
 
 // ignore: must_be_immutable
-class ArabicWord extends StatelessWidget {
+
+class ArabicWord extends StatefulWidget {
   const ArabicWord({Key? key}) : super(key: key);
+
+  @override
+  State<ArabicWord> createState() => _ArabicWordState();
+}
+
+class _ArabicWordState extends State<ArabicWord> {
+  final audioPlayer = AudioPlayer();
+
+  @override
+  void dispose() {
+    audioPlayer.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -166,7 +182,61 @@ class ArabicWord extends StatelessWidget {
                         const SizedBox(
                           height: 25,
                         ),
-                        SizedBox(height: 700, child: WordData()),
+                        const SizedBox(height: 620, child: WordData()),
+                        Column(
+                          children: [
+                            InkWell(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    width: 60,
+                                    height: 60,
+                                    color: AppsColor.lightYellow,
+                                    child: const Center(
+                                        child: Text('ي',
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 0, 0, 0),
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.bold))),
+                                  ),
+                                  Container(
+                                    width: 60,
+                                    height: 60,
+                                    color: AppsColor.skyBlue,
+                                    child: const Center(
+                                        child: Text('ئ',
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 0, 0, 0),
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.bold))),
+                                  )
+                                ],
+                              ),
+                              onTap: () async {
+                                audioPlayer.setReleaseMode(ReleaseMode.RELEASE);
+                                final player = AudioCache(prefix: 'wordaudio/');
+                                final url =
+                                    await player.load('alif.mp3');
+                                audioPlayer.setUrl(url.path, isLocal: true);
+                                await audioPlayer.resume();
+                              },
+                            ),
+                            const SizedBox(
+                              height: 7,
+                            ),
+                            Text('ইয়া',
+                                style: TextStyle(
+                                    fontSize: 12.sp,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500))
+                          ],
+                        ),
+                        const SizedBox(
+                          height: 30,
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
