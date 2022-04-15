@@ -37,12 +37,12 @@ class _WordDataState extends State<WordData> {
       'color': AppsColor.skyBlue,
       'path': 'alif.mp3'
     },
-    // 5
+    // !5
     {
       'word': 'د',
       'text': 'দাাল',
       'color': AppsColor.skyBlue,
-      'path': 'dal1.mp3'
+      'path': 'dal.mp3'
     },
     {
       'word': 'خ',
@@ -59,134 +59,104 @@ class _WordDataState extends State<WordData> {
       'path': 'jim.mp3'
     },
     // !5
-    {
-      'word': 'س',
-      'text': 'সীন',
-      'color': AppsColor.skyBlue,
-      'path': 'asdsdsdsdsd'
-    },
+    {'word': 'س', 'text': 'সীন', 'color': AppsColor.skyBlue, 'path': 'sin.mp3'},
     {
       'word': 'ز',
       'text': 'ঝা',
       'color': AppsColor.lightYellow,
-      'path': 'asaaaaaaaaaaaa'
+      'path': 'jha.mp3'
     },
-    {
-      'word': 'ر',
-      'text': 'র',
-      'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
-    },
+    {'word': 'ر', 'text': 'র', 'color': AppsColor.skyBlue, 'path': 'ro.mp3'},
 
     {
       'word': 'ذ',
       'text': 'যাাল',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'jal.mp3'
     },
     // !5
     {
       'word': 'ط',
       'text': 'ত্ব-',
       'color': AppsColor.skyBlue,
-      'path': 'asagdsasasasfg'
+      'path': 'too.mp3'
     },
     {
       'word': 'ض',
       'text': 'দ্বদ',
       'color': AppsColor.lightYellow,
-      'path': 'asaaaaaaaaaaaa'
+      'path': 'dod.mp3'
     },
     {
       'word': 'ص',
       'text': 'স্বদ',
       'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
+      'path': 'sod.mp3'
     },
 
     {
       'word': 'ش',
       'text': 'শীন',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'shin.mp3'
     },
     // !5
     {
       'word': 'ف',
       'text': 'ফা',
       'color': AppsColor.lightYellow,
-      'path': 'asagdsasasasfg'
+      'path': 'fa.mp3'
     },
     {
       'word': 'غ',
       'text': 'গইন',
       'color': AppsColor.lightYellow,
-      'path': 'asaaaaaaaaaaaa'
+      'path': 'goin.mp3'
     },
     {
       'word': 'ع',
       'text': '‘আইন',
       'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
+      'path': 'ain.mp3'
     },
 
     {
       'word': 'ظ',
       'text': 'য-',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'joo.mp3'
     },
     // !5
-    {
-      'word': 'م',
-      'text': 'মিম',
-      'color': AppsColor.skyBlue,
-      'path': 'asagdsasasasfg'
-    },
-    {
-      'word': 'ل',
-      'text': 'লাম',
-      'color': AppsColor.skyBlue,
-      'path': 'asaaaaaaaaaaaa'
-    },
-    {
-      'word': 'ك',
-      'text': 'কাফ',
-      'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
-    },
+    {'word': 'م', 'text': 'মিম', 'color': AppsColor.skyBlue, 'path': 'mim.mp3'},
+    {'word': 'ل', 'text': 'লাম', 'color': AppsColor.skyBlue, 'path': 'lam.mp3'},
+    {'word': 'ك', 'text': 'কাফ', 'color': AppsColor.skyBlue, 'path': 'kaf.mp3'},
 
     {
       'word': 'ق',
       'text': 'ক্বফ',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'qof.mp3'
     },
     // !5
     {
       'word': 'ء',
       'text': 'হামজা',
       'color': AppsColor.lightYellow,
-      'path': 'asagdsasasasfg'
+      'path': 'hamza.mp3'
     },
-    {
-      'word': 'ه',
-      'text': 'হা',
-      'color': AppsColor.skyBlue,
-      'path': 'asaaaaaaaaaaaa'
-    },
+    {'word': 'ه', 'text': 'হা', 'color': AppsColor.skyBlue, 'path': 'ha2.mp3'},
     {
       'word': 'و',
       'text': 'ওয়াও',
       'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
+      'path': 'waw.mp3'
     },
 
     {
       'word': 'ن',
       'text': 'নুন',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'nun.mp3'
     },
   ];
   // !Audio
