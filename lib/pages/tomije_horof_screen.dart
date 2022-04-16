@@ -37,7 +37,51 @@ class TomijeHorofScreen extends StatelessWidget {
               Text(
                   "প্রতিটি বর্ণের উপরে ক্লিক করে উচ্চারণ শুনুন ও নিজে নিজে বার বার প্র্যাকটিস করুন।",
                   style: TextStyle(fontSize: 13.sp, color: Colors.white)),
-                  
+              Container(
+                height: 200,
+                color: Colors.amber,
+                child: Column(
+                  children: [
+                    Container(
+                      height: 150,
+                      color: const Color.fromARGB(255, 172, 172, 172),
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 220,
+                            color: Colors.green,
+                            child: Column(
+                              children: [
+                                Flexible(
+                                  child: Container(
+                                    height: 40,
+                                    width: 100,
+                                    color: Colors.red,
+                                    child: const Text("gfdsga"),
+                                  ),
+                                ),
+                                const Text("data")
+                              ],
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              Container(
+                                height: 40,
+                                width: 100,
+                                color: Colors.red,
+                                child: const Text("gfdsga"),
+                              ),
+                              const Text("data")
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    const Text('উচ্চারনের বর্ণনা')
+                  ],
+                ),
+              ),
               // !Bottom Navigation
               PreviousNextNavigations(
                 previous: const ArabicWord(),
