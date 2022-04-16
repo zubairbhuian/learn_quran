@@ -46,34 +46,41 @@ class TomijeHorofScreen extends StatelessWidget {
                       height: 150,
                       color: const Color.fromARGB(255, 172, 172, 172),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Container(
-                            width: 220,
-                            color: Colors.green,
-                            child: Column(
-                              children: [
-                                Flexible(
-                                  child: Container(
+                          Flexible(
+                            flex: 2,
+                            child: Container(
+                              color: Colors.green,
+                              child: Column(
+                                children: [
+                                  Container(
                                     height: 40,
                                     width: 100,
                                     color: Colors.red,
                                     child: const Text("gfdsga"),
                                   ),
-                                ),
-                                const Text("data")
-                              ],
+                                  const Text("data")
+                                ],
+                              ),
                             ),
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                height: 40,
-                                width: 100,
-                                color: Colors.red,
-                                child: const Text("gfdsga"),
+                          Flexible(
+                            flex: 3,
+                            child: Container(
+                              color: const Color.fromARGB(255, 238, 98, 98),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    height: 40,
+                                    width: 100,
+                                    color: Colors.red,
+                                    child: const Text("gfdsga"),
+                                  ),
+                                  const Text("data")
+                                ],
                               ),
-                              const Text("data")
-                            ],
+                            ),
                           )
                         ],
                       ),
