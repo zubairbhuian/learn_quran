@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:learn_quran/pages/arabic_word.dart';
-import 'package:learn_quran/widgets/previous_next_navigations.dart';
 
 class TomijeHorofScreen extends StatelessWidget {
   const TomijeHorofScreen({Key? key}) : super(key: key);
@@ -17,84 +15,20 @@ class TomijeHorofScreen extends StatelessWidget {
                   color: Colors.black,
                   fontWeight: FontWeight.w500)),
         ),
-        body: Container(
-          decoration: const BoxDecoration(
-              image: DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
-          child: Scrollbar(
-            isAlwaysShown: true,
-            showTrackOnHover: true,
-            child: ListView(children: [
-              const SizedBox(
-                height: 35,
-              ),
-              Text(
-                  "যেসব হরফের উচ্চারণ কাছাকাছি কি এদের মধ্যে উচ্চারণগত পার্থক্য আছে সেগুলোকে পাশাপাশি দেখানো হয়েছে।",
-                  style: TextStyle(fontSize: 13.sp, color: Colors.white)),
-              const SizedBox(
-                height: 10,
-              ),
-              Text(
-                  "প্রতিটি বর্ণের উপরে ক্লিক করে উচ্চারণ শুনুন ও নিজে নিজে বার বার প্র্যাকটিস করুন।",
-                  style: TextStyle(fontSize: 13.sp, color: Colors.white)),
-              Container(
-                height: 200,
-                color: Colors.amber,
-                child: Column(
-                  children: [
-                    Container(
-                      height: 150,
-                      color: const Color.fromARGB(255, 172, 172, 172),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Flexible(
-                            flex: 2,
-                            child: Container(
-                              color: Colors.green,
-                              child: Column(
-                                children: [
-                                  Container(
-                                    height: 40,
-                                    width: 100,
-                                    color: Colors.red,
-                                    child: const Text("gfdsga"),
-                                  ),
-                                  const Text("data")
-                                ],
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            flex: 3,
-                            child: Container(
-                              color: const Color.fromARGB(255, 238, 98, 98),
-                              child: Column(
-                                children: [
-                                  Container(
-                                    height: 40,
-                                    width: 100,
-                                    color: Colors.red,
-                                    child: const Text("gfdsga"),
-                                  ),
-                                  const Text("data")
-                                ],
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    const Text('উচ্চারনের বর্ণনা')
-                  ],
-                ),
-              ),
-              // !Bottom Navigation
-              PreviousNextNavigations(
-                previous: const ArabicWord(),
-              )
-            ]),
-          ),
+        body: GridView.count(
+          crossAxisCount: 2,
+          children: [
+            Container(
+              color: Colors.purple,
+              width: 100,
+              height: 100,
+            ),
+            Container(
+              color: Colors.blue,
+              width: 100,
+              height: 100,
+            )
+          ],
         ),
       ),
     );
