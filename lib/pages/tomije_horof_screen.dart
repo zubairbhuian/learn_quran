@@ -25,32 +25,22 @@ class TomijeHorofScreen extends StatelessWidget {
             isAlwaysShown: true,
             showTrackOnHover: true,
             child: ListView(children: [
-              Padding(
-                padding: EdgeInsets.only(
-                    top: 35, bottom: 30, left: 20.h, right: 20.h),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Text(
-                        "যেসব হরফের উচ্চারণ কাছাকাছি কি এদের মধ্যে উচ্চারণগত পার্থক্য আছে সেগুলোকে পাশাপাশি দেখানো হয়েছে।",
-                        style: TextStyle(fontSize: 13.sp, color: Colors.white)),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                        "প্রতিটি বর্ণের উপরে ক্লিক করে উচ্চারণ শুনুন ও নিজে নিজে বার বার প্র্যাকটিস করুন।",
-                        style: TextStyle(fontSize: 13.sp, color: Colors.white)),
-
-                    Container(
-                      color: Colors.red,
-                      child:
-                    ),
-                    // !Bottom Navigation
-                    PreviousNextNavigations(
-                      previous: const ArabicWord(),
-                    )
-                  ],
-                ),
+              const SizedBox(
+                height: 35,
+              ),
+              Text(
+                  "যেসব হরফের উচ্চারণ কাছাকাছি কি এদের মধ্যে উচ্চারণগত পার্থক্য আছে সেগুলোকে পাশাপাশি দেখানো হয়েছে।",
+                  style: TextStyle(fontSize: 13.sp, color: Colors.white)),
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                  "প্রতিটি বর্ণের উপরে ক্লিক করে উচ্চারণ শুনুন ও নিজে নিজে বার বার প্র্যাকটিস করুন।",
+                  style: TextStyle(fontSize: 13.sp, color: Colors.white)),
+                  
+              // !Bottom Navigation
+              PreviousNextNavigations(
+                previous: const ArabicWord(),
               )
             ]),
           ),

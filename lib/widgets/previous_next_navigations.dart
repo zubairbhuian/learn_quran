@@ -13,28 +13,31 @@ class PreviousNextNavigations extends StatelessWidget {
   Widget? next;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        ElevatedButton.icon(
-            onPressed: () {
-              Navigator.push(
-                  context,
-                  CupertinoPageRoute(
-                      builder: (_) => previous ?? const NotReadyPage()));
-            },
-            icon: const Icon(Icons.arrow_back),
-            label: const Text('Previous')),
-        ElevatedButton.icon(
-            onPressed: () {
-              Navigator.pushReplacement(
-                  context,
-                  CupertinoPageRoute(
-                      builder: (_) => next ?? const NotReadyPage()));
-            },
-            icon: const Text('Next'),
-            label: const Icon(Icons.arrow_forward))
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          ElevatedButton.icon(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                        builder: (_) => previous ?? const NotReadyPage()));
+              },
+              icon: const Icon(Icons.arrow_back),
+              label: const Text('Previous')),
+          ElevatedButton.icon(
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    CupertinoPageRoute(
+                        builder: (_) => next ?? const NotReadyPage()));
+              },
+              icon: const Text('Next'),
+              label: const Icon(Icons.arrow_forward))
+        ],
+      ),
     );
   }
 }
