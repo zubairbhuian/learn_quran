@@ -42,15 +42,9 @@ class TomijeHorofScreen extends StatelessWidget {
                         style: TextStyle(fontSize: 13.sp, color: Colors.white)),
 
                     Container(
-                        color: Colors.red,
-                        child: GridView.count(
-                          crossAxisCount: 2,
-                          children: [
-                            Container(
-                              
-                            )
-                            ],
-                        )),
+                      color: Colors.red,
+                      child:
+                    ),
                     // !Bottom Navigation
                     PreviousNextNavigations(
                       previous: const ArabicWord(),
