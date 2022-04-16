@@ -27,7 +27,7 @@ class PreviousNextNavigations extends StatelessWidget {
             label: const Text('Previous')),
         ElevatedButton.icon(
             onPressed: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                   context,
                   CupertinoPageRoute(
                       builder: (_) => next ?? const NotReadyPage()));

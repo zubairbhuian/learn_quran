@@ -2,6 +2,8 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/pages/index_screen.dart';
+import 'package:learn_quran/pages/tomije_horof_screen.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/word_data.dart';
 
@@ -237,7 +239,10 @@ class _ArabicWordState extends State<ArabicWord> {
                         const SizedBox(
                           height: 30,
                         ),
-                        PreviousNextNavigations()
+                        PreviousNextNavigations(
+                          previous: const IndexScreen(),
+                          next: const TomijeHorofScreen(),
+                        )
                       ],
                     ),
                   ),

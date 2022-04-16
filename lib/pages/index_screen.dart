@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
+import 'package:learn_quran/pages/tomije_horof_screen.dart';
 import 'package:learn_quran/widgets/index_button.dart';
 
 class IndexScreen extends StatelessWidget {
@@ -39,7 +40,10 @@ class IndexScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 15),
                 // !Index 2
-                IndexButton(title: 'তামীযে হরফ'),
+                IndexButton(
+                  title: 'তামীযে হরফ',
+                  navigateWidget: const TomijeHorofScreen(),
+                ),
                 // !Index 3
                 const SizedBox(height: 15),
                 IndexButton(title: 'চিহ্ন দিয়ে হরফ শিক্ষা'),
