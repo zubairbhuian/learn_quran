@@ -41,6 +41,16 @@ class TomijeHorofScreen extends StatelessWidget {
                         "প্রতিটি বর্ণের উপরে ক্লিক করে উচ্চারণ শুনুন ও নিজে নিজে বার বার প্র্যাকটিস করুন।",
                         style: TextStyle(fontSize: 13.sp, color: Colors.white)),
 
+                    Container(
+                        color: Colors.red,
+                        child: GridView.count(
+                          crossAxisCount: 2,
+                          children: [
+                            Container(
+                              
+                            )
+                            ],
+                        )),
                     // !Bottom Navigation
                     PreviousNextNavigations(
                       previous: const ArabicWord(),
