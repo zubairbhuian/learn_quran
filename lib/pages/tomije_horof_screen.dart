@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 
@@ -37,59 +38,82 @@ class TomijeHorofScreen extends StatelessWidget {
               Text(
                   "প্রতিটি বর্ণের উপরে ক্লিক করে উচ্চারণ শুনুন ও নিজে নিজে বার বার প্র্যাকটিস করুন।",
                   style: TextStyle(fontSize: 13.sp, color: Colors.white)),
-              Container(
+              SizedBox(
                 height: 200,
-                color: const Color.fromRGBO(255, 193, 7, 1),
                 child: Column(
                   children: [
-                    Container(
-                      height: 150,
-                      color: const Color.fromARGB(255, 172, 172, 172),
+                    SizedBox(
+                      height: 130,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
+                            height: 160,
+                            padding: const EdgeInsets.all(5),
                             width: MediaQuery.of(context).size.width * 0.5,
-                            color: Colors.green,
-                            child: Column(
-                              children: [
-                                Container(
-                                  height: 40,
-                                  width: 100,
-                                  color: Colors.red,
-                                  child: const Text("gfdsga"),
-                                ),
-                                const Text("data")
-                              ],
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(16),
-                            width: MediaQuery.of(context).size.width * 0.5,
-                            color: const Color.fromARGB(255, 238, 98, 98),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
                                   height: 70.h,
                                   width: 130.sw,
-                                  color: Colors.red,
+                                  color: AppsColor.lightYellow,
                                   child: Column(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: const [
-                                        Text("data"),
-                                        Text("data"),
+                                        Text("ت",
+                                            style: TextStyle(
+                                                fontSize: 22,
+                                                fontWeight: FontWeight.bold)),
+                                        Text("তা"),
                                       ]),
                                 ),
-                                const Text("data")
+                                SizedBox(
+                                  height: 5.h,
+                                ),
+                                const Text("ت এর উচ্চারন চিকন হবে")
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 160,
+                            padding: const EdgeInsets.all(5),
+                            width: MediaQuery.of(context).size.width * 0.5,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  height: 70.h,
+                                  width: 130.sw,
+                                  color: AppsColor.lightYellow,
+                                  child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: const [
+                                        Text("ط",
+                                            style: TextStyle(
+                                                fontSize: 22,
+                                                fontWeight: FontWeight.bold)),
+                                        Text("ত্ব"),
+                                      ]),
+                                ),
+                                SizedBox(
+                                  height: 5.h,
+                                ),
+                                const Text("ت এর উচ্চারন চিকন হবে")
                               ],
                             ),
                           )
                         ],
                       ),
                     ),
-                    const Text('উচ্চারনের বর্ণনা')
+                    ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.green,
+                            minimumSize: Size(100.sw, 50)),
+                        onPressed: () {},
+                        child: const Text('হরফ দুটির উচ্চারণ শুনুন'))
                   ],
                 ),
               ),
