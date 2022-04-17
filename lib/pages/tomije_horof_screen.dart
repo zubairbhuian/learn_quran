@@ -48,38 +48,42 @@ class TomijeHorofScreen extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Flexible(
-                            flex: 2,
-                            child: Container(
-                              color: Colors.green,
-                              child: Column(
-                                children: [
-                                  Container(
-                                    height: 40,
-                                    width: 100,
-                                    color: Colors.red,
-                                    child: const Text("gfdsga"),
-                                  ),
-                                  const Text("data")
-                                ],
-                              ),
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.5,
+                            color: Colors.green,
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 40,
+                                  width: 100,
+                                  color: Colors.red,
+                                  child: const Text("gfdsga"),
+                                ),
+                                const Text("data")
+                              ],
                             ),
                           ),
-                          Flexible(
-                            flex: 3,
-                            child: Container(
-                              color: const Color.fromARGB(255, 238, 98, 98),
-                              child: Column(
-                                children: [
-                                  Container(
-                                    height: 40,
-                                    width: 100,
-                                    color: Colors.red,
-                                    child: const Text("gfdsga"),
-                                  ),
-                                  const Text("data")
-                                ],
-                              ),
+                          Container(
+                            padding: const EdgeInsets.all(16),
+                            width: MediaQuery.of(context).size.width * 0.5,
+                            color: const Color.fromARGB(255, 238, 98, 98),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  height: 70.h,
+                                  width: 130.sw,
+                                  color: Colors.red,
+                                  child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: const [
+                                        Text("data"),
+                                        Text("data"),
+                                      ]),
+                                ),
+                                const Text("data")
+                              ],
                             ),
                           )
                         ],
