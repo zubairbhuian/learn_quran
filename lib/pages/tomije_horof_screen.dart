@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
+import 'package:learn_quran/pages/learn_words_by_symbol.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/tomij2.dart';
 
@@ -209,6 +210,7 @@ class TomijeHorofScreen extends StatelessWidget {
                     // !Bottom Navigation
                     PreviousNextNavigations(
                       previous: const ArabicWord(),
+                      next: const LearnWordsBySymbol(),
                     ),
                   ],
                 ),

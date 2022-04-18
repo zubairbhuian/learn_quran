@@ -7,7 +7,7 @@ class LearnWordsBySymbol extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      appBar: AppBar(title: const Text('Learn words by symbol')),
+      appBar: AppBar(title: const Text('চিহ্ন দিয়ে হরফ শিক্ষা')),
       body: Column(
         children: [
           Container(
