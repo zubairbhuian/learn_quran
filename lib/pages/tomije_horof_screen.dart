@@ -30,14 +30,11 @@ class TomijeHorofScreen extends StatelessWidget {
                 height: 35,
               ),
               Text(
-                  "যেসব হরফের উচ্চারণ কাছাকাছি কি এদের মধ্যে উচ্চারণগত পার্থক্য আছে সেগুলোকে পাশাপাশি দেখানো হয়েছে।",
+                  "যে সব হরফের উচ্চারন কাছাকাছি কিন্তু এদের মধ্যে উচ্চারণগত পার্থক্য আছে তাদেরকে পাশাপাশি দেখানোহয়েছে।",
                   style: TextStyle(fontSize: 13.sp, color: Colors.white)),
               const SizedBox(
                 height: 10,
               ),
-              Text(
-                  "প্রতিটি বর্ণের উপরে ক্লিক করে উচ্চারণ শুনুন ও নিজে নিজে বার বার প্র্যাকটিস করুন।",
-                  style: TextStyle(fontSize: 13.sp, color: Colors.white)),
               SizedBox(
                 height: 200,
                 child: Column(
@@ -116,6 +113,36 @@ class TomijeHorofScreen extends StatelessWidget {
                         child: const Text('হরফ দুটির উচ্চারণ শুনুন'))
                   ],
                 ),
+              ),
+              Column(
+                children: [
+                  Container(
+                    color: Colors.red,
+                    child: Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: Container(
+                          height: 20,
+                          color: Colors.green,
+                        ),
+                      ),
+                      Flexible(
+                        flex: 3,
+                        child: Container(
+                          height: 20,
+                          color: Colors.black,
+                        ),
+                      ),
+                      Flexible(
+                        flex: 3,
+                        child: Container(
+                          height: 20,
+                          color: Colors.amber,
+                        ),
+                      ),
+                    ]),
+                  )
+                ],
               ),
               // !Bottom Navigation
               PreviousNextNavigations(
