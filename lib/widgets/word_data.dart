@@ -19,7 +19,7 @@ class _WordDataState extends State<WordData> {
       'path': 'cha.mp3'
     },
     {
-      'word': 'ث',
+      'word': 'ت',
       'text': 'তাা’',
       'color': AppsColor.lightYellow,
       'path': 'ta.mp3'
