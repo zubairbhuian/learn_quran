@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 
@@ -26,127 +25,56 @@ class TomijeHorofScreen extends StatelessWidget {
             isAlwaysShown: true,
             showTrackOnHover: true,
             child: ListView(children: [
-              const SizedBox(
-                height: 35,
-              ),
-              Text(
-                  "যে সব হরফের উচ্চারন কাছাকাছি কিন্তু এদের মধ্যে উচ্চারণগত পার্থক্য আছে তাদেরকে পাশাপাশি দেখানোহয়েছে।",
-                  style: TextStyle(fontSize: 13.sp, color: Colors.white)),
-              const SizedBox(
-                height: 10,
-              ),
-              SizedBox(
-                height: 200,
+              Padding(
+                padding: EdgeInsets.only(
+                    top: 16, bottom: 30, left: 20.h, right: 20.h),
                 child: Column(
                   children: [
-                    SizedBox(
-                      height: 130,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            height: 160,
-                            padding: const EdgeInsets.all(5),
-                            width: MediaQuery.of(context).size.width * 0.5,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height: 70.h,
-                                  width: 130.sw,
-                                  color: AppsColor.lightYellow,
-                                  child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: const [
-                                        Text("ت",
-                                            style: TextStyle(
-                                                fontSize: 22,
-                                                fontWeight: FontWeight.bold)),
-                                        Text("তা"),
-                                      ]),
-                                ),
-                                SizedBox(
-                                  height: 5.h,
-                                ),
-                                const Text("ت এর উচ্চারন চিকন হবে")
-                              ],
-                            ),
-                          ),
-                          Container(
-                            height: 160,
-                            padding: const EdgeInsets.all(5),
-                            width: MediaQuery.of(context).size.width * 0.5,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height: 70.h,
-                                  width: 130.sw,
-                                  color: AppsColor.lightYellow,
-                                  child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: const [
-                                        Text("ط",
-                                            style: TextStyle(
-                                                fontSize: 22,
-                                                fontWeight: FontWeight.bold)),
-                                        Text("ত্ব"),
-                                      ]),
-                                ),
-                                SizedBox(
-                                  height: 5.h,
-                                ),
-                                const Text("ت এর উচ্চারন চিকন হবে")
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
+                    const SizedBox(
+                      height: 35,
                     ),
-                    ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                            primary: Colors.green,
-                            minimumSize: Size(100.sw, 50)),
-                        onPressed: () {},
-                        child: const Text('হরফ দুটির উচ্চারণ শুনুন'))
+                    Text(
+                        "যে সব হরফের উচ্চারন কাছাকাছি কিন্তু এদের মধ্যে উচ্চারণগত পার্থক্য আছে তাদেরকে পাশাপাশি দেখানোহয়েছে।",
+                        style: TextStyle(fontSize: 13.sp, color: Colors.white)),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          color: Colors.red,
+                          child: Row(children: [
+                            Flexible(
+                              flex: 1,
+                              child: Container(
+                                height: 20,
+                                color: Colors.green,
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              child: Container(
+                                height: 20,
+                                color: Colors.black,
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              child: Container(
+                                height: 20,
+                                color: Colors.amber,
+                              ),
+                            ),
+                          ]),
+                        )
+                      ],
+                    ),
+                    // !Bottom Navigation
+                    PreviousNextNavigations(
+                      previous: const ArabicWord(),
+                    )
                   ],
                 ),
-              ),
-              Column(
-                children: [
-                  Container(
-                    color: Colors.red,
-                    child: Row(children: [
-                      Flexible(
-                        flex: 1,
-                        child: Container(
-                          height: 20,
-                          color: Colors.green,
-                        ),
-                      ),
-                      Flexible(
-                        flex: 1,
-                        child: Container(
-                          height: 20,
-                          color: Colors.black,
-                        ),
-                      ),
-                      Flexible(
-                        flex: 1,
-                        child: Container(
-                          height: 20,
-                          color: Colors.amber,
-                        ),
-                      ),
-                    ]),
-                  )
-                ],
-              ),
-              // !Bottom Navigation
-              PreviousNextNavigations(
-                previous: const ArabicWord(),
               )
             ]),
           ),
