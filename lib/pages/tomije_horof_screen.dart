@@ -57,6 +57,50 @@ class TomijeHorofScreen extends StatelessWidget {
                                         right: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: const [
+                                        Text(
+                                          "ز",
+                                          style: TextStyle(
+                                              fontSize: 27,
+                                              fontWeight: FontWeight.w900,
+                                              color: Colors.white),
+                                        ),
+                                        Text("ঝা",
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w500,
+                                                color: Colors.white)),
+                                      ],
+                                    ),
+                                    const SizedBox(
+                                      width: 12,
+                                    ),
+                                    Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: const [
+                                        Text(
+                                          "ج",
+                                          style: TextStyle(
+                                              fontSize: 27,
+                                              fontWeight: FontWeight.w900,
+                                              color: Colors.white),
+                                        ),
+                                        Text("জীম ",
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w500,
+                                                color: Colors.white)),
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                             Flexible(
