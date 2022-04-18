@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 
@@ -42,27 +43,108 @@ class TomijeHorofScreen extends StatelessWidget {
                     Column(
                       children: [
                         Container(
-                          color: Colors.red,
+                          color: Colors.white,
+                          padding: const EdgeInsets.all(4),
                           child: Row(children: [
                             Flexible(
                               flex: 1,
+                              // !First
                               child: Container(
-                                height: 20,
-                                color: Colors.green,
+                                // padding: const EdgeInsets.only(right: 2),
+                                decoration: const BoxDecoration(
+                                    color: AppsColor.lightYellow,
+                                    border: Border(
+                                        right: BorderSide(
+                                            color: Colors.white, width: 3))),
+                                height: 70,
                               ),
                             ),
                             Flexible(
                               flex: 1,
+                              // !Secont
                               child: Container(
-                                height: 20,
-                                color: Colors.black,
+                                color: AppsColor.lightYellow,
+                                height: 70,
                               ),
                             ),
                             Flexible(
                               flex: 1,
+                              // !Third
                               child: Container(
-                                height: 20,
-                                color: Colors.amber,
+                                decoration: const BoxDecoration(
+                                    color: AppsColor.lightYellow,
+                                    border: Border(
+                                        left: BorderSide(
+                                            color: Colors.white, width: 3))),
+                                height: 70,
+                              ),
+                            ),
+                          ]),
+                        ),
+                        Container(
+                          color: Colors.white,
+                          padding: const EdgeInsets.only(
+                              left: 4, bottom: 4, right: 4),
+                          child: Row(children: [
+                            Flexible(
+                              flex: 1,
+                              // !First
+                              child: Container(
+                                // padding: const EdgeInsets.only(right: 2),
+                                decoration: const BoxDecoration(
+                                    color: AppsColor.skyBlue,
+                                    border: Border(
+                                        right: BorderSide(
+                                            color: Colors.white, width: 3))),
+                                height: 70,
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              // !Secont
+                              child: Container(
+                                color: AppsColor.skyBlue,
+                                height: 70,
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              // !Third
+                              child: Container(
+                                decoration: const BoxDecoration(
+                                    color: AppsColor.skyBlue,
+                                    border: Border(
+                                        left: BorderSide(
+                                            color: Colors.white, width: 3))),
+                                height: 70,
+                              ),
+                            ),
+                          ]),
+                        ),
+                        Container(
+                          color: Colors.white,
+                          padding: const EdgeInsets.only(
+                              left: 4, bottom: 4, right: 4),
+                          child: Row(children: [
+                            Flexible(
+                              flex: 1,
+                              // !First
+                              child: Container(
+                                // padding: const EdgeInsets.only(right: 2),
+                                decoration: const BoxDecoration(
+                                    color: AppsColor.lightYellow,
+                                    border: Border(
+                                        right: BorderSide(
+                                            color: Colors.white, width: 3))),
+                                height: 70,
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              // !Third
+                              child: Container(
+                                color: AppsColor.lightYellow,
+                                height: 70,
                               ),
                             ),
                           ]),
@@ -72,7 +154,7 @@ class TomijeHorofScreen extends StatelessWidget {
                     // !Bottom Navigation
                     PreviousNextNavigations(
                       previous: const ArabicWord(),
-                    )
+                    ),
                   ],
                 ),
               )
