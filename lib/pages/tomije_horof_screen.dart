@@ -127,14 +127,14 @@ class TomijeHorofScreen extends StatelessWidget {
                         ),
                       ),
                       Flexible(
-                        flex: 3,
+                        flex: 1,
                         child: Container(
                           height: 20,
                           color: Colors.black,
                         ),
                       ),
                       Flexible(
-                        flex: 3,
+                        flex: 1,
                         child: Container(
                           height: 20,
                           color: Colors.amber,
