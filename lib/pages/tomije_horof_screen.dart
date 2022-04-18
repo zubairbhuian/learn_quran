@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
+import 'package:learn_quran/widgets/tomij2.dart';
 
 class TomijeHorofScreen extends StatelessWidget {
   const TomijeHorofScreen({Key? key}) : super(key: key);
@@ -36,9 +37,10 @@ class TomijeHorofScreen extends StatelessWidget {
                     ),
                     Text(
                         "যে সব হরফের উচ্চারন কাছাকাছি কিন্তু এদের মধ্যে উচ্চারণগত পার্থক্য আছে তাদেরকে পাশাপাশি দেখানোহয়েছে।",
-                        style: TextStyle(fontSize: 13.sp, color: Colors.white)),
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 16.sp, color: Colors.white)),
                     const SizedBox(
-                      height: 10,
+                      height: 20,
                     ),
                     Column(
                       children: [
@@ -50,56 +52,17 @@ class TomijeHorofScreen extends StatelessWidget {
                               flex: 1,
                               // !First
                               child: Container(
-                                // padding: const EdgeInsets.only(right: 2),
                                 decoration: const BoxDecoration(
                                     color: AppsColor.lightYellow,
                                     border: Border(
                                         right: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: const [
-                                        Text(
-                                          "ز",
-                                          style: TextStyle(
-                                              fontSize: 27,
-                                              fontWeight: FontWeight.w900,
-                                              color: Colors.white),
-                                        ),
-                                        Text("ঝা",
-                                            style: TextStyle(
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w500,
-                                                color: Colors.white)),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      width: 12,
-                                    ),
-                                    Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: const [
-                                        Text(
-                                          "ج",
-                                          style: TextStyle(
-                                              fontSize: 27,
-                                              fontWeight: FontWeight.w900,
-                                              color: Colors.white),
-                                        ),
-                                        Text("জীম ",
-                                            style: TextStyle(
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w500,
-                                                color: Colors.white)),
-                                      ],
-                                    ),
-                                  ],
+                                child: Tomoj2(
+                                  word1: 'ز',
+                                  text1: 'ঝা',
+                                  word2: 'ج',
+                                  text2: 'জীম',
                                 ),
                               ),
                             ),
@@ -109,6 +72,12 @@ class TomijeHorofScreen extends StatelessWidget {
                               child: Container(
                                 color: AppsColor.lightYellow,
                                 height: 70,
+                                child: Tomoj2(
+                                  word1: 'ز',
+                                  text1: 'ঝা',
+                                  word2: 'ج',
+                                  text2: 'জীম',
+                                ),
                               ),
                             ),
                             Flexible(
@@ -121,6 +90,12 @@ class TomijeHorofScreen extends StatelessWidget {
                                         left: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
+                                child: Tomoj2(
+                                  word1: 'ز',
+                                  text1: 'ঝা',
+                                  word2: 'ج',
+                                  text2: 'জীম',
+                                ),
                               ),
                             ),
                           ]),
@@ -141,6 +116,12 @@ class TomijeHorofScreen extends StatelessWidget {
                                         right: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
+                                child: Tomoj2(
+                                  word1: 'ز',
+                                  text1: 'ঝা',
+                                  word2: 'ج',
+                                  text2: 'জীম',
+                                ),
                               ),
                             ),
                             Flexible(
@@ -149,6 +130,14 @@ class TomijeHorofScreen extends StatelessWidget {
                               child: Container(
                                 color: AppsColor.skyBlue,
                                 height: 70,
+                                child: Tomoj2(
+                                  word1: 'ز',
+                                  text1: 'ঝা',
+                                  word2: 'ج',
+                                  text2: 'জীম',
+                                  word3: 'ز',
+                                  text3: 'ঝা',
+                                ),
                               ),
                             ),
                             Flexible(
@@ -161,6 +150,14 @@ class TomijeHorofScreen extends StatelessWidget {
                                         left: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
+                                child: Tomoj2(
+                                  word1: 'ز',
+                                  text1: 'ঝা',
+                                  word2: 'ج',
+                                  text2: 'জীম',
+                                  word3: 'ز',
+                                  text3: 'ঝা',
+                                ),
                               ),
                             ),
                           ]),
@@ -181,6 +178,14 @@ class TomijeHorofScreen extends StatelessWidget {
                                         right: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
+                                child: Tomoj2(
+                                  word1: 'ز',
+                                  text1: 'ঝা',
+                                  word2: 'ج',
+                                  text2: 'জীম',
+                                  word3: 'ز',
+                                  text3: 'ঝা',
+                                ),
                               ),
                             ),
                             Flexible(
@@ -189,6 +194,12 @@ class TomijeHorofScreen extends StatelessWidget {
                               child: Container(
                                 color: AppsColor.lightYellow,
                                 height: 70,
+                                child: Tomoj2(
+                                  word1: 'ز',
+                                  text1: 'ঝা',
+                                  word2: 'ج',
+                                  text2: 'জীম',
+                                ),
                               ),
                             ),
                           ]),
