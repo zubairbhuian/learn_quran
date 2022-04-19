@@ -13,8 +13,8 @@ class PRow10 extends StatelessWidget {
       child: Column(
         children: [
           HeadText(
-            word: 'خ',
-            text: 'খ',
+            word: 'ر',
+            text: 'র',
           ),
           const SizedBox(
             height: 10,
@@ -24,18 +24,18 @@ class PRow10 extends StatelessWidget {
               SymbolItem(
                 flex: 1,
                 rightBorder: 2,
-                word: 'ـخ',
+                word: 'ـر',
                 text: 'শেষে',
               ),
               SymbolItem(
                 flex: 1,
                 rightBorder: 2,
-                word: 'ـخـ',
+                word: 'ـر',
                 text: 'মাঝে',
               ),
               SymbolItem(
                 flex: 1,
-                word: 'خـ',
+                word: 'ر',
                 text: 'শুরুতে',
               ),
             ],
