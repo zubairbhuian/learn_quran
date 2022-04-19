@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/widgets/tomije_horof/row1.dart';
 import 'package:learn_quran/widgets/tomije_horof/row2.dart';
 import 'package:learn_quran/widgets/tomije_horof/row3.dart';
+import 'package:learn_quran/widgets/tomije_horof/row4.dart';
 
 class LearnWordsBySymbol extends StatelessWidget {
   const LearnWordsBySymbol({Key? key}) : super(key: key);
@@ -35,6 +36,10 @@ class LearnWordsBySymbol extends StatelessWidget {
                           height: 30,
                         ),
                         Row3(),
+                        SizedBox(
+                          height: 30,
+                        ),
+                        Row4(),
                       ],
                     ),
                   )

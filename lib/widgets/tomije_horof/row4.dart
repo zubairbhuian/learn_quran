@@ -25,12 +25,12 @@ class Row4 extends StatelessWidget {
                 flex: 1,
                 rightBorder: 2,
                 word: 'ضـ',
-                text: 'শীন',
+                text: 'দ্বদ',
               ),
               SymbolItem(
                 flex: 1,
                 word: 'صـ',
-                text: 'সীন',
+                text: 'স্বদ',
               ),
             ],
           )
