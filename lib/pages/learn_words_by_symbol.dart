@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/widgets/head_text.dart';
+import 'package:learn_quran/widgets/symbol_item.dart';
 
 class LearnWordsBySymbol extends StatelessWidget {
   const LearnWordsBySymbol({Key? key}) : super(key: key);
@@ -29,26 +29,30 @@ class LearnWordsBySymbol extends StatelessWidget {
                           word: 'بـ',
                           text: 'দিয়ে পাঁচটি হরফ',
                         ),
-                        Container(
-                          color: Colors.red,
-                          child: Row(
-                            children: [
-                              //  !SymbolItems
-                              Column(
-                                children: [
-                                  Container(
-                                    height: 60,
-                                    width: 60,
-                                    color: AppsColor.lightYellow,
-                                    child: const Center(
-                                      child: Text('S'),
-                                    ),
-                                  ),
-                                  const Text("sdfsdf"),
-                                ],
-                              )
-                            ],
-                          ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          children: [
+                            //  !SymbolItems
+                            Flexible(
+                              flex: 1,
+                              child: Container(
+                                
+                                child: SymbolItem(
+                                  word: 's',
+                                  text: 'e',
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              child: SymbolItem(
+                                word: 's',
+                                text: 'e',
+                              ),
+                            )
+                          ],
                         )
                       ],
                     ),
