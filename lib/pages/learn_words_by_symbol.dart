@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/widgets/tomije_horof/row1.dart';
+import 'package:learn_quran/widgets/tomije_horof/row2.dart';
 
 class LearnWordsBySymbol extends StatelessWidget {
   const LearnWordsBySymbol({Key? key}) : super(key: key);
@@ -23,7 +24,13 @@ class LearnWordsBySymbol extends StatelessWidget {
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [Row1()],
+                      children: const [
+                        Row1(),
+                        SizedBox(
+                          height: 30,
+                        ),
+                        Row2(),
+                      ],
                     ),
                   )
                 ]),
