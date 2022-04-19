@@ -6,6 +6,7 @@ import 'package:learn_quran/widgets/tomije_horof/row3.dart';
 import 'package:learn_quran/widgets/tomije_horof/row4.dart';
 import 'package:learn_quran/widgets/tomije_horof/row5.dart';
 import 'package:learn_quran/widgets/tomije_horof/row6.dart';
+import 'package:learn_quran/widgets/tomije_horof/row7.dart';
 
 class LearnWordsBySymbol extends StatelessWidget {
   const LearnWordsBySymbol({Key? key}) : super(key: key);
@@ -50,6 +51,10 @@ class LearnWordsBySymbol extends StatelessWidget {
                           height: 30,
                         ),
                         Row6(),
+                          SizedBox(
+                          height: 30,
+                        ),
+                        Row7(),
                       ],
                     ),
                   )
