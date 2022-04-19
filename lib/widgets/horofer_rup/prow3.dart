@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:learn_quran/widgets/head_text.dart';
 import 'package:learn_quran/widgets/symbol_item.dart';
 
-class PRow2 extends StatelessWidget {
-  const PRow2({
+class PRow3 extends StatelessWidget {
+  const PRow3({
     Key? key,
   }) : super(key: key);
 
@@ -13,7 +13,7 @@ class PRow2 extends StatelessWidget {
       child: Column(
         children: [
           HeadText(
-            word: 'ب',
+            word: 'ت',
             text: 'তাা’',
           ),
           const SizedBox(
@@ -24,18 +24,18 @@ class PRow2 extends StatelessWidget {
               SymbolItem(
                 flex: 1,
                 rightBorder: 2,
-                word: 'ـب',
+                word: 'ـت',
                 text: 'শেষে',
               ),
               SymbolItem(
                 flex: 1,
                 rightBorder: 2,
-                word: 'ـبـ',
+                word: 'ـتـ',
                 text: 'মাঝে',
               ),
               SymbolItem(
                 flex: 1,
-                word: 'بـ',
+                word: 'تـ',
                 text: 'শুরুতে',
               ),
             ],
