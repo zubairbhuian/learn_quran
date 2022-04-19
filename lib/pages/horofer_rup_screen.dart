@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/widgets/horofer_rup/prow1.dart';
 import 'package:learn_quran/widgets/horofer_rup/prow2.dart';
 import 'package:learn_quran/widgets/horofer_rup/prow3.dart';
+import 'package:learn_quran/widgets/horofer_rup/prow4.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 
 class HoroferRupScreen extends StatelessWidget {
@@ -37,6 +38,10 @@ class HoroferRupScreen extends StatelessWidget {
                           height: 30,
                         ),
                         const PRow3(),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        const PRow4(),
                         const SizedBox(
                           height: 30,
                         ),
