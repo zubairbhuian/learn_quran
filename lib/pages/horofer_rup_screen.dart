@@ -4,6 +4,9 @@ import 'package:learn_quran/widgets/horofer_rup/prow1.dart';
 import 'package:learn_quran/widgets/horofer_rup/prow2.dart';
 import 'package:learn_quran/widgets/horofer_rup/prow3.dart';
 import 'package:learn_quran/widgets/horofer_rup/prow4.dart';
+import 'package:learn_quran/widgets/horofer_rup/prow5.dart';
+import 'package:learn_quran/widgets/horofer_rup/prow6.dart';
+import 'package:learn_quran/widgets/horofer_rup/prow7.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 
 class HoroferRupScreen extends StatelessWidget {
@@ -42,6 +45,18 @@ class HoroferRupScreen extends StatelessWidget {
                           height: 30,
                         ),
                         const PRow4(),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        const PRow5(),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        const PRow6(),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        const PRow7(),
                         const SizedBox(
                           height: 30,
                         ),
