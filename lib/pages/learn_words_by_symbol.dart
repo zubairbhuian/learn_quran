@@ -51,7 +51,7 @@ class LearnWordsBySymbol extends StatelessWidget {
                           height: 30,
                         ),
                         Row6(),
-                          SizedBox(
+                        SizedBox(
                           height: 30,
                         ),
                         Row7(),
