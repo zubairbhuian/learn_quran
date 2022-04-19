@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
+import 'package:learn_quran/pages/horofer_rup_screen.dart';
 import 'package:learn_quran/pages/learn_words_by_symbol.dart';
 import 'package:learn_quran/pages/tomije_horof_screen.dart';
 import 'package:learn_quran/widgets/index_button.dart';
@@ -53,7 +54,10 @@ class IndexScreen extends StatelessWidget {
                 ),
                 // !Index 4
                 const SizedBox(height: 15),
-                IndexButton(title: 'স্থান ভেদে প্রতিটি হরফের রুপ আকৃতি'),
+                IndexButton(
+                  title: 'স্থান ভেদে প্রতিটি হরফের রুপ আকৃতি',
+                  navigateWidget: const HoroferRupScreen(),
+                ),
                 // !Index 5
                 const SizedBox(height: 15),
                 IndexButton(title: 'হরকত'),
