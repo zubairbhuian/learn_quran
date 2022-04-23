@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/widgets/horkat_text.dart';
 
 class Horkat extends StatelessWidget {
@@ -40,6 +41,100 @@ class Horkat extends StatelessWidget {
                         HorkatText(
                           text: 'হরকত ছাড়া হরফ পড়া যায় না',
                         ),
+
+                        Container(
+                          color: Colors.red,
+                          child: Row(
+                            children: [
+                              Flexible(
+                                flex: 1,
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          color: AppsColor.skyBlue,
+                                          image: DecorationImage(
+                                              fit: BoxFit.scaleDown,
+                                              image: AssetImage(
+                                                  'images/jobor.png')),
+                                          border: Border(
+                                              right: BorderSide(
+                                                  width: 2,
+                                                  color: Colors.white))),
+                                      height: 70,
+                                    ),
+                                    const SizedBox(
+                                      height: 7,
+                                    ),
+                                    const Text(
+                                      "জবর",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w600,
+                                          color: Colors.white),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Flexible(
+                                flex: 1,
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              fit: BoxFit.scaleDown,
+                                              image:
+                                                  AssetImage('images/jer.png')),
+                                          color: AppsColor.skyBlue,
+                                          border: Border(
+                                              right: BorderSide(
+                                                  width: 2,
+                                                  color: Colors.white))),
+                                      height: 70,
+                                    ),
+                                       const SizedBox(
+                                      height: 7,
+                                    ),
+                                    const Text(
+                                      "জের",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w600,
+                                          color: Colors.white),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Flexible(
+                                  flex: 1,
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              fit: BoxFit.scaleDown,
+                                              image: AssetImage(
+                                                  'images/pesh.png')),
+                                          color: AppsColor.skyBlue,
+                                        ),
+                                        height: 70,
+                                      ),
+                                         const SizedBox(
+                                      height: 7,
+                                    ),
+                                    const Text(
+                                      "জবর",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w600,
+                                          color: Colors.white),
+                                    )
+                                    ],
+                                  ))
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   )
