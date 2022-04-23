@@ -30,19 +30,21 @@ class Horkat extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 10,
-                              width: 10,
-                              color: AppsColor.lightYellow,
-                            ),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              child: const Text(
-                                  'Asadaf sdg sdgsd gsdg sg s gsd gsd g sdg dfg rf hd fh dfdf hdf hdfghdf h df hdf hdf hg df hdf'),
-                            )
-                          ],
+                        Container(
+                          color: Colors.red,
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 10,
+                                width: 10,
+                                color: AppsColor.lightYellow,
+                              ),
+                              const Expanded(
+                                child: Text(
+                                    'Asadaf sdg sdgsd gsdg sg s gsd gsd g sdg dfg rf hd fh dfdf hdf hdfghdf h df hdf hdf hg df hdf'),
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
