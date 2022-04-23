@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/widgets/horkat_text.dart';
 
 class Horkat extends StatelessWidget {
   const Horkat({Key? key}) : super(key: key);
@@ -30,22 +30,16 @@ class Horkat extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Container(
-                          color: Colors.red,
-                          child: Row(
-                            children: [
-                              Container(
-                                height: 10,
-                                width: 10,
-                                color: AppsColor.lightYellow,
-                              ),
-                              const Expanded(
-                                child: Text(
-                                    'Asadaf sdg sdgsd gsdg sg s gsd gsd g sdg dfg rf hd fh dfdf hdf hdfghdf h df hdf hdf hg df hdf'),
-                              )
-                            ],
-                          ),
-                        )
+                        // !HorkotText
+                        HorkatText(
+                          text: 'আরবিতে হরকত তিনটি',
+                        ),
+                        HorkatText(
+                          text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
+                        ),
+                        HorkatText(
+                          text: 'হরকত ছাড়া হরফ পড়া যায় না',
+                        ),
                       ],
                     ),
                   )
