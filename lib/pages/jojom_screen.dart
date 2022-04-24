@@ -44,7 +44,6 @@ class JojomScreen extends StatelessWidget {
                                     flex: 2,
                                     child: Container(
                                       decoration: const BoxDecoration(
-                                          color: AppsColor.skyBlue,
                                           border: Border(
                                               right: BorderSide(
                                                   width: 2,
@@ -65,7 +64,6 @@ class JojomScreen extends StatelessWidget {
                                     flex: 5,
                                     child: Container(
                                       decoration: const BoxDecoration(
-                                          color: AppsColor.skyBlue,
                                           border: Border(
                                               right: BorderSide(
                                                   width: 2,
@@ -77,7 +75,6 @@ class JojomScreen extends StatelessWidget {
                                     flex: 2,
                                     child: Container(
                                       decoration: const BoxDecoration(
-                                          color: AppsColor.skyBlue,
                                           border: Border(
                                               right: BorderSide(
                                                   width: 2,
@@ -98,7 +95,80 @@ class JojomScreen extends StatelessWidget {
                                     flex: 5,
                                     child: Container(
                                       decoration: const BoxDecoration(
-                                          color: AppsColor.skyBlue,
+                                          border: Border(
+                                              right: BorderSide(
+                                                  width: 0,
+                                                  color: Colors.white))),
+                                      height: 50,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            // !2
+                            Container(
+                              decoration: const BoxDecoration(
+                                  color: AppsColor.lightYellow,
+                                  border: Border(
+                                      top: BorderSide(
+                                          color: Colors.white, width: 2))),
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    flex: 2,
+                                    child: Container(
+                                      decoration: const BoxDecoration(
+                                          border: Border(
+                                              right: BorderSide(
+                                                  width: 2,
+                                                  color: Colors.white))),
+                                      height: 50,
+                                      child: const Center(
+                                        child: Text(
+                                          '1',
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 5,
+                                    child: Container(
+                                      decoration: const BoxDecoration(
+                                          border: Border(
+                                              right: BorderSide(
+                                                  width: 2,
+                                                  color: Colors.white))),
+                                      height: 50,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 2,
+                                    child: Container(
+                                      decoration: const BoxDecoration(
+                                          border: Border(
+                                              right: BorderSide(
+                                                  width: 2,
+                                                  color: Colors.white))),
+                                      height: 50,
+                                      child: const Center(
+                                        child: Text(
+                                          '2',
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 5,
+                                    child: Container(
+                                      decoration: const BoxDecoration(
                                           border: Border(
                                               right: BorderSide(
                                                   width: 0,
