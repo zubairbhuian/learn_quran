@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/pages/jojom_screen.dart';
+import 'package:learn_quran/pages/learn_words_by_symbol.dart';
 import 'package:learn_quran/widgets/horkat/horkat_img.dart';
 import 'package:learn_quran/widgets/horkat/jer_data.dart';
 import 'package:learn_quran/widgets/horkat/jobor_data.dart';
 import 'package:learn_quran/widgets/horkat/pesh_data.dart';
 import 'package:learn_quran/widgets/horkat_text.dart';
+import 'package:learn_quran/widgets/previous_next_navigations.dart';
 
 class Horkat extends StatelessWidget {
   const Horkat({Key? key}) : super(key: key);
@@ -134,6 +137,10 @@ class Horkat extends StatelessWidget {
                         ),
 
                         const SizedBox(height: 620, child: PeshData()),
+                        PreviousNextNavigations(
+                          previous: const LearnWordsBySymbol(),
+                          next: const JojomScreen(),
+                        )
                       ],
                     ),
                   )

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class JojomScreen extends StatelessWidget {
-  const JojomScreen({Key? key}) : super(key: key);
+class Screen extends StatelessWidget {
+  const Screen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
