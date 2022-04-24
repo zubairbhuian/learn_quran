@@ -5,6 +5,7 @@ import 'package:learn_quran/pages/horkat_screen.dart';
 import 'package:learn_quran/pages/horofer_rup_screen.dart';
 import 'package:learn_quran/pages/jojom_screen.dart';
 import 'package:learn_quran/pages/learn_words_by_symbol.dart';
+import 'package:learn_quran/pages/tanvin_screen.dart';
 import 'package:learn_quran/pages/tomije_horof_screen.dart';
 import 'package:learn_quran/widgets/index_button.dart';
 
@@ -71,7 +72,10 @@ class IndexScreen extends StatelessWidget {
                 ),
                 // !Index 7
                 const SizedBox(height: 15),
-                IndexButton(title: 'তানওয়ীন শিক্ষা'),
+                IndexButton(
+                  title: 'তানওয়ীন শিক্ষা',
+                  navigateWidget: const TanvinScreen(),
+                ),
                 // !Index 8
                 const SizedBox(height: 15),
                 IndexButton(title: 'তানওয়ীন শিক্ষা'),
