@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
 import 'package:learn_quran/pages/horkat_screen.dart';
 import 'package:learn_quran/pages/horofer_rup_screen.dart';
+import 'package:learn_quran/pages/jojom_screen.dart';
 import 'package:learn_quran/pages/learn_words_by_symbol.dart';
 import 'package:learn_quran/pages/tomije_horof_screen.dart';
 import 'package:learn_quran/widgets/index_button.dart';
@@ -64,7 +65,10 @@ class IndexScreen extends StatelessWidget {
                 IndexButton(title: 'হরকত', navigateWidget: const Horkat()),
                 // !Index 6
                 const SizedBox(height: 15),
-                IndexButton(title: 'জযম শিক্ষা'),
+                IndexButton(
+                  title: 'জযম শিক্ষা',
+                  navigateWidget: const JojomScreen(),
+                ),
                 // !Index 7
                 const SizedBox(height: 15),
                 IndexButton(title: 'তানওয়ীন শিক্ষা'),
