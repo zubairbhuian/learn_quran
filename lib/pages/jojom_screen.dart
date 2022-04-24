@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/widgets/jojom/jojom_box.dart';
 import 'package:learn_quran/widgets/jojom/jojom_text.dart';
+import 'package:learn_quran/widgets/jojom/wakfo.dart';
 
 class JojomScreen extends StatelessWidget {
   const JojomScreen({Key? key}) : super(key: key);
@@ -30,26 +31,18 @@ class JojomScreen extends StatelessWidget {
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       // crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        const JojomText(),
-                        const JojomBox(),
-                        const SizedBox(
+                      children: const [
+                        JojomText(),
+                        JojomBox(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Text("জযম শিক্ষা",
+                        Text("জযম শিক্ষা",
                             style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500)),
-                        Container(
-                          // padding: const EdgeInsets.all(2),
-                          color: Colors.white,
-                          child: Row(
-                            children: const [
-                              
-                            ],
-                          ),
-                        )
+                        Wakfo()
                       ],
                     ),
                   )

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/widgets/tanvin/double_jer.dart';
+import 'package:learn_quran/widgets/tanvin/double_jobor.dart';
+import 'package:learn_quran/widgets/tanvin/double_pesh.dart';
 
 class TanvinScreen extends StatelessWidget {
   const TanvinScreen({Key? key}) : super(key: key);
@@ -9,7 +12,7 @@ class TanvinScreen extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
-              title: Text("হরকত",
+              title: Text("তানওয়ীন শিক্ষা",
                   style: TextStyle(
                       fontSize: 20.w,
                       color: Colors.black,
@@ -28,7 +31,19 @@ class TanvinScreen extends StatelessWidget {
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [],
+                      children: [
+                        Text("তানওয়ীন শিক্ষা",
+                            style: TextStyle(
+                                fontSize: 15.w,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600)),
+                        const SizedBox(height: 20),
+                        const SizedBox(height: 620, child: DoubleJobor()),
+                        const SizedBox(height: 50),
+                        const SizedBox(height: 620, child: DoubleJer()),
+                        const SizedBox(height: 50),
+                        const SizedBox(height: 620, child: Doublepesh())
+                      ],
                     ),
                   )
                 ]),
