@@ -30,17 +30,26 @@ class JojomScreen extends StatelessWidget {
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       // crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [
-                        JojomText(),
-                        JojomBox(),
-                        SizedBox(
+                      children: [
+                        const JojomText(),
+                        const JojomBox(),
+                        const SizedBox(
                           height: 30,
                         ),
-                        Text("জযম শিক্ষা",
+                        const Text("জযম শিক্ষা",
                             style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500)),
+                        Container(
+                          // padding: const EdgeInsets.all(2),
+                          color: Colors.white,
+                          child: Row(
+                            children: const [
+                              
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   )
