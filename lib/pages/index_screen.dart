@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/pages/arabic_word.dart';
+import 'package:learn_quran/pages/gunnah_screen.dart';
 import 'package:learn_quran/pages/horkat_screen.dart';
 import 'package:learn_quran/pages/horofer_rup_screen.dart';
+import 'package:learn_quran/pages/important_question_answer.dart';
 import 'package:learn_quran/pages/jojom_screen.dart';
+import 'package:learn_quran/pages/kolkolah_screen.dart';
 import 'package:learn_quran/pages/learn_words_by_symbol.dart';
+import 'package:learn_quran/pages/maad_screen.dart';
+import 'package:learn_quran/pages/others_screen.dart';
 import 'package:learn_quran/pages/tanvin_screen.dart';
+import 'package:learn_quran/pages/tashdid_screen.dart';
 import 'package:learn_quran/pages/tomije_horof_screen.dart';
 import 'package:learn_quran/widgets/index_button.dart';
 
@@ -78,22 +84,40 @@ class IndexScreen extends StatelessWidget {
                 ),
                 // !Index 8
                 const SizedBox(height: 15),
-                IndexButton(title: 'কলকলাহ শিক্ষা'),
+                IndexButton(
+                  title: 'কলকলাহ শিক্ষা',
+                  navigateWidget: const KolkolahScreen(),
+                ),
                 // !Index 9
                 const SizedBox(height: 15),
-                IndexButton(title: 'তাশদীদ শিক্ষা'),
+                IndexButton(
+                  title: 'তাশদীদ শিক্ষা',
+                  navigateWidget: const TashdidScreen(),
+                ),
                 // !Index 10
                 const SizedBox(height: 15),
-                IndexButton(title: 'মাদ শিক্ষা'),
+                IndexButton(
+                  title: 'মাদ শিক্ষা',
+                  navigateWidget: const MaadScreen(),
+                ),
                 // !Index 11
                 const SizedBox(height: 15),
-                IndexButton(title: 'গুন্নাহ শিক্ষা'),
+                IndexButton(
+                  title: 'গুন্নাহ শিক্ষা',
+                  navigateWidget: const GunnahScreen(),
+                ),
                 // !Index 12
                 const SizedBox(height: 15),
-                IndexButton(title: 'অন্যান্য'),
+                IndexButton(
+                  title: 'অন্যান্য',
+                  navigateWidget: const OthersScreen(),
+                ),
                 // !Index 13
                 const SizedBox(height: 15),
-                IndexButton(title: 'গুরুত্বপূর্ণ প্রশ্ন ও উত্তর'),
+                IndexButton(
+                  title: 'গুরুত্বপূর্ণ প্রশ্ন ও উত্তর',
+                  navigateWidget: const ImportantQuestionAnswerScreen(),
+                ),
               ],
             ),
           )
