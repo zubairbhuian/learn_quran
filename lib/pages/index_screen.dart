@@ -78,7 +78,22 @@ class IndexScreen extends StatelessWidget {
                 ),
                 // !Index 8
                 const SizedBox(height: 15),
-                IndexButton(title: 'তানওয়ীন শিক্ষা'),
+                IndexButton(title: 'কলকলাহ শিক্ষা'),
+                // !Index 9
+                const SizedBox(height: 15),
+                IndexButton(title: 'তাশদীদ শিক্ষা'),
+                // !Index 10
+                const SizedBox(height: 15),
+                IndexButton(title: 'মাদ শিক্ষা'),
+                // !Index 11
+                const SizedBox(height: 15),
+                IndexButton(title: 'গুন্নাহ শিক্ষা'),
+                // !Index 12
+                const SizedBox(height: 15),
+                IndexButton(title: 'অন্যান্য'),
+                // !Index 13
+                const SizedBox(height: 15),
+                IndexButton(title: 'গুরুত্বপূর্ণ প্রশ্ন ও উত্তর'),
               ],
             ),
           )
