@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/widgets/horkat_text.dart';
 
 class KolkolahScreen extends StatelessWidget {
   const KolkolahScreen({Key? key}) : super(key: key);
@@ -28,7 +29,11 @@ class KolkolahScreen extends StatelessWidget {
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [],
+                      children:  [
+                        HorkatText(text: 'কলকলাহ'),
+                        HorkatText(text: 'কলকলাহ'),
+                        HorkatText(text: 'কলকলাহ'),
+                      ],
                     ),
                   )
                 ]),
