@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/widgets/mad/mad_text.dart';
 
 class MaadScreen extends StatelessWidget {
   const MaadScreen({Key? key}) : super(key: key);
@@ -28,7 +29,32 @@ class MaadScreen extends StatelessWidget {
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [],
+                      children: [
+                        const Text(
+                            "হরকতের উচ্চারণ টেনের পড়া কে মাদ বলে ।মাদের হরফ তিনটি",
+                            style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600)),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        MadText(
+                          text1: 'ــَـ ا',
+                          text2: 'যবরের পরে খালি আলিফ,',
+                          text3: 'بَا',
+                        ),
+                        MadText(
+                          text1: 'ــِـ يٛ',
+                          text2: 'যবরের পরে খালি আলিফ,',
+                          text3: 'بِيٛ',
+                        ),
+                        MadText(
+                          text1: 'ــُـ وٛ',
+                          text2: 'যবরের পরে খালি আলিফ,',
+                          text3: 'بُوٛ',
+                        ),
+                      ],
                     ),
                   )
                 ]),
