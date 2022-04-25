@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/widgets/horkat_text.dart';
+import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
 
 class KolkolahScreen extends StatelessWidget {
   const KolkolahScreen({Key? key}) : super(key: key);
@@ -29,10 +31,100 @@ class KolkolahScreen extends StatelessWidget {
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:  [
+                      children: [
                         HorkatText(text: 'কলকলাহ'),
                         HorkatText(text: 'কলকলাহ'),
                         HorkatText(text: 'কলকলাহ'),
+                        Container(
+                          padding: const EdgeInsets.all(2),
+                          color: Colors.white,
+                          child: Row(
+                            children: [
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 65.w,
+                                  padding:
+                                      const EdgeInsets.only(top: 8, bottom: 8),
+                                  decoration: const BoxDecoration(
+                                      color: AppsColor.lightYellow,
+                                      border: Border(
+                                          right: BorderSide(
+                                              color: Colors.white, width: 2))),
+                                  child: const Center(
+                                      child: Text(
+                                    "A",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 29,
+                                        fontWeight: FontWeight.w600),
+                                  )),
+                                ),
+                              ),
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 65.w,
+                                  padding:
+                                      const EdgeInsets.only(top: 8, bottom: 8),
+                                  decoration: const BoxDecoration(
+                                      color: AppsColor.lightYellow,
+                                      border: Border(
+                                          right: BorderSide(
+                                              color: Colors.white, width: 2))),
+                                  child: const Center(
+                                      child: Text(
+                                    "A",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 29,
+                                        fontWeight: FontWeight.w600),
+                                  )),
+                                ),
+                              ),
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 65.w,
+                                  padding:
+                                      const EdgeInsets.only(top: 8, bottom: 8),
+                                  decoration: const BoxDecoration(
+                                      color: AppsColor.lightYellow,
+                                      border: Border(
+                                          right: BorderSide(
+                                              color: Colors.white, width: 2))),
+                                  child: const Center(
+                                      child: Text(
+                                    "A",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 29,
+                                        fontWeight: FontWeight.w600),
+                                  )),
+                                ),
+                              ),
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 65.w,
+                                  padding:
+                                      const EdgeInsets.only(top: 8, bottom: 8),
+                                  color: AppsColor.lightYellow,
+                                  child: const Center(
+                                      child: Text("A",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 29,
+                                              fontWeight: FontWeight.w600))),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        TashdidText(text: 'There is some text here')
                       ],
                     ),
                   )
