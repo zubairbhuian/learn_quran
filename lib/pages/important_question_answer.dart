@@ -9,7 +9,7 @@ class ImportantQuestionAnswerScreen extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
-              title: Text("হরকত",
+              title: Text("গুরুত্বপূর্ণ প্রশ্ন ও উত্তর",
                   style: TextStyle(
                       fontSize: 20.w,
                       color: Colors.black,

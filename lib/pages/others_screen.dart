@@ -9,7 +9,7 @@ class OthersScreen extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
-              title: Text("হরকত",
+              title: Text("অন্যান্য",
                   style: TextStyle(
                       fontSize: 20.w,
                       color: Colors.black,

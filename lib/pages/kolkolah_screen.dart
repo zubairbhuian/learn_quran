@@ -9,7 +9,7 @@ class KolkolahScreen extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
-              title: Text("হরকত",
+              title: Text("কলকলাহ শিক্ষা",
                   style: TextStyle(
                       fontSize: 20.w,
                       color: Colors.black,

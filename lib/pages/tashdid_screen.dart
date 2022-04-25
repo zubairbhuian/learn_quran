@@ -9,7 +9,7 @@ class TashdidScreen extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
-              title: Text("হরকত",
+              title: Text("তাশদীদ শিক্ষা",
                   style: TextStyle(
                       fontSize: 20.w,
                       color: Colors.black,
