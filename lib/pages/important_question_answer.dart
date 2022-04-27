@@ -1,11 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/widgets/qun_ans.dart';
 
 class ImportantQuestionAnswerScreen extends StatelessWidget {
   const ImportantQuestionAnswerScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final List data = [
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {'qun': 'Here some text1', 'ans': 'Here some text'},
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {'qun': 'Here some text', 'ans': 'Here some text'},
+    ];
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
@@ -23,11 +37,10 @@ class ImportantQuestionAnswerScreen extends StatelessWidget {
                   isAlwaysShown: true,
                   showTrackOnHover: true,
                   child: ListView.builder(
-                      itemCount: 100,
-                      itemBuilder: (buildContext, index) => Container(
-                            height: 40,
-                            color: Colors.amber,
-                            child: const Text('dfsdfsdf'),
+                      itemCount: data.length,
+                      itemBuilder: (context, index) => QunAns(
+                            ans: '${data[index]['qun']}',
+                            qun: 'asda',
                           ))),
             )));
   }
