@@ -14,7 +14,7 @@ class QunAns extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.only(top: 8, bottom: 5, left: 16, right: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -25,7 +25,7 @@ class QunAns extends StatelessWidget {
               child: Text(
                 qun,
                 textAlign: TextAlign.justify,
-                style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w600),
+                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w500),
               ),
             ),
             Container(
@@ -35,7 +35,7 @@ class QunAns extends StatelessWidget {
               child: Text(
                 ans,
                 textAlign: TextAlign.justify,
-                style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w600),
+                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w500),
               ),
             )
           ],

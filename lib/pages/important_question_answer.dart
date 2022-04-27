@@ -8,17 +8,40 @@ class ImportantQuestionAnswerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List data = [
-      {'qun': 'Here some text', 'ans': 'Here some text'},
-      {'qun': 'Here some text1', 'ans': 'Here some text'},
-      {'qun': 'Here some text', 'ans': 'Here some text'},
-      {'qun': 'Here some text', 'ans': 'Here some text'},
-      {'qun': 'Here some text', 'ans': 'Here some text'},
-      {'qun': 'Here some text', 'ans': 'Here some text'},
-      {'qun': 'Here some text', 'ans': 'Here some text'},
-      {'qun': 'Here some text', 'ans': 'Here some text'},
-      {'qun': 'Here some text', 'ans': 'Here some text'},
-      {'qun': 'Here some text', 'ans': 'Here some text'},
-      {'qun': 'Here some text', 'ans': 'Here some text'},
+      {
+        'qun': 'প্রশ্নঃ১। কোরআন কোন ভাষায় লেখা হয়েছে ?',
+        'ans': 'উত্তরঃ কুরআন আরবি ভাষায় লেখা হয়েছে ।'
+      },
+      {
+        'qun': 'প্রশ্নঃ১। আরবি ভাষা হরফ কয়টি ?',
+        'ans': 'উত্তরঃ আরবি ভাষায় হরফ ২৯ টি ।'
+      },
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
+      {'qun': 'প্রশ্নঃ১। ?', 'ans': 'উত্তরঃ ।'},
     ];
     return SafeArea(
         child: Scaffold(
@@ -39,8 +62,8 @@ class ImportantQuestionAnswerScreen extends StatelessWidget {
                   child: ListView.builder(
                       itemCount: data.length,
                       itemBuilder: (context, index) => QunAns(
-                            ans: '${data[index]['qun']}',
-                            qun: 'asda',
+                            qun: '${data[index]['qun']}',
+                            ans: '${data[index]['ans']}',
                           ))),
             )));
   }
