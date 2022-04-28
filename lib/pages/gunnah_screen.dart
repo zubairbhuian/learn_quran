@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/widgets/gunnah/gunnah_one.dart';
+import 'package:learn_quran/widgets/head_text.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 
 class GunnahScreen extends StatelessWidget {
@@ -50,7 +52,13 @@ class GunnahScreen extends StatelessWidget {
                               MediamText(text: '৩। মিম সাকিনের গুন্নাহ'),
                             ],
                           ),
-                        )
+                        ),
+
+                        // !
+                        HeadText(
+                            word: '১',
+                            text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
+                        const GunnahOne()
                       ],
                     ),
                   )

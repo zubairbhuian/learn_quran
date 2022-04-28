@@ -27,9 +27,13 @@ class HeadText extends StatelessWidget {
         const SizedBox(
           width: 10,
         ),
-        Text(text,
-            style: const TextStyle(
-                fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white))
+        Flexible(
+          child: Text(text,
+              style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white)),
+        )
       ],
     );
   }
