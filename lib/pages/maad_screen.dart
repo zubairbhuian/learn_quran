@@ -224,7 +224,7 @@ class MaadScreen extends StatelessWidget {
                         ),
                         // !
                         const SizedBox(
-                          height: 30,
+                          height: 50,
                         ),
                         Center(
                           child: Container(
@@ -238,7 +238,20 @@ class MaadScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                        )
+                        ),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        MadText(
+                          text1: 'ــَـ ا',
+                          text2: 'যবরের পরে খালি আলিফ,',
+                          text3: 'بَا',
+                        ),
+                        MadText(
+                          text1: 'ــِـ يٛ',
+                          text2: 'যবরের পরে খালি আলিফ,',
+                          text3: 'بِيٛ',
+                        ),
                       ],
                     ),
                   )
