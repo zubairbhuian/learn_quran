@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learn_quran/const/apps_color.dart';
 
-class GunnahOne extends StatelessWidget {
-  const GunnahOne({
+class GunnahThree extends StatelessWidget {
+  const GunnahThree({
     Key? key,
   }) : super(key: key);
 
@@ -18,12 +18,9 @@ class GunnahOne extends StatelessWidget {
       {'word': 'tertert', 'url': 'fdssd'},
       {'word': 'tertert', 'url': 'fdssd'},
       {'word': 'tertert', 'url': 'fdssd'},
-      {'word': 'tertert', 'url': 'fdssd'},
-      {'word': 'tertert', 'url': 'fdssd'},
-      {'word': 'tertert', 'url': 'fdssd'},
     ];
     return SizedBox(
-      height: 400,
+      height: 320,
       child: GridView.builder(
           controller: ScrollController(keepScrollOffset: false),
           itemCount: data.length,

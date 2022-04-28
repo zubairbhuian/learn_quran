@@ -5,10 +5,12 @@ class HeadText extends StatelessWidget {
   HeadText({
     required this.word,
     required this.text,
+    this.bgcolor,
     Key? key,
   }) : super(key: key);
   String word;
   String text;
+  Color? bgcolor;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -16,7 +18,7 @@ class HeadText extends StatelessWidget {
         Container(
           width: 80,
           height: 60,
-          color: AppsColor.skyBlue,
+          color: bgcolor ?? AppsColor.skyBlue,
           child: Center(
               child: Text(
             word,

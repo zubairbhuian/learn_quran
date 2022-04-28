@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/widgets/gunnah/gunnah_one.dart';
+import 'package:learn_quran/widgets/gunnah/gunnah_three.dart';
+import 'package:learn_quran/widgets/gunnah/gunnah_two.dart';
+import 'package:learn_quran/widgets/gunnah/two_ba_word.dart';
+import 'package:learn_quran/widgets/gunnah/two_without_gunnah.dart';
 import 'package:learn_quran/widgets/head_text.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 
@@ -54,11 +58,71 @@ class GunnahScreen extends StatelessWidget {
                           ),
                         ),
 
-                        // !
+                        // !1
+                        const SizedBox(
+                          height: 10,
+                        ),
                         HeadText(
-                            word: '১',
-                            text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
-                        const GunnahOne()
+                          word: '১',
+                          text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ',
+                          bgcolor: const Color.fromARGB(255, 241, 111, 183),
+                        ),
+
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const GunnahOne(),
+                        // !২
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        HeadText(
+                          word: '২',
+                          text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ',
+                          bgcolor: const Color.fromARGB(255, 241, 111, 183),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        MediamText(text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const GunnahTwo(),
+                        // !২.ba
+
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        MediamText(text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const TwoBaWord(),
+                        // !২With out gunnah
+
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        MediamText(text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const WithoutGunnah(),
+                        // !1
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        HeadText(
+                          word: '৩',
+                          text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ',
+                          bgcolor: const Color.fromARGB(255, 241, 111, 183),
+                        ),
+
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const GunnahThree(),
                       ],
                     ),
                   )
