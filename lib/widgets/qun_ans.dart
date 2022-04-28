@@ -25,7 +25,7 @@ class QunAns extends StatelessWidget {
               child: Text(
                 qun,
                 textAlign: TextAlign.justify,
-                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w500),
+                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),
               ),
             ),
             Container(
@@ -35,7 +35,7 @@ class QunAns extends StatelessWidget {
               child: Text(
                 ans,
                 textAlign: TextAlign.justify,
-                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w500),
+                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),
               ),
             )
           ],
