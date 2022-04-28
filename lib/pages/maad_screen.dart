@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/widgets/big_text.dart';
 import 'package:learn_quran/widgets/mad/mad_text.dart';
+import 'package:learn_quran/widgets/mediam_text.dart';
 
 class MaadScreen extends StatelessWidget {
   const MaadScreen({Key? key}) : super(key: key);
@@ -54,6 +57,188 @@ class MaadScreen extends StatelessWidget {
                           text2: 'যবরের পরে খালি আলিফ,',
                           text3: 'بُوٛ',
                         ),
+                        // !
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        MediamText(text: 'মাদের হরফ এক আলিফ টেনে পড়তে হয় ।'),
+                        Container(
+                          decoration: BoxDecoration(
+                              border:
+                                  Border.all(width: 2, color: Colors.white)),
+                          child: Row(
+                            children: [
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 50,
+                                  decoration: const BoxDecoration(
+                                      color: AppsColor.lightYellow,
+                                      border: Border(
+                                          right: BorderSide(
+                                              width: 2, color: Colors.white))),
+                                  child: Center(
+                                      child: MediamText(
+                                          text: 'ere', color: AppsColor.red)),
+                                ),
+                              ),
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 50,
+                                  color: AppsColor.lightYellow,
+                                  child: Center(
+                                      child: MediamText(
+                                          text: 'ere', color: AppsColor.red)),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: const BoxDecoration(
+                              border: Border(
+                                  bottom:
+                                      BorderSide(width: 2, color: Colors.white),
+                                  left:
+                                      BorderSide(width: 2, color: Colors.white),
+                                  right: BorderSide(
+                                      width: 2, color: Colors.white))),
+                          child: Row(
+                            children: [
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 50,
+                                  decoration: const BoxDecoration(
+                                      color: AppsColor.lightYellow,
+                                      border: Border(
+                                          right: BorderSide(
+                                              width: 2, color: Colors.white))),
+                                  child: Center(
+                                      child: MediamText(
+                                    text: 'ere',
+                                    color: AppsColor.red,
+                                  )),
+                                ),
+                              ),
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 50,
+                                  color: AppsColor.lightYellow,
+                                  child: Center(
+                                      child: MediamText(
+                                    text: 'ere',
+                                    color: AppsColor.red,
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        // !
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        const Text(
+                          "এক আলিফ পরিমাণঃ",
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                              decoration: TextDecoration.underline),
+                        ),
+                        MediamText(text: 'এক আলিফ পরিমাণ'),
+                        MediamText(text: 'এক আলিফ পরিমাণ'),
+                        Container(
+                          decoration: BoxDecoration(
+                              border:
+                                  Border.all(width: 2, color: Colors.white)),
+                          child: Row(
+                            children: [
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 50,
+                                  color: AppsColor.lightYellow,
+                                  child: Center(
+                                      child: MediamText(
+                                          text: 'ere', color: AppsColor.red)),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: const BoxDecoration(
+                              border: Border(
+                                  bottom:
+                                      BorderSide(width: 2, color: Colors.white),
+                                  left:
+                                      BorderSide(width: 2, color: Colors.white),
+                                  right: BorderSide(
+                                      width: 2, color: Colors.white))),
+                          child: Row(
+                            children: [
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 50,
+                                  color: AppsColor.lightYellow,
+                                  child: Center(
+                                      child: MediamText(
+                                    text: 'ere',
+                                    color: AppsColor.red,
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: const BoxDecoration(
+                              border: Border(
+                                  bottom:
+                                      BorderSide(width: 2, color: Colors.white),
+                                  left:
+                                      BorderSide(width: 2, color: Colors.white),
+                                  right: BorderSide(
+                                      width: 2, color: Colors.white))),
+                          child: Row(
+                            children: [
+                              Flexible(
+                                flex: 1,
+                                child: Container(
+                                  height: 50,
+                                  color: AppsColor.lightYellow,
+                                  child: Center(
+                                      child: MediamText(
+                                    text: 'ere',
+                                    color: AppsColor.red,
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        // !
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        Center(
+                          child: Container(
+                            padding: const EdgeInsets.only(
+                                bottom: 10, top: 10, left: 10),
+                            width: 200,
+                            color: AppsColor.green,
+                            child: Center(
+                              child: BigText(
+                                text: 'Demo Text',
+                              ),
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   )
