@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:learn_quran/const/apps_color.dart';
-import 'package:learn_quran/widgets/head_text.dart';
+import 'package:learn_quran/widgets/all_with_text.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
+import 'package:learn_quran/widgets/others/others_con.dart';
+import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
+import 'package:learn_quran/widgets/wakfo_example.dart';
 
 class OthersScreen extends StatelessWidget {
   const OthersScreen({Key? key}) : super(key: key);
@@ -32,23 +34,104 @@ class OthersScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Container(
-                          padding: const EdgeInsets.only(
-                              bottom: 10, top: 10, left: 10),
-                          width: 200,
-                          color: AppsColor.green,
-                          child: Center(
-                            child: MediamText(
-                              text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
-                            ),
-                          ),
-                        ),
+                        // !Allah word er mota chikon
+                        AllWithText(text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা'),
                         const SizedBox(
                           height: 10,
                         ),
-                        HeadText(
-                            word: '১।',
-                            text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা')
+                        OthersCon(
+                          word: '1',
+                          text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                          exaple1: 'dsa',
+                          exaple2: 'sds',
+                        ),
+                        OthersCon(
+                          word: '1',
+                          text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                          exaple1: 'dsa',
+                          exaple2: 'sds',
+                        ),
+                        // !R Horofer mota chikon
+                        // ?Section  1
+                        const SizedBox(
+                          height: 50,
+                        ),
+                        AllWithText(text: 'ر (র) হরফ মোটা ছিকন শিক্ষা'),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        OthersCon(
+                          word: '1',
+                          text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                          exaple1: 'dsa',
+                          exaple2: 'sds',
+                        ),
+                        // ?Section  2
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        AllWithText(text: 'ر (র) হরফ মোটা ছিকন শিক্ষা'),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        OthersCon(
+                          word: '1',
+                          text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                          exaple1: 'dsa',
+                          exaple2: 'sds',
+                        ),
+                        // ?Section  3
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        AllWithText(text: 'ر (র) হরফ মোটা ছিকন শিক্ষা'),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        OthersCon(
+                          word: '1',
+                          text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                          exaple1: 'dsa',
+                          exaple2: 'sds',
+                        ),
+                        // ! Wakfo shikha
+                        const SizedBox(
+                          height: 50,
+                        ),
+                        AllWithText(text: 'ওয়াকফ শিক্ষা'),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        MediamText(text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা'),
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        MediamText(text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা'),
+                        const WakfoExample(),
+                        const WakfoExample(),
+                        const WakfoExample(),
+                        const WakfoExample(),
+                        // !Gol Ta
+                        
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        TashdidText(
+                          text:
+                              'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                        ),
+                        const WakfoExample(),
+                        const WakfoExample(),
+                        
+                         const SizedBox(
+                          height: 15,
+                        ),
+                        TashdidText(
+                          text:
+                              'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                        ),
+                        const WakfoExample(),
+                        const WakfoExample(),
                       ],
                     ),
                   )
