@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/widgets/head_text.dart';
+import 'package:learn_quran/widgets/mediam_text.dart';
 
 class OthersScreen extends StatelessWidget {
   const OthersScreen({Key? key}) : super(key: key);
@@ -28,7 +31,25 @@ class OthersScreen extends StatelessWidget {
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [],
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.only(
+                              bottom: 10, top: 10, left: 10),
+                          width: 200,
+                          color: AppsColor.green,
+                          child: Center(
+                            child: MediamText(
+                              text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        HeadText(
+                            word: '১।',
+                            text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা')
+                      ],
                     ),
                   )
                 ]),
