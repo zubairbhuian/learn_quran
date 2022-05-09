@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/widgets/all_with_text.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 import 'package:learn_quran/widgets/others/others_con.dart';
+import 'package:learn_quran/widgets/others/others_two_example.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
 import 'package:learn_quran/widgets/wakfo_example.dart';
 
@@ -164,10 +165,69 @@ class OthersScreen extends StatelessWidget {
                         ),
                         const WakfoExample(),
                         // ?যা জানা একান্ত প্রয়্যজন
+                        const SizedBox(
+                          height: 20,
+                        ),
                         AllWithText(text: 'আল্লাহ শব্দের লাম'),
+                        // ?*1
+                        const SizedBox(
+                          height: 18,
+                        ),
                         TashdidText(
                           text:
                               'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                        ),
+                        Others2Example(
+                          text1: 'ds',
+                          text2: 'fdf',
+                        ),
+                        // ?*2
+                        const SizedBox(
+                          height: 12,
+                        ),
+                        TashdidText(
+                          text:
+                              'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                        ),
+                        Others2Example(
+                          text1: 'ds',
+                          text2: 'fdf',
+                        ),
+                        // ?*3
+                        const SizedBox(
+                          height: 12,
+                        ),
+                        TashdidText(
+                          text:
+                              'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                        ),
+                        Others2Example(
+                          text1: 'ds',
+                          text2: 'fdf',
+                        ),
+                        // ?*4
+                        const SizedBox(
+                          height: 12,
+                        ),
+                        TashdidText(
+                          text:
+                              'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                        ),
+                        Others2Example(
+                          text1: 'ds',
+                          text2: 'fdf',
+                        ),
+                        // ?*5
+                        const SizedBox(
+                          height: 12,
+                        ),
+                        TashdidText(
+                          text:
+                              'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                        ),
+                        Others2Example(
+                          text1: 'ds',
+                          text2: 'fdf',
                         ),
                       ],
                     ),
