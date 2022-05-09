@@ -112,7 +112,7 @@ class OthersScreen extends StatelessWidget {
                         const WakfoExample(),
                         const WakfoExample(),
                         // !Gol Ta
-                        
+
                         const SizedBox(
                           height: 15,
                         ),
@@ -122,8 +122,8 @@ class OthersScreen extends StatelessWidget {
                         ),
                         const WakfoExample(),
                         const WakfoExample(),
-                        
-                         const SizedBox(
+
+                        const SizedBox(
                           height: 15,
                         ),
                         TashdidText(
@@ -132,6 +132,43 @@ class OthersScreen extends StatelessWidget {
                         ),
                         const WakfoExample(),
                         const WakfoExample(),
+                        // ?সাক্তাহ
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        AllWithText(text: 'সাক্তাহ শিক্ষা'),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        MediamText(
+                            text:
+                                'আওয়াজ বন্ধ,শ্বাস চালু তার নাম সাক্তাহ শিক্ষা'),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        const WakfoExample(),
+                        const WakfoExample(),
+                        // ?কুতনি শিক্ষা
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        AllWithText(text: 'কুতনি শিক্ষা'),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        MediamText(
+                            text:
+                                'আওয়াজ বন্ধ,শ্বাস চালু তার নাম সাক্তাহ শিক্ষা'),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        const WakfoExample(),
+                        // ?যা জানা একান্ত প্রয়্যজন
+                        AllWithText(text: 'আল্লাহ শব্দের লাম'),
+                        TashdidText(
+                          text:
+                              'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
+                        ),
                       ],
                     ),
                   )
