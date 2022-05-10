@@ -4,6 +4,7 @@ import 'package:learn_quran/widgets/all_with_text.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 import 'package:learn_quran/widgets/others/others_con.dart';
 import 'package:learn_quran/widgets/others/others_two_example.dart';
+import 'package:learn_quran/widgets/others/without_mad.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
 import 'package:learn_quran/widgets/wakfo_example.dart';
 
@@ -168,7 +169,7 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 20,
                         ),
-                        AllWithText(text: 'আল্লাহ শব্দের লাম'),
+                        AllWithText(text: 'যা জানা একান্ত প্রয়্যজন'),
                         // ?*1
                         const SizedBox(
                           height: 18,
@@ -225,10 +226,7 @@ class OthersScreen extends StatelessWidget {
                           text:
                               'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
                         ),
-                        Others2Example(
-                          text1: 'ds',
-                          text2: 'fdf',
-                        ),
+                        const WithoutMad()
                       ],
                     ),
                   )
