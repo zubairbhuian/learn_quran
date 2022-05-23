@@ -25,8 +25,7 @@ class TomijeHorofScreen extends StatelessWidget {
               image: DecorationImage(
                   fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
           child: Scrollbar(
-            isAlwaysShown: true,
-            showTrackOnHover: true,
+            thumbVisibility: true,
             child: ListView(children: [
               Padding(
                 padding: EdgeInsets.only(
@@ -59,7 +58,7 @@ class TomijeHorofScreen extends StatelessWidget {
                                         right: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
-                                child: Tomoj2(
+                                child: const Tomoj2(
                                   word1: 'ز',
                                   text1: 'ঝা',
                                   word2: 'ج',
@@ -73,7 +72,7 @@ class TomijeHorofScreen extends StatelessWidget {
                               child: Container(
                                 color: AppsColor.lightYellow,
                                 height: 70,
-                                child: Tomoj2(
+                                child: const Tomoj2(
                                   word1: 'ح',
                                   text1: 'হাা’',
                                   word2: 'ه',
@@ -91,7 +90,7 @@ class TomijeHorofScreen extends StatelessWidget {
                                         left: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
-                                child: Tomoj2(
+                                child: const Tomoj2(
                                   word1: 'ت',
                                   text1: 'তাা’',
                                   word2: 'ص',
@@ -117,7 +116,7 @@ class TomijeHorofScreen extends StatelessWidget {
                                         right: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
-                                child: Tomoj2(
+                                child: const Tomoj2(
                                   word1: 'ذ',
                                   text1: 'যাাল',
                                   word2: 'ظ',
@@ -131,7 +130,7 @@ class TomijeHorofScreen extends StatelessWidget {
                               child: Container(
                                 color: AppsColor.skyBlue,
                                 height: 70,
-                                child: Tomoj2(
+                                child: const Tomoj2(
                                   word1: 'د',
                                   text1: 'দাাল ',
                                   word2: 'ظ',
@@ -151,7 +150,7 @@ class TomijeHorofScreen extends StatelessWidget {
                                         left: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
-                                child: Tomoj2(
+                                child: const Tomoj2(
                                   word1: 'ث',
                                   text1: 'ছাা’',
                                   word2: 'س',
@@ -179,7 +178,7 @@ class TomijeHorofScreen extends StatelessWidget {
                                         right: BorderSide(
                                             color: Colors.white, width: 3))),
                                 height: 70,
-                                child: Tomoj2(
+                                child: const Tomoj2(
                                   word1: 'م',
                                   text1: 'মিম',
                                   word2: 'ب',
@@ -195,7 +194,7 @@ class TomijeHorofScreen extends StatelessWidget {
                               child: Container(
                                 color: AppsColor.lightYellow,
                                 height: 70,
-                                child: Tomoj2(
+                                child: const Tomoj2(
                                   word1: 'ق',
                                   text1: 'ক্বফ',
                                   word2: 'ك',
@@ -208,9 +207,9 @@ class TomijeHorofScreen extends StatelessWidget {
                       ],
                     ),
                     // !Bottom Navigation
-                    PreviousNextNavigations(
-                      previous: const ArabicWord(),
-                      next: const LearnWordsBySymbol(),
+                    const PreviousNextNavigations(
+                      previous: ArabicWord(),
+                      next: LearnWordsBySymbol(),
                     ),
                   ],
                 ),

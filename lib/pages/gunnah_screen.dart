@@ -38,20 +38,20 @@ class GunnahScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        MediamText(
+                        const MediamText(
                           text: 'গুন্নাহ মানে নাকের ভেতর গুনগুন করা ।',
                         ),
-                        MediamText(
+                        const MediamText(
                           text: 'সকল গুনাহ এক আলিফ পরিমাণ করতে হয় ।',
                         ),
-                        MediamText(
+                        const MediamText(
                           text: 'কুরআন মাজিদে তিন প্রকার গুন্নাহ আছে ।',
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 30),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            children: const [
                               MediamText(text: '১। নুনে মীমে তাশদীদে গুন্নাহ'),
                               MediamText(
                                   text: '২। নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
@@ -64,10 +64,10 @@ class GunnahScreen extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        HeadText(
+                        const HeadText(
                           word: '১',
                           text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ',
-                          bgcolor: const Color.fromARGB(255, 241, 111, 183),
+                          bgcolor: Color.fromARGB(255, 241, 111, 183),
                         ),
 
                         const SizedBox(
@@ -78,15 +78,16 @@ class GunnahScreen extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        HeadText(
+                        const HeadText(
                           word: '২',
                           text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ',
-                          bgcolor: const Color.fromARGB(255, 241, 111, 183),
+                          bgcolor: Color.fromARGB(255, 241, 111, 183),
                         ),
                         const SizedBox(
                           height: 10,
                         ),
-                        MediamText(text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
+                        const MediamText(
+                            text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
                         const SizedBox(
                           height: 10,
                         ),
@@ -96,7 +97,8 @@ class GunnahScreen extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        MediamText(text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
+                        const MediamText(
+                            text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
                         const SizedBox(
                           height: 10,
                         ),
@@ -106,7 +108,8 @@ class GunnahScreen extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        MediamText(text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
+                        const MediamText(
+                            text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
                         const SizedBox(
                           height: 10,
                         ),
@@ -115,10 +118,10 @@ class GunnahScreen extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        HeadText(
+                        const HeadText(
                           word: '৩',
                           text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ',
-                          bgcolor: const Color.fromARGB(255, 241, 111, 183),
+                          bgcolor: Color.fromARGB(255, 241, 111, 183),
                         ),
 
                         const SizedBox(

@@ -39,7 +39,8 @@ class OthersScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         // !Allah word er mota chikon
-                        AllWithText(text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা'),
+                        const AllWithText(
+                            text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা'),
                         const SizedBox(
                           height: 10,
                         ),
@@ -60,7 +61,7 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 50,
                         ),
-                        AllWithText(text: 'ر (র) হরফ মোটা ছিকন শিক্ষা'),
+                        const AllWithText(text: 'ر (র) হরফ মোটা ছিকন শিক্ষা'),
                         const SizedBox(
                           height: 10,
                         ),
@@ -74,7 +75,7 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 20,
                         ),
-                        AllWithText(text: 'ر (র) হরফ মোটা ছিকন শিক্ষা'),
+                        const AllWithText(text: 'ر (র) হরফ মোটা ছিকন শিক্ষা'),
                         const SizedBox(
                           height: 10,
                         ),
@@ -88,7 +89,7 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 20,
                         ),
-                        AllWithText(text: 'ر (র) হরফ মোটা ছিকন শিক্ষা'),
+                        const AllWithText(text: 'ر (র) হরফ মোটা ছিকন শিক্ষা'),
                         const SizedBox(
                           height: 10,
                         ),
@@ -102,15 +103,17 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 50,
                         ),
-                        AllWithText(text: 'ওয়াকফ শিক্ষা'),
+                        const AllWithText(text: 'ওয়াকফ শিক্ষা'),
                         const SizedBox(
                           height: 20,
                         ),
-                        MediamText(text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা'),
+                        const MediamText(
+                            text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা'),
                         const SizedBox(
                           height: 15,
                         ),
-                        MediamText(text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা'),
+                        const MediamText(
+                            text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা'),
                         const WakfoExample(),
                         const WakfoExample(),
                         const WakfoExample(),
@@ -140,11 +143,11 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 15,
                         ),
-                        AllWithText(text: 'সাক্তাহ শিক্ষা'),
+                        const AllWithText(text: 'সাক্তাহ শিক্ষা'),
                         const SizedBox(
                           height: 8,
                         ),
-                        MediamText(
+                        const MediamText(
                             text:
                                 'আওয়াজ বন্ধ,শ্বাস চালু তার নাম সাক্তাহ শিক্ষা'),
                         const SizedBox(
@@ -156,11 +159,11 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 15,
                         ),
-                        AllWithText(text: 'কুতনি শিক্ষা'),
+                        const AllWithText(text: 'কুতনি শিক্ষা'),
                         const SizedBox(
                           height: 8,
                         ),
-                        MediamText(
+                        const MediamText(
                             text:
                                 'আওয়াজ বন্ধ,শ্বাস চালু তার নাম সাক্তাহ শিক্ষা'),
                         const SizedBox(
@@ -171,7 +174,7 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 20,
                         ),
-                        AllWithText(text: 'যা জানা একান্ত প্রয়্যজন'),
+                        const AllWithText(text: 'যা জানা একান্ত প্রয়্যজন'),
                         // ?*1
                         const SizedBox(
                           height: 18,

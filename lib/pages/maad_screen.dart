@@ -64,7 +64,8 @@ class MaadScreen extends StatelessWidget {
                         const SizedBox(
                           height: 30,
                         ),
-                        MediamText(text: 'মাদের হরফ এক আলিফ টেনে পড়তে হয় ।'),
+                        const MediamText(
+                            text: 'মাদের হরফ এক আলিফ টেনে পড়তে হয় ।'),
                         Container(
                           decoration: BoxDecoration(
                               border:
@@ -80,7 +81,7 @@ class MaadScreen extends StatelessWidget {
                                       border: Border(
                                           right: BorderSide(
                                               width: 2, color: Colors.white))),
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                           text: 'ere', color: AppsColor.red)),
                                 ),
@@ -90,7 +91,7 @@ class MaadScreen extends StatelessWidget {
                                 child: Container(
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                           text: 'ere', color: AppsColor.red)),
                                 ),
@@ -118,7 +119,7 @@ class MaadScreen extends StatelessWidget {
                                       border: Border(
                                           right: BorderSide(
                                               width: 2, color: Colors.white))),
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                     text: 'ere',
                                     color: AppsColor.red,
@@ -130,7 +131,7 @@ class MaadScreen extends StatelessWidget {
                                 child: Container(
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                     text: 'ere',
                                     color: AppsColor.red,
@@ -152,8 +153,8 @@ class MaadScreen extends StatelessWidget {
                               color: Colors.white,
                               decoration: TextDecoration.underline),
                         ),
-                        MediamText(text: 'এক আলিফ পরিমাণ'),
-                        MediamText(text: 'এক আলিফ পরিমাণ'),
+                        const MediamText(text: 'এক আলিফ পরিমাণ'),
+                        const MediamText(text: 'এক আলিফ পরিমাণ'),
                         Container(
                           decoration: BoxDecoration(
                               border:
@@ -165,7 +166,7 @@ class MaadScreen extends StatelessWidget {
                                 child: Container(
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                           text: 'ere', color: AppsColor.red)),
                                 ),
@@ -189,7 +190,7 @@ class MaadScreen extends StatelessWidget {
                                 child: Container(
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                     text: 'ere',
                                     color: AppsColor.red,
@@ -215,7 +216,7 @@ class MaadScreen extends StatelessWidget {
                                 child: Container(
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                     text: 'ere',
                                     color: AppsColor.red,
@@ -305,7 +306,7 @@ class MaadScreen extends StatelessWidget {
                         const SizedBox(
                           height: 20,
                         ),
-                        MediamText(text: 'Some demoi text'),
+                        const MediamText(text: 'Some demoi text'),
                         const SizedBox(
                           height: 10,
                         ),
@@ -324,7 +325,7 @@ class MaadScreen extends StatelessWidget {
                                       border: Border(
                                           right: BorderSide(
                                               width: 2, color: Colors.white))),
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                           text: 'ere', color: AppsColor.red)),
                                 ),
@@ -334,7 +335,7 @@ class MaadScreen extends StatelessWidget {
                                 child: Container(
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                           text: 'ere', color: AppsColor.red)),
                                 ),
@@ -362,7 +363,7 @@ class MaadScreen extends StatelessWidget {
                                       border: Border(
                                           right: BorderSide(
                                               width: 2, color: Colors.white))),
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                     text: 'ere',
                                     color: AppsColor.red,
@@ -374,7 +375,7 @@ class MaadScreen extends StatelessWidget {
                                 child: Container(
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                     text: 'ere',
                                     color: AppsColor.red,
@@ -404,7 +405,7 @@ class MaadScreen extends StatelessWidget {
                                       border: Border(
                                           right: BorderSide(
                                               width: 2, color: Colors.white))),
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                     text: 'ere',
                                     color: AppsColor.red,
@@ -416,7 +417,7 @@ class MaadScreen extends StatelessWidget {
                                 child: Container(
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: Center(
+                                  child: const Center(
                                       child: MediamText(
                                     text: 'ere',
                                     color: AppsColor.red,

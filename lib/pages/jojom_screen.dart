@@ -45,10 +45,6 @@ class JojomScreen extends StatelessWidget {
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500)),
                         Wakfo(),
-                        PreviousNextNavigations(
-                          previous: Horkat(),
-                          next: TanvinScreen(),
-                        ),
                         PreviousNextNavigations(previous: Horkat(),next: TanvinScreen(),)
                       ],
                     ),

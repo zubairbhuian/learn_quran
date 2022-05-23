@@ -34,9 +34,9 @@ class KolkolahScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        HorkatText(text: 'কলকলাহ'),
-                        HorkatText(text: 'কলকলাহ'),
-                        HorkatText(text: 'কলকলাহ'),
+                        const HorkatText(text: 'কলকলাহ'),
+                        const HorkatText(text: 'কলকলাহ'),
+                        const HorkatText(text: 'কলকলাহ'),
                         Container(
                           padding: const EdgeInsets.all(2),
                           color: Colors.white,

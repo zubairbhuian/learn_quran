@@ -27,8 +27,7 @@ class IndexScreen extends StatelessWidget {
           image: DecorationImage(
               fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
       child: Scrollbar(
-        isAlwaysShown: true,
-        showTrackOnHover: true,
+        thumbVisibility: true,
         child: ListView(children: [
           Padding(
             padding:
@@ -45,78 +44,78 @@ class IndexScreen extends StatelessWidget {
                 ),
                 // !Index 1
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'আরবি ভাষার বর্ণ',
-                  navigateWidget: const ArabicWord(),
+                  navigateWidget: ArabicWord(),
                 ),
                 const SizedBox(height: 15),
                 // !Index 2
-                IndexButton(
+                const IndexButton(
                   title: 'তামীযে হরফ',
-                  navigateWidget: const TomijeHorofScreen(),
+                  navigateWidget: TomijeHorofScreen(),
                 ),
                 // !Index 3
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'চিহ্ন দিয়ে হরফ শিক্ষা',
-                  navigateWidget: const LearnWordsBySymbol(),
+                  navigateWidget: LearnWordsBySymbol(),
                 ),
                 // !Index 4
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'স্থান ভেদে প্রতিটি হরফের রুপ আকৃতি',
-                  navigateWidget: const HoroferRupScreen(),
+                  navigateWidget: HoroferRupScreen(),
                 ),
                 // !Index 5
                 const SizedBox(height: 15),
-                IndexButton(title: 'হরকত', navigateWidget: const Horkat()),
+                const IndexButton(title: 'হরকত', navigateWidget: Horkat()),
                 // !Index 6
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'জযম শিক্ষা',
-                  navigateWidget: const JojomScreen(),
+                  navigateWidget: JojomScreen(),
                 ),
                 // !Index 7
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'তানওয়ীন শিক্ষা',
-                  navigateWidget: const TanvinScreen(),
+                  navigateWidget: TanvinScreen(),
                 ),
                 // !Index 8
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'কলকলাহ শিক্ষা',
-                  navigateWidget: const KolkolahScreen(),
+                  navigateWidget: KolkolahScreen(),
                 ),
                 // !Index 9
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'তাশদীদ শিক্ষা',
-                  navigateWidget: const TashdidScreen(),
+                  navigateWidget: TashdidScreen(),
                 ),
                 // !Index 10
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'মাদ শিক্ষা',
-                  navigateWidget: const MaadScreen(),
+                  navigateWidget: MaadScreen(),
                 ),
                 // !Index 11
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'গুন্নাহ শিক্ষা',
-                  navigateWidget: const GunnahScreen(),
+                  navigateWidget: GunnahScreen(),
                 ),
                 // !Index 12
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'অন্যান্য',
-                  navigateWidget: const OthersScreen(),
+                  navigateWidget: OthersScreen(),
                 ),
                 // !Index 13
                 const SizedBox(height: 15),
-                IndexButton(
+                const IndexButton(
                   title: 'গুরুত্বপূর্ণ প্রশ্ন ও উত্তর',
-                  navigateWidget: const ImportantQuestionAnswerScreen(),
+                  navigateWidget: ImportantQuestionAnswerScreen(),
                 ),
               ],
             ),

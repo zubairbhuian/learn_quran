@@ -20,8 +20,7 @@ class Screen extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(

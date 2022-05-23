@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/horofer_rup_screen.dart';
 import 'package:learn_quran/pages/jojom_screen.dart';
-import 'package:learn_quran/pages/learn_words_by_symbol.dart';
 import 'package:learn_quran/widgets/horkat/horkat_img.dart';
 import 'package:learn_quran/widgets/horkat/jer_data.dart';
 import 'package:learn_quran/widgets/horkat/jobor_data.dart';
@@ -39,13 +38,13 @@ class Horkat extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         // !HorkotText
-                        HorkatText(
+                        const HorkatText(
                           text: 'আরবিতে হরকত তিনটি',
                         ),
-                        HorkatText(
+                        const HorkatText(
                           text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
                         ),
-                        HorkatText(
+                        const HorkatText(
                           text: 'হরকত ছাড়া হরফ পড়া যায় না',
                         ),
                         const HorkatImage(),
@@ -70,10 +69,10 @@ class Horkat extends StatelessWidget {
                         const SizedBox(
                           height: 25,
                         ),
-                        HorkatText(
+                        const HorkatText(
                           text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
                         ),
-                        HorkatText(
+                        const HorkatText(
                           text: 'হরকত ছাড়া হরফ পড়া যায় না',
                         ),
 
@@ -98,15 +97,15 @@ class Horkat extends StatelessWidget {
                         const SizedBox(
                           height: 25,
                         ),
-                        HorkatText(
+                        const HorkatText(
                           text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
                         ),
-                        HorkatText(
+                        const HorkatText(
                           text: 'হরকত ছাড়া হরফ পড়া যায় না',
                         ),
 
                         const SizedBox(height: 620, child: JerData()),
-                        HorkatText(
+                        const HorkatText(
                           text: 'হরকত ছাড়া হরফ পড়া যায় না',
                         ),
                         // !Pesh
@@ -129,18 +128,15 @@ class Horkat extends StatelessWidget {
                         const SizedBox(
                           height: 25,
                         ),
-                        HorkatText(
+                        const HorkatText(
                           text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
                         ),
-                        HorkatText(
+                        const HorkatText(
                           text: 'হরকত ছাড়া হরফ পড়া যায় না',
                         ),
 
                         const SizedBox(height: 620, child: PeshData()),
-                        const PreviousNextNavigations(
-                          previous: LearnWordsBySymbol(),
-                          next: JojomScreen(),
-                        ),
+
                         const PreviousNextNavigations(
                           previous: HoroferRupScreen(),
                           next: JojomScreen(),
