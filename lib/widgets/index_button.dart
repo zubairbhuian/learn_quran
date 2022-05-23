@@ -5,15 +5,15 @@ import 'package:learn_quran/pages/not_ready_page.dart';
 
 // ignore: must_be_immutable
 class IndexButton extends StatelessWidget {
-  IndexButton({
+  const IndexButton({
     // required this.onTab,
     required this.title,
     this.navigateWidget,
     Key? key,
   }) : super(key: key);
   // VoidCallback onTab;
-  String title;
-  Widget? navigateWidget;
+  final String title;
+  final Widget? navigateWidget;
 
   @override
   Widget build(BuildContext context) {

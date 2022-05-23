@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/pages/horofer_rup_screen.dart';
 import 'package:learn_quran/pages/jojom_screen.dart';
 import 'package:learn_quran/pages/learn_words_by_symbol.dart';
 import 'package:learn_quran/widgets/horkat/horkat_img.dart';
@@ -29,8 +30,7 @@ class Horkat extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
@@ -137,9 +137,13 @@ class Horkat extends StatelessWidget {
                         ),
 
                         const SizedBox(height: 620, child: PeshData()),
-                        PreviousNextNavigations(
-                          previous: const LearnWordsBySymbol(),
-                          next: const JojomScreen(),
+                        const PreviousNextNavigations(
+                          previous: LearnWordsBySymbol(),
+                          next: JojomScreen(),
+                        ),
+                        const PreviousNextNavigations(
+                          previous: HoroferRupScreen(),
+                          next: JojomScreen(),
                         )
                       ],
                     ),

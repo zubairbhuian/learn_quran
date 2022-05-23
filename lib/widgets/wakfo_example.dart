@@ -20,10 +20,9 @@ class WakfoExample extends StatelessWidget {
             child: Container(
               height: 50,
               color: AppsColor.lightYellow,
-              child: Center(
+              child: const Center(
                   child: MediamText(
-                      text: 'ere',
-                      color: const Color.fromARGB(255, 1, 216, 37))),
+                      text: 'ere', color: Color.fromARGB(255, 1, 216, 37))),
             ),
           ),
         ],

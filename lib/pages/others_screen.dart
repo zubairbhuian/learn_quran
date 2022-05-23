@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/pages/gunnah_screen.dart';
+import 'package:learn_quran/pages/important_question_answer.dart';
 import 'package:learn_quran/widgets/all_with_text.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 import 'package:learn_quran/widgets/others/others_con.dart';
 import 'package:learn_quran/widgets/others/others_two_example.dart';
 import 'package:learn_quran/widgets/others/without_mad.dart';
+import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
 import 'package:learn_quran/widgets/wakfo_example.dart';
 
@@ -27,8 +30,7 @@ class OthersScreen extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
@@ -226,7 +228,11 @@ class OthersScreen extends StatelessWidget {
                           text:
                               'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
                         ),
-                        const WithoutMad()
+                        const WithoutMad(),
+                        const PreviousNextNavigations(
+                          previous: GunnahScreen(),
+                          next: ImportantQuestionAnswerScreen(),
+                        )
                       ],
                     ),
                   )

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/pages/horkat_screen.dart';
+import 'package:learn_quran/pages/learn_words_by_symbol.dart';
 import 'package:learn_quran/widgets/horofer_rup/prow1.dart';
 import 'package:learn_quran/widgets/horofer_rup/prow10.dart';
 import 'package:learn_quran/widgets/horofer_rup/prow2.dart';
@@ -26,56 +28,55 @@ class HoroferRupScreen extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        const PRow1(),
-                        const SizedBox(
+                      children: const [
+                        PRow1(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const PRow2(),
-                        const SizedBox(
+                        PRow2(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const PRow3(),
-                        const SizedBox(
+                        PRow3(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const PRow4(),
-                        const SizedBox(
+                        PRow4(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const PRow5(),
-                        const SizedBox(
+                        PRow5(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const PRow6(),
-                        const SizedBox(
+                        PRow6(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const PRow7(),
-                        const SizedBox(
+                        PRow7(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const PRow8(),
-                        const SizedBox(
+                        PRow8(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const PRow9(),
-                        const SizedBox(
+                        PRow9(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const PRow10(),
-                        const SizedBox(
+                        PRow10(),
+                        SizedBox(
                           height: 30,
                         ),
-                        PreviousNextNavigations()
+                        PreviousNextNavigations(previous: LearnWordsBySymbol(),next: Horkat())
                       ],
                     ),
                   )

@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 
 class SymbolItem extends StatelessWidget {
-  SymbolItem({
+  const SymbolItem({
     required this.word,
     required this.text,
     this.rightBorder,
@@ -12,12 +12,12 @@ class SymbolItem extends StatelessWidget {
     this.fontsSize,
     Key? key,
   }) : super(key: key);
-  double? rightBorder;
-  double? bottomBorder;
-  String word;
-  String text;
-  int? flex;
-  int? fontsSize;
+  final double? rightBorder;
+  final double? bottomBorder;
+  final String word;
+  final String text;
+  final int? flex;
+  final int? fontsSize;
   @override
   Widget build(BuildContext context) {
     return Flexible(

@@ -3,13 +3,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 
 class QunAns extends StatelessWidget {
-  QunAns({
+  const QunAns({
     required this.qun,
     required this.ans,
     Key? key,
   }) : super(key: key);
-  String qun;
-  String ans;
+  final String qun;
+  final String ans;
 
   @override
   Widget build(BuildContext context) {

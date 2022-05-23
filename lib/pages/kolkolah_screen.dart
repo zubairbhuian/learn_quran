@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/pages/tanvin_screen.dart';
+import 'package:learn_quran/pages/tashdid_screen.dart';
 import 'package:learn_quran/widgets/horkat_text.dart';
+import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
 
 class KolkolahScreen extends StatelessWidget {
@@ -23,8 +26,7 @@ class KolkolahScreen extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
@@ -124,7 +126,11 @@ class KolkolahScreen extends StatelessWidget {
                         const SizedBox(
                           height: 20,
                         ),
-                        TashdidText(text: 'There is some text here')
+                        TashdidText(text: 'There is some text here'),
+                        const PreviousNextNavigations(
+                          previous: TanvinScreen(),
+                          next: TashdidScreen(),
+                        )
                       ],
                     ),
                   )

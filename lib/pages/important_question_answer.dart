@@ -164,8 +164,7 @@ class ImportantQuestionAnswerScreen extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                  isAlwaysShown: true,
-                  showTrackOnHover: true,
+                  thumbVisibility: true,
                   child: ListView.builder(
                       itemCount: data.length,
                       itemBuilder: (context, index) => QunAns(

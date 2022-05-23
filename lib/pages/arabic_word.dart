@@ -40,8 +40,7 @@ class _ArabicWordState extends State<ArabicWord> {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
@@ -239,9 +238,9 @@ class _ArabicWordState extends State<ArabicWord> {
                         const SizedBox(
                           height: 30,
                         ),
-                        PreviousNextNavigations(
-                          previous: const IndexScreen(),
-                          next: const TomijeHorofScreen(),
+                        const PreviousNextNavigations(
+                          previous: IndexScreen(),
+                          next: TomijeHorofScreen(),
                         )
                       ],
                     ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Tomoj2 extends StatelessWidget {
-  Tomoj2({
+  const Tomoj2({
     required this.word1,
     required this.text1,
     required this.word2,
@@ -10,12 +10,12 @@ class Tomoj2 extends StatelessWidget {
     this.text3,
     Key? key,
   }) : super(key: key);
-  String word1;
-  String text1;
-  String word2;
-  String text2;
-  String? word3;
-  String? text3;
+  final String word1;
+  final String text1;
+  final String word2;
+  final String text2;
+  final String? word3;
+  final String? text3;
   @override
   Widget build(BuildContext context) {
     return Row(

@@ -26,30 +26,30 @@ class JojomScreen extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       // crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        const JojomText(),
-                        const JojomBox(),
-                        const SizedBox(
+                      children: const [
+                        JojomText(),
+                        JojomBox(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Text("জযম শিক্ষা",
+                        Text("জযম শিক্ষা",
                             style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500)),
-                        const Wakfo(),
+                        Wakfo(),
                         PreviousNextNavigations(
-                          previous: const Horkat(),
-                          next: const TanvinScreen(),
-                        )
+                          previous: Horkat(),
+                          next: TanvinScreen(),
+                        ),
+                        PreviousNextNavigations(previous: Horkat(),next: TanvinScreen(),)
                       ],
                     ),
                   ),

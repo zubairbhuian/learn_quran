@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/pages/gunnah_screen.dart';
+import 'package:learn_quran/pages/tashdid_screen.dart';
 import 'package:learn_quran/widgets/big_text.dart';
 import 'package:learn_quran/widgets/mad/mad_text.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
+import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
 
 class MaadScreen extends StatelessWidget {
@@ -25,8 +28,7 @@ class MaadScreen extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
@@ -233,7 +235,7 @@ class MaadScreen extends StatelessWidget {
                                 bottom: 10, top: 10, left: 10),
                             width: 200,
                             color: AppsColor.green,
-                            child: Center(
+                            child: const Center(
                               child: BigText(
                                 text: 'Demo Text',
                               ),
@@ -264,7 +266,7 @@ class MaadScreen extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            BigText(text: 'এক আলিফ '),
+                            const BigText(text: 'এক আলিফ '),
                             Container(
                               color: AppsColor.red,
                               height: 25,
@@ -274,7 +276,7 @@ class MaadScreen extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            BigText(text: 'এক আলিফ '),
+                            const BigText(text: 'এক আলিফ '),
                             Container(
                               color: AppsColor.green,
                               height: 25,
@@ -292,7 +294,7 @@ class MaadScreen extends StatelessWidget {
                                 bottom: 10, top: 10, left: 10),
                             width: 200,
                             color: AppsColor.green,
-                            child: Center(
+                            child: const Center(
                               child: BigText(
                                 text: 'Demo Text',
                               ),
@@ -424,6 +426,10 @@ class MaadScreen extends StatelessWidget {
                             ],
                           ),
                         ),
+                        const PreviousNextNavigations(
+                          previous: TashdidScreen(),
+                          next: GunnahScreen(),
+                        )
                       ],
                     ),
                   )

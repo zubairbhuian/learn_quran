@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/pages/kolkolah_screen.dart';
+import 'package:learn_quran/pages/maad_screen.dart';
+import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_grid.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
 
@@ -22,8 +25,7 @@ class TashdidScreen extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
@@ -44,6 +46,10 @@ class TashdidScreen extends StatelessWidget {
                         TashdidText(
                           text:
                               'কোন হরকত বিশিষ্ট হরফের পরে সাকিন ও তারপরের হরফে তাশদীদ থাকলে তাশদীদ প্রাধান্য পাবে',
+                        ),
+                        const PreviousNextNavigations(
+                          previous: KolkolahScreen(),
+                          next: MaadScreen(),
                         )
                       ],
                     ),

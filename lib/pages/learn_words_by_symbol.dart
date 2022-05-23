@@ -25,52 +25,54 @@ class LearnWordsBySymbol extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        const Row1(),
-                        const SizedBox(
+                      children: const [
+                        Row1(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Row2(),
-                        const SizedBox(
+                        Row2(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Row3(),
-                        const SizedBox(
+                        Row3(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Row4(),
-                        const SizedBox(
+                        Row4(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Row5(),
-                        const SizedBox(
+                        Row5(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Row6(),
-                        const SizedBox(
+                        Row6(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Row7(),
-                        const SizedBox(
+                        Row7(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Row8(),
-                        const SizedBox(
+                        Row8(),
+                        SizedBox(
                           height: 30,
                         ),
-                        const Row9(),
-                        const SizedBox(
+                        Row9(),
+                        SizedBox(
                           height: 30,
                         ),
-                        PreviousNextNavigations(previous: TomijeHorofScreen(),)
+                        PreviousNextNavigations(
+                          previous: TomijeHorofScreen(),
+                          next: TomijeHorofScreen(),
+                        )
                       ],
                     ),
                   )

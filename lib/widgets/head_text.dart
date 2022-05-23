@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:learn_quran/const/apps_color.dart';
 
 class HeadText extends StatelessWidget {
-  HeadText({
+  const HeadText({
     required this.word,
     required this.text,
     this.bgcolor,
     Key? key,
   }) : super(key: key);
-  String word;
-  String text;
-  Color? bgcolor;
+  final String word;
+  final String text;
+  final Color? bgcolor;
   @override
   Widget build(BuildContext context) {
     return Row(

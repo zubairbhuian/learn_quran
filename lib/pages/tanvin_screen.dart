@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/pages/jojom_screen.dart';
+import 'package:learn_quran/pages/kolkolah_screen.dart';
+import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/tanvin/double_jer.dart';
 import 'package:learn_quran/widgets/tanvin/double_jobor.dart';
 import 'package:learn_quran/widgets/tanvin/double_pesh.dart';
@@ -23,8 +26,7 @@ class TanvinScreen extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
@@ -42,7 +44,11 @@ class TanvinScreen extends StatelessWidget {
                         const SizedBox(height: 50),
                         const SizedBox(height: 620, child: DoubleJer()),
                         const SizedBox(height: 50),
-                        const SizedBox(height: 620, child: Doublepesh())
+                        const SizedBox(height: 620, child: Doublepesh()),
+                        const PreviousNextNavigations(
+                          previous: JojomScreen(),
+                          next: KolkolahScreen(),
+                        )
                       ],
                     ),
                   )
