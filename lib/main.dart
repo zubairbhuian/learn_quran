@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         designSize: ScreenUtil.defaultSize,
         splitScreenMode: true,
         minTextAdapt: true,
-        builder: (() => MaterialApp(
+        builder: ((BuildContext context, Widget? widget) => MaterialApp(
               debugShowCheckedModeBanner: false,
               theme: ThemeData(
                   primaryColor: Colors.red,
