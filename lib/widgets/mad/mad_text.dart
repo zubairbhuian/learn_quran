@@ -3,15 +3,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 
 class MadText extends StatelessWidget {
-  MadText({
+  const MadText({
     required this.text1,
     required this.text2,
     required this.text3,
     Key? key,
   }) : super(key: key);
-  String text1;
-  String text2;
-  String text3;
+  final String text1;
+  final String text2;
+  final String text3;
   @override
   Widget build(BuildContext context) {
     return Padding(

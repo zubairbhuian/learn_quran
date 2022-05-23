@@ -4,23 +4,23 @@ import 'package:learn_quran/widgets/head_text.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 
 class OthersCon extends StatelessWidget {
- OthersCon({
-   required this.word,
-   required this.text,
-   required this.exaple1,
-   required this.exaple2,
+  const OthersCon({
+    required this.word,
+    required this.text,
+    required this.exaple1,
+    required this.exaple2,
     Key? key,
   }) : super(key: key);
-  String word;
-  String text;
-  String exaple1;
-  String exaple2;
+  final String word;
+  final String text;
+  final String exaple1;
+  final String exaple2;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       child: Column(
         children: [
-          HeadText(word:word, text: text),
+          HeadText(word: word, text: text),
           const SizedBox(
             height: 10,
           ),
@@ -38,7 +38,7 @@ class OthersCon extends StatelessWidget {
                         border: Border(
                             right: BorderSide(width: 2, color: Colors.white))),
                     child: Center(
-                        child: MediamText(text:exaple1, color: AppsColor.red)),
+                        child: MediamText(text: exaple1, color: AppsColor.red)),
                   ),
                 ),
                 Flexible(

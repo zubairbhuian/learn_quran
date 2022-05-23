@@ -12,7 +12,7 @@ class PRow1 extends StatelessWidget {
     return SizedBox(
       child: Column(
         children: [
-          HeadText(
+          const HeadText(
             word: 'ا',
             text: 'আলিফ',
           ),
@@ -20,7 +20,7 @@ class PRow1 extends StatelessWidget {
             height: 10,
           ),
           Row(
-            children: [
+            children: const [
               SymbolItem(
                 flex: 1,
                 rightBorder: 2,

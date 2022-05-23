@@ -29,7 +29,7 @@ class SymbolItem extends StatelessWidget {
                 color: AppsColor.lightYellow,
                 border: Border(
                     bottom: BorderSide(
-                        width: rightBorder ?? 0, color: Colors.white),
+                        width: rightBorder ?? 2, color: Colors.white),
                     right: BorderSide(
                         width: rightBorder ?? 0, color: Colors.white))),
             height: 50.h,
