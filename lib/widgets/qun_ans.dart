@@ -14,7 +14,7 @@ class QunAns extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.only(top: 8, bottom: 5, left: 16, right: 16),
+        padding: const EdgeInsets.only(top: 8, bottom: 5),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

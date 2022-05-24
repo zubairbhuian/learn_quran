@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/pages/others_screen.dart';
 import 'package:learn_quran/widgets/qun_ans.dart';
 
 class ImportantQuestionAnswerScreen extends StatelessWidget {
@@ -163,14 +165,36 @@ class ImportantQuestionAnswerScreen extends StatelessWidget {
               decoration: const BoxDecoration(
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
-              child: Scrollbar(
-                  thumbVisibility: true,
-                  child: ListView.builder(
-                      itemCount: data.length,
-                      itemBuilder: (context, index) => QunAns(
-                            qun: '${data[index]['qun']}',
-                            ans: '${data[index]['ans']}',
-                          ))),
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20, right: 20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ListView.builder(
+                          shrinkWrap: true,
+                          primary: false,
+                          itemCount: data.length,
+                          itemBuilder: (context, index) => QunAns(
+                                qun: '${data[index]['qun']}',
+                                ans: '${data[index]['ans']}',
+                              )),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16, bottom: 25),
+                        child: ElevatedButton.icon(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  CupertinoPageRoute(
+                                      builder: (_) => const OthersScreen()));
+                            },
+                            icon: const Icon(Icons.arrow_back),
+                            label: const Text('Previous')),
+                      )
+                    ],
+                  ),
+                ),
+              ),
             )));
   }
 }

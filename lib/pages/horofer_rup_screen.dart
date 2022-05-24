@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/pages/horkat_screen.dart';
+import 'package:learn_quran/pages/learn_words_by_symbol.dart';
 import 'package:learn_quran/widgets/head_text.dart';
+import 'package:learn_quran/widgets/previous_next_navigations.dart';
 
 import '../widgets/symbol_item.dart';
 
@@ -60,59 +63,72 @@ class HoroferRupScreen extends StatelessWidget {
       {'word': 'ي', 'text': '', 'end': 'ـي', 'middle': 'ـيـ', 'start': 'يـ'},
     ];
     return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: Text("স্থান ভেদে প্রতিটি হরফের রুপ আকৃতি",
-            style: TextStyle(
-                fontSize: 20.w,
-                color: Colors.white,
-                fontWeight: FontWeight.w600)),
-      ),
-      body: Container(
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-                fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
-        child: SizedBox(
-          child: ListView.builder(
-              itemCount: data.length,
-              itemBuilder: (contex, index) => Container(
-                    padding: const EdgeInsets.only(left: 25, right: 25),
-                    margin: const EdgeInsets.only(bottom: 25),
-                    child: Column(
-                      children: [
-                        HeadText(
-                          word: '${data[index]['word']}',
-                          text: '${data[index]['text']}',
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        Row(
-                          children: [
-                            SymbolItem(
-                              flex: 1,
-                              rightBorder: 2,
-                              word: '${data[index]['end']}',
-                              text: 'শেষে',
-                            ),
-                            SymbolItem(
-                              flex: 1,
-                              rightBorder: 2,
-                              word: '${data[index]['middle']}',
-                              text: 'মাঝে',
-                            ),
-                            SymbolItem(
-                              flex: 1,
-                              word: '${data[index]['start']}',
-                              text: 'শুরুতে',
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  )),
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("স্থান ভেদে প্রতিটি হরফের রুপ আকৃতি",
+              style: TextStyle(
+                  fontSize: 20.w,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600)),
         ),
+        body: Container(
+            decoration: const BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20),
+                child: Column(
+                  children: [
+                    ListView.builder(
+                        shrinkWrap: true,
+                        primary: false,
+                        itemCount: data.length,
+                        itemBuilder: (contex, index) => Container(
+                              margin:
+                                  const EdgeInsets.only(bottom: 25, top: 10),
+                              child: Column(
+                                children: [
+                                  HeadText(
+                                    word: '${data[index]['word']}',
+                                    text: '${data[index]['text']}',
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  Row(
+                                    children: [
+                                      SymbolItem(
+                                        flex: 1,
+                                        rightBorder: 2,
+                                        word: '${data[index]['end']}',
+                                        text: 'শেষে',
+                                      ),
+                                      SymbolItem(
+                                        flex: 1,
+                                        rightBorder: 2,
+                                        word: '${data[index]['middle']}',
+                                        text: 'মাঝে',
+                                      ),
+                                      SymbolItem(
+                                        flex: 1,
+                                        word: '${data[index]['start']}',
+                                        text: 'শুরুতে',
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )),
+                    const PreviousNextNavigations(
+                      previous: LearnWordsBySymbol(),
+                      next: Horkat(),
+                    )
+                  ],
+                ),
+              ),
+            )),
       ),
-    ));
+    );
   }
 }
