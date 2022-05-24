@@ -44,13 +44,16 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        OthersCon(
+                        const OthersCon(
                           word: '1',
                           text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
                           exaple1: 'dsa',
                           exaple2: 'sds',
                         ),
-                        OthersCon(
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        const OthersCon(
                           word: '1',
                           text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
                           exaple1: 'dsa',
@@ -65,7 +68,7 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        OthersCon(
+                        const OthersCon(
                           word: '1',
                           text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
                           exaple1: 'dsa',
@@ -79,7 +82,7 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        OthersCon(
+                        const OthersCon(
                           word: '1',
                           text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
                           exaple1: 'dsa',
@@ -93,7 +96,7 @@ class OthersScreen extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        OthersCon(
+                        const OthersCon(
                           word: '1',
                           text: 'আল্লাহ শব্দের লাম মোটা ছিকন শিক্ষা',
                           exaple1: 'dsa',

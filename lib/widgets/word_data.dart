@@ -179,6 +179,7 @@ class _WordDataState extends State<WordData> {
           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
       itemBuilder: (_, index) {
         return InkWell(
+          enableFeedback: false,
           child: SizedBox(
             width: 80,
             height: 80,

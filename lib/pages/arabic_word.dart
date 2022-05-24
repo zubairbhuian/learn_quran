@@ -188,6 +188,7 @@ class _ArabicWordState extends State<ArabicWord> {
                         Column(
                           children: [
                             InkWell(
+                              enableFeedback: false,
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
