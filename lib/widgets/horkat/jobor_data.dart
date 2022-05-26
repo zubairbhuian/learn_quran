@@ -7,40 +7,40 @@ class JoborData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List data = [
-      {'word': 'ث', 'text': 'ছাা’', 'path': 'cha.mp3'},
-      {'word': 'ت', 'text': 'তাা’', 'path': 'ta.mp3'},
-      {'word': 'ب', 'text': 'বাা’', 'path': 'ba.mp3'},
-      {'word': 'ا', 'text': 'আলিফ', 'path': 'alif.mp3'},
+      {'word': 'جَ', 'text': 'জা', 'path': 'cha.mp3'},
+      {'word': 'ثَ', 'text': 'ছা', 'path': 'ta.mp3'},
+      {'word': 'َت', 'text': 'তা', 'path': 'ba.mp3'},
+      {'word': 'بَ', 'text': 'বা', 'path': 'alif.mp3'},
       // !5
-      {'word': 'د', 'text': 'দাাল', 'path': 'dal.mp3'},
-      {'word': 'خ', 'text': 'খ', 'path': 'kho.mp3'},
-      {'word': 'ح', 'text': 'হাা’', 'path': 'ha.mp3'},
-      {'word': 'ج', 'text': 'জীম', 'path': 'jim.mp3'},
+      {'word': 'َذ', 'text': 'জা', 'path': 'dal.mp3'},
+      {'word': 'دَ', 'text': 'দা', 'path': 'kho.mp3'},
+      {'word': 'خَ', 'text': 'খ', 'path': 'ha.mp3'},
+      {'word': 'حَ', 'text': "হা'", 'path': 'jim.mp3'},
       // !5
-      {'word': 'س', 'text': 'সীন', 'path': 'sin.mp3'},
-      {'word': 'ز', 'text': 'ঝা', 'path': 'jha.mp3'},
-      {'word': 'ر', 'text': 'র', 'path': 'ro.mp3'},
-      {'word': 'ذ', 'text': 'যাাল', 'path': 'jal.mp3'},
+      {'word': 'شَ', 'text': 'শা', 'path': 'sin.mp3'},
+      {'word': 'سَ', 'text': 'ছা', 'path': 'jha.mp3'},
+      {'word': 'زَ', 'text': 'ঝা', 'path': 'ro.mp3'},
+      {'word': 'رَ', 'text': 'ঝা', 'path': 'jal.mp3'},
       // !5
-      {'word': 'ط', 'text': 'ত্ব-', 'path': 'too.mp3'},
-      {'word': 'ض', 'text': 'দ্বদ', 'path': 'dod.mp3'},
-      {'word': 'ص', 'text': 'স্বদ', 'path': 'sod.mp3'},
-      {'word': 'ش', 'text': 'শীন', 'path': 'shin.mp3'},
+      {'word': 'ظَ', 'text': 'জ্ব', 'path': 'too.mp3'},
+      {'word': 'طَ', 'text': 'জ্ব', 'path': 'dod.mp3'},
+      {'word': 'ضَ', 'text': 'গ্ব', 'path': 'sod.mp3'},
+      {'word': 'صَ', 'text': 'ছ্ব', 'path': 'shin.mp3'},
       // !5
-      {'word': 'ف', 'text': 'ফা', 'path': 'fa.mp3'},
-      {'word': 'غ', 'text': 'গইন', 'path': 'goin.mp3'},
-      {'word': 'ع', 'text': '‘আইন', 'path': 'ain.mp3'},
-      {'word': 'ظ', 'text': 'য-', 'path': 'joo.mp3'},
+      {'word': 'قَ', 'text': 'ক্ব', 'path': 'fa.mp3'},
+      {'word': 'فَ', 'text': 'ফা', 'path': 'goin.mp3'},
+      {'word': 'غَ', 'text': 'গ্ব', 'path': 'ain.mp3'},
+      {'word': 'عَ', 'text': "আ'", 'path': 'joo.mp3'},
       // !5
-      {'word': 'م', 'text': 'মিম', 'path': 'mim.mp3'},
-      {'word': 'ل', 'text': 'লাম', 'path': 'lam.mp3'},
-      {'word': 'ك', 'text': 'কাফ', 'path': 'kaf.mp3'},
-      {'word': 'ق', 'text': 'ক্বফ', 'path': 'qof.mp3'},
+      {'word': 'نَ', 'text': 'না', 'path': 'mim.mp3'},
+      {'word': 'مَ', 'text': 'মা', 'path': 'lam.mp3'},
+      {'word': 'لَ', 'text': 'লা', 'path': 'kaf.mp3'},
+      {'word': 'كَ', 'text': 'কা', 'path': 'qof.mp3'},
       // !5
-      {'word': 'ء', 'text': 'হামজা', 'path': 'hamza.mp3'},
-      {'word': 'ه', 'text': 'হা', 'path': 'ha2.mp3'},
-      {'word': 'و', 'text': 'ওয়াও', 'path': 'waw.mp3'},
-      {'word': 'ن', 'text': 'নুন', 'path': 'nun.mp3'},
+      {'word': 'ىَ', 'text': 'ইয়া', 'path': 'hamza.mp3'},
+      {'word': 'ءَ', 'text': 'আ', 'path': 'ha2.mp3'},
+      {'word': 'هَ', 'text': 'হা', 'path': 'waw.mp3'},
+      {'word': 'وَ', 'text': 'ওয়া', 'path': 'nun.mp3'},
     ];
 
     return GridView.builder(
@@ -50,6 +50,7 @@ class JoborData extends StatelessWidget {
           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
       itemBuilder: (_, index) {
         return InkWell(
+          enableFeedback: false,
           child: SizedBox(
             width: 80,
             height: 80,
@@ -62,12 +63,18 @@ class JoborData extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 10, bottom: 10),
                     color: AppsColor.lightYellow,
                     child: Center(
-                      child: Text(
-                        "${data[index]['word']}",
-                        style: const TextStyle(
-                            color: Color.fromARGB(255, 0, 0, 0),
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold),
+                      child: Container(
+                        padding: const EdgeInsets.only(left: 15),
+                        // color: Colors.red,
+                        width: 45,
+                        // height: 20,
+                        child: Text(
+                          "${data[index]['word']}",
+                          style: const TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                   ),
