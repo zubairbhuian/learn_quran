@@ -7,46 +7,46 @@ class JerData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List data = [
-      {'word': 'جِ', 'text': 'জীম', 'path': 'jim.mp3'},
-      {'word': 'ثِ', 'text': 'ছাা’', 'path': 'cha.mp3'},
-      {'word': 'تِ', 'text': 'তাা’', 'path': 'ta.mp3'},
-      {'word': 'بِ', 'text': 'বাা’', 'path': 'ba.mp3'},
+      {'word': 'جِ', 'text': 'জি', 'path': 'jim.mp3'},
+      {'word': 'ثِ', 'text': 'ছি', 'path': 'cha.mp3'},
+      {'word': 'تِ', 'text': 'তি', 'path': 'ta.mp3'},
+      {'word': 'بِ', 'text': 'বি', 'path': 'ba.mp3'},
 
       // !5
-      {'word': 'ذِ', 'text': 'যাাল', 'path': 'jal.mp3'},
-      {'word': 'دِ', 'text': 'দাাল', 'path': 'dal.mp3'},
-      {'word': 'خِ', 'text': 'খ', 'path': 'kho.mp3'},
-      {'word': 'حِ', 'text': 'হাা’', 'path': 'ha.mp3'},
+      {'word': 'ذِ', 'text': 'জি', 'path': 'jal.mp3'},
+      {'word': 'دِ', 'text': 'দি', 'path': 'dal.mp3'},
+      {'word': 'خِ', 'text': 'খি', 'path': 'kho.mp3'},
+      {'word': 'حِ', 'text': "হি'", 'path': 'ha.mp3'},
 
       // !5
-      {'word': 'شِ', 'text': 'শীন', 'path': 'shin.mp3'},
-      {'word': 'سِ', 'text': 'সীন', 'path': 'sin.mp3'},
-      {'word': 'زِ', 'text': 'ঝা', 'path': 'jha.mp3'},
-      {'word': 'رِ', 'text': 'র', 'path': 'ro.mp3'},
+      {'word': 'شِ', 'text': 'শি', 'path': 'shin.mp3'},
+      {'word': 'سِ', 'text': 'ছি', 'path': 'sin.mp3'},
+      {'word': 'زِ', 'text': 'ঝি', 'path': 'jha.mp3'},
+      {'word': 'رِ', 'text': 'রি', 'path': 'ro.mp3'},
 
       // !5
-      {'word': 'ظِ', 'text': 'য-', 'path': 'joo.mp3'},
-      {'word': 'طِ', 'text': 'ত্ব-', 'path': 'too.mp3'},
-      {'word': 'ضِ', 'text': 'দ্বদ', 'path': 'dod.mp3'},
-      {'word': 'صِ', 'text': 'স্বদ', 'path': 'sod.mp3'},
+      {'word': 'ظِ', 'text': 'জ্বি', 'path': 'joo.mp3'},
+      {'word': 'طِ', 'text': 'ত্বি', 'path': 'too.mp3'},
+      {'word': 'ضِ', 'text': 'দ্বি', 'path': 'dod.mp3'},
+      {'word': 'صِ', 'text': 'ছ্বি', 'path': 'sod.mp3'},
 
       // !5
-      {'word': 'قِ', 'text': 'ক্বফ', 'path': 'qof.mp3'},
-      {'word': 'فِ', 'text': 'ফা', 'path': 'fa.mp3'},
-      {'word': 'غِ', 'text': 'গইন', 'path': 'goin.mp3'},
-      {'word': 'عِ', 'text': '‘আইন', 'path': 'ain.mp3'},
+      {'word': 'قِ', 'text': 'ক্বি', 'path': 'qof.mp3'},
+      {'word': 'فِ', 'text': 'ফি', 'path': 'fa.mp3'},
+      {'word': 'غِ', 'text': 'গ্বি', 'path': 'goin.mp3'},
+      {'word': 'عِ', 'text': "ই'", 'path': 'ain.mp3'},
 
       // !5
-      {'word': 'نِ', 'text': 'নুন', 'path': 'nun.mp3'},
-      {'word': 'مِ', 'text': 'মিম', 'path': 'mim.mp3'},
-      {'word': 'لِ', 'text': 'লাম', 'path': 'lam.mp3'},
-      {'word': 'كِ', 'text': 'কাফ', 'path': 'kaf.mp3'},
+      {'word': 'نِ', 'text': 'নি', 'path': 'nun.mp3'},
+      {'word': 'مِ', 'text': 'মি', 'path': 'mim.mp3'},
+      {'word': 'لِ', 'text': 'লি', 'path': 'lam.mp3'},
+      {'word': 'كِ', 'text': 'কি', 'path': 'kaf.mp3'},
 
       // !5
-      {'word': 'ىِ', 'text': 'হামজা', 'path': 'hamza.mp3'},
-      {'word': 'ءِ', 'text': 'হামজা', 'path': 'hamza.mp3'},
-      {'word': 'هِ', 'text': 'হা', 'path': 'ha2.mp3'},
-      {'word': 'وِ', 'text': 'ওয়াও', 'path': 'waw.mp3'},
+      {'word': 'ىِ', 'text': 'ঈ', 'path': 'hamza.mp3'},
+      {'word': 'ءِ', 'text': 'ই', 'path': 'hamza.mp3'},
+      {'word': 'هِ', 'text': 'হি', 'path': 'ha2.mp3'},
+      {'word': 'وِ', 'text': 'ওয়ি', 'path': 'waw.mp3'},
     ];
 
     return GridView.builder(

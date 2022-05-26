@@ -20,11 +20,11 @@ class JoborData extends StatelessWidget {
       {'word': 'شَ', 'text': 'শা', 'path': 'sin.mp3'},
       {'word': 'سَ', 'text': 'ছা', 'path': 'jha.mp3'},
       {'word': 'زَ', 'text': 'ঝা', 'path': 'ro.mp3'},
-      {'word': 'رَ', 'text': 'ঝা', 'path': 'jal.mp3'},
+      {'word': 'رَ', 'text': 'র', 'path': 'jal.mp3'},
       // !5
       {'word': 'ظَ', 'text': 'জ্ব', 'path': 'too.mp3'},
-      {'word': 'طَ', 'text': 'জ্ব', 'path': 'dod.mp3'},
-      {'word': 'ضَ', 'text': 'গ্ব', 'path': 'sod.mp3'},
+      {'word': 'طَ', 'text': 'ত্ব', 'path': 'dod.mp3'},
+      {'word': 'ضَ', 'text': 'দ্ব', 'path': 'sod.mp3'},
       {'word': 'صَ', 'text': 'ছ্ব', 'path': 'shin.mp3'},
       // !5
       {'word': 'قَ', 'text': 'ক্ব', 'path': 'fa.mp3'},
