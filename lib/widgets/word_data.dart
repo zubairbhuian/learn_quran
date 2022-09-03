@@ -3,193 +3,173 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 
-class WordData extends StatelessWidget {
-  WordData({Key? key}) : super(key: key);
+class WordData extends StatefulWidget {
+  const WordData({Key? key}) : super(key: key);
+
+  @override
+  State<WordData> createState() => _WordDataState();
+}
+
+class _WordDataState extends State<WordData> {
   final List node = [
     {
       'word': 'ث',
       'text': 'ছাা’',
       'color': AppsColor.lightYellow,
-      'path': 'asagdfg'
+      'path': 'cha.mp3'
     },
     {
-      'word': 'ث',
+      'word': 'ت',
       'text': 'তাা’',
       'color': AppsColor.lightYellow,
-      'path': 'asaaaaaaaaaaaa'
+      'path': 'ta.mp3'
     },
     {
       'word': 'ب',
       'text': 'বাা’',
       'color': AppsColor.lightYellow,
-      'path': 'asaaaaaa'
+      'path': 'ba.mp3'
     },
 
     {
       'word': 'ا',
       'text': 'আলিফ',
       'color': AppsColor.skyBlue,
-      'path': 'fdfgaaaaaaaa'
+      'path': 'alif.mp3'
     },
     // !5
     {
       'word': 'د',
       'text': 'দাাল',
       'color': AppsColor.skyBlue,
-      'path': 'asagdfg'
+      'path': 'dal.mp3'
     },
     {
       'word': 'خ',
       'text': 'খ',
       'color': AppsColor.lightYellow,
-      'path': 'asaaaaaaaaaaaa'
+      'path': 'kho.mp3'
     },
-    {
-      'word': 'ح',
-      'text': 'হাা’',
-      'color': AppsColor.skyBlue,
-      'path': 'asaaaaaa'
-    },
+    {'word': 'ح', 'text': 'হাা’', 'color': AppsColor.skyBlue, 'path': 'ha.mp3'},
 
     {
       'word': 'ج',
       'text': 'জীম',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaasasasaaa'
+      'path': 'jim.mp3'
     },
     // !5
-    {
-      'word': 'س',
-      'text': 'সীন',
-      'color': AppsColor.skyBlue,
-      'path': 'asagdsasasasfg'
-    },
+    {'word': 'س', 'text': 'সীন', 'color': AppsColor.skyBlue, 'path': 'sin.mp3'},
     {
       'word': 'ز',
       'text': 'ঝা',
       'color': AppsColor.lightYellow,
-      'path': 'asaaaaaaaaaaaa'
+      'path': 'jha.mp3'
     },
-    {
-      'word': 'ر',
-      'text': 'র',
-      'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
-    },
+    {'word': 'ر', 'text': 'র', 'color': AppsColor.skyBlue, 'path': 'ro.mp3'},
 
     {
       'word': 'ذ',
       'text': 'যাাল',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'jal.mp3'
     },
     // !5
     {
       'word': 'ط',
       'text': 'ত্ব-',
       'color': AppsColor.skyBlue,
-      'path': 'asagdsasasasfg'
+      'path': 'too.mp3'
     },
     {
       'word': 'ض',
       'text': 'দ্বদ',
       'color': AppsColor.lightYellow,
-      'path': 'asaaaaaaaaaaaa'
+      'path': 'dod.mp3'
     },
     {
       'word': 'ص',
       'text': 'স্বদ',
       'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
+      'path': 'sod.mp3'
     },
 
     {
       'word': 'ش',
       'text': 'শীন',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'shin.mp3'
     },
     // !5
     {
       'word': 'ف',
       'text': 'ফা',
       'color': AppsColor.lightYellow,
-      'path': 'asagdsasasasfg'
+      'path': 'fa.mp3'
     },
     {
       'word': 'غ',
       'text': 'গইন',
       'color': AppsColor.lightYellow,
-      'path': 'asaaaaaaaaaaaa'
+      'path': 'goin.mp3'
     },
     {
       'word': 'ع',
       'text': '‘আইন',
       'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
+      'path': 'ain.mp3'
     },
 
     {
       'word': 'ظ',
       'text': 'য-',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'joo.mp3'
     },
     // !5
-    {
-      'word': 'م',
-      'text': 'মিম',
-      'color': AppsColor.skyBlue,
-      'path': 'asagdsasasasfg'
-    },
-    {
-      'word': 'ل',
-      'text': 'লাম',
-      'color': AppsColor.skyBlue,
-      'path': 'asaaaaaaaaaaaa'
-    },
-    {
-      'word': 'ك',
-      'text': 'কাফ',
-      'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
-    },
+    {'word': 'م', 'text': 'মিম', 'color': AppsColor.skyBlue, 'path': 'mim.mp3'},
+    {'word': 'ل', 'text': 'লাম', 'color': AppsColor.skyBlue, 'path': 'lam.mp3'},
+    {'word': 'ك', 'text': 'কাফ', 'color': AppsColor.skyBlue, 'path': 'kaf.mp3'},
 
     {
       'word': 'ق',
       'text': 'ক্বফ',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'qof.mp3'
     },
     // !5
     {
       'word': 'ء',
       'text': 'হামজা',
       'color': AppsColor.lightYellow,
-      'path': 'asagdsasasasfg'
+      'path': 'hamza.mp3'
     },
-    {
-      'word': 'ه',
-      'text': 'হা',
-      'color': AppsColor.skyBlue,
-      'path': 'asaaaaaaaaaaaa'
-    },
+    {'word': 'ه', 'text': 'হা', 'color': AppsColor.skyBlue, 'path': 'ha2.mp3'},
     {
       'word': 'و',
       'text': 'ওয়াও',
       'color': AppsColor.skyBlue,
-      'path': 'sassaaaaaaaaaasasa'
+      'path': 'waw.mp3'
     },
 
     {
       'word': 'ن',
       'text': 'নুন',
       'color': AppsColor.lightYellow,
-      'path': 'fdfgaaaaaaasasaaa'
+      'path': 'nun.mp3'
     },
   ];
+  // !Audio
+  final audioPlayer = AudioPlayer();
 
+  @override
+  void dispose() {
+    audioPlayer.dispose();
+    super.dispose();
+  }
 
+  // AudioCache? audioCache;
+  // String path = 'wordaudio/1.mp3';
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -199,6 +179,7 @@ class WordData extends StatelessWidget {
           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
       itemBuilder: (_, index) {
         return InkWell(
+          enableFeedback: false,
           child: SizedBox(
             width: 80,
             height: 80,
@@ -229,7 +210,13 @@ class WordData extends StatelessWidget {
               ],
             ),
           ),
-          onTap: () {},
+          onTap: () async {
+            audioPlayer.setReleaseMode(ReleaseMode.RELEASE);
+            final player = AudioCache(prefix: 'wordaudio/');
+            final url = await player.load('${node[index]['path']}');
+            audioPlayer.setUrl(url.path, isLocal: true);
+            await audioPlayer.resume();
+          },
         );
       },
     );

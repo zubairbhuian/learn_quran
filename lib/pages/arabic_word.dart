@@ -1,11 +1,30 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/pages/index_screen.dart';
+import 'package:learn_quran/pages/tomije_horof_screen.dart';
+import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/word_data.dart';
 
 // ignore: must_be_immutable
-class ArabicWord extends StatelessWidget {
+
+class ArabicWord extends StatefulWidget {
   const ArabicWord({Key? key}) : super(key: key);
+
+  @override
+  State<ArabicWord> createState() => _ArabicWordState();
+}
+
+class _ArabicWordState extends State<ArabicWord> {
+  final audioPlayer = AudioPlayer();
+
+  @override
+  void dispose() {
+    audioPlayer.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -21,8 +40,7 @@ class ArabicWord extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
-                isAlwaysShown: true,
-                showTrackOnHover: true,
+                thumbVisibility: true,
                 child: ListView(children: [
                   Padding(
                     padding: EdgeInsets.only(
@@ -166,19 +184,64 @@ class ArabicWord extends StatelessWidget {
                         const SizedBox(
                           height: 25,
                         ),
-                        SizedBox(height: 700, child: WordData()),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        const SizedBox(height: 620, child: WordData()),
+                        Column(
                           children: [
-                            ElevatedButton.icon(
-                                onPressed: () {},
-                                icon: const Icon(Icons.arrow_back),
-                                label: const Text('Previous')),
-                            ElevatedButton.icon(
-                                onPressed: () {},
-                                icon: const Text('Next'),
-                                label: const Icon(Icons.arrow_forward))
+                            InkWell(
+                              enableFeedback: false,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    width: 60,
+                                    height: 60,
+                                    color: AppsColor.lightYellow,
+                                    child: const Center(
+                                        child: Text('ي',
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 0, 0, 0),
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.bold))),
+                                  ),
+                                  Container(
+                                    width: 60,
+                                    height: 60,
+                                    color: AppsColor.skyBlue,
+                                    child: const Center(
+                                        child: Text('ئ',
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 0, 0, 0),
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.bold))),
+                                  )
+                                ],
+                              ),
+                              onTap: () async {
+                                audioPlayer.setReleaseMode(ReleaseMode.RELEASE);
+                                final player = AudioCache(prefix: 'wordaudio/');
+                                final url = await player.load('ya.mp3');
+                                audioPlayer.setUrl(url.path, isLocal: true);
+                                await audioPlayer.resume();
+                              },
+                            ),
+                            const SizedBox(
+                              height: 7,
+                            ),
+                            Text('ইয়া',
+                                style: TextStyle(
+                                    fontSize: 12.sp,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500))
                           ],
+                        ),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        const PreviousNextNavigations(
+                          previous: IndexScreen(),
+                          next: TomijeHorofScreen(),
                         )
                       ],
                     ),
