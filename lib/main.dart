@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
-import 'package:learn_quran/pages/aboutus-screen.dart';
 import 'package:learn_quran/pages/splash_screen.dart';
 
 void main() {
@@ -29,8 +28,7 @@ class MyApp extends StatelessWidget {
                   appBarTheme: const AppBarTheme(
                       backgroundColor: AppsColor.lightYellow,
                       iconTheme: IconThemeData(color: Colors.blue, size: 30))),
-              home: const AboutUsScreen(),
+              home: const SplashScreen(),
             )));
   }
 }
-// const SplashScreen()

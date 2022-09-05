@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:learn_quran/pages/aboutus-screen.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -64,7 +65,10 @@ class CustromDrawer extends StatelessWidget {
             color: Colors.cyan[400],
           ),
           title: const Text("About Us"),
-          onTap: () {},
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (contex) => const AboutUsScreen()));
+          },
         ),
         const Divider(
           height: 1,
