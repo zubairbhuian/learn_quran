@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutUsScreen extends StatelessWidget {
   const AboutUsScreen({Key? key}) : super(key: key);
@@ -75,16 +76,60 @@ class AboutUsScreen extends StatelessWidget {
                     endIndent: 100.w,
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Text(
-                      'www.masteracademy.com.bd\n www.facebook.com/masteracadmy\n www.youtube.com/MASTERACADEMY4',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 13.sp,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Column(
+                        children: [
+                          GestureDetector(
+                            child: Text(
+                              'www.masteracademy.com.bd',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 13.sp,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            onTap: () async {
+                              final Uri url =
+                                    Uri.parse('https://www.masteracademy.com.bd');
+                                if (!await launchUrl(url)) {
+                                  throw 'Could not launch $url';
+                                }
+                            },
+                          ),
+                          GestureDetector(
+                              child: Text(
+                                'www.facebook.com/masteracadmy',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 13.sp,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              onTap: () async {
+                                 final Uri url =
+                                    Uri.parse('https://www.facebook.com/masteracadmy');
+                                if (!await launchUrl(url)) {
+                                  throw 'Could not launch $url';
+                                }
+                              }),
+                          GestureDetector(
+                              child: Text(
+                                'www.youtube.com/MASTERACADEMY4',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 13.sp,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              onTap: () async {
+                                 final Uri url =
+                                    Uri.parse('https://www.youtube.com/MASTERACADEMY4');
+                                if (!await launchUrl(url)) {
+                                  throw 'Could not launch $url';
+                                }
+                              }),
+                        ],
+                      )),
                 ],
               ),
             ),
