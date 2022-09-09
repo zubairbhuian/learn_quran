@@ -30,121 +30,123 @@ class Horkat extends StatelessWidget {
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
                 thumbVisibility: true,
-                child: ListView(children: [
-                  Padding(
-                    padding: EdgeInsets.only(
-                        top: 35, bottom: 30, left: 20.h, right: 20.h),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        // !HorkotText
-                        const HorkatText(
-                          text: 'আরবিতে হরকত তিনটি',
-                        ),
-                        const HorkatText(
-                          text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
-                        ),
-                        const HorkatText(
-                          text: 'হরকত ছাড়া হরফ পড়া যায় না',
-                        ),
-                        const HorkatImage(),
-                        const SizedBox(
-                          height: 35,
-                        ),
-                        // !Jobor
-                        Container(
-                          padding: const EdgeInsets.only(top: 10, bottom: 10),
-                          color: AppsColor.green,
-                          child: const Center(
-                            child: Text(
-                              'ফাতহা/জবর',
-                              style: TextStyle(
-                                  fontSize: 27,
-                                  fontWeight: FontWeight.w900,
-                                  color: Colors.white),
+                child: SingleChildScrollView(
+                  child: Column(children: [
+                    Padding(
+                      padding: EdgeInsets.only(
+                          top: 35, bottom: 30, left: 20.h, right: 20.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          // !HorkotText
+                          const HorkatText(
+                            text: 'আরবিতে হরকত তিনটি',
+                          ),
+                          const HorkatText(
+                            text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
+                          ),
+                          const HorkatText(
+                            text: 'হরকত ছাড়া হরফ পড়া যায় না',
+                          ),
+                          const HorkatImage(),
+                          const SizedBox(
+                            height: 35,
+                          ),
+                          // !Jobor
+                          Container(
+                            padding: const EdgeInsets.only(top: 10, bottom: 10),
+                            color: AppsColor.green,
+                            child: const Center(
+                              child: Text(
+                                'ফাতহা/জবর',
+                                style: TextStyle(
+                                    fontSize: 27,
+                                    fontWeight: FontWeight.w900,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-                        ),
-
-                        const SizedBox(
-                          height: 25,
-                        ),
-                        const HorkatText(
-                          text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
-                        ),
-                        const HorkatText(
-                          text: 'হরকত ছাড়া হরফ পড়া যায় না',
-                        ),
-
-                        const SizedBox(height: 620, child: JoborData()),
-                        // !Jer
-                        const SizedBox(
-                          height: 45,
-                        ),
-                        Container(
-                          padding: const EdgeInsets.only(top: 10, bottom: 10),
-                          color: AppsColor.green,
-                          child: const Center(
-                            child: Text(
-                              'কসরা/জের',
-                              style: TextStyle(
-                                  fontSize: 27,
-                                  fontWeight: FontWeight.w900,
-                                  color: Colors.white),
+                
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          const HorkatText(
+                            text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
+                          ),
+                          const HorkatText(
+                            text: 'হরকত ছাড়া হরফ পড়া যায় না',
+                          ),
+                
+                         JoborData(),
+                          // !Jer
+                          const SizedBox(
+                            height: 45,
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(top: 10, bottom: 10),
+                            color: AppsColor.green,
+                            child: const Center(
+                              child: Text(
+                                'কসরা/জের',
+                                style: TextStyle(
+                                    fontSize: 27,
+                                    fontWeight: FontWeight.w900,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-                        ),
-                        const SizedBox(
-                          height: 25,
-                        ),
-                        const HorkatText(
-                          text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
-                        ),
-                        const HorkatText(
-                          text: 'হরকত ছাড়া হরফ পড়া যায় না',
-                        ),
-
-                        const SizedBox(height: 620, child: JerData()),
-                        const HorkatText(
-                          text: 'হরকত ছাড়া হরফ পড়া যায় না',
-                        ),
-                        // !Pesh
-                        const SizedBox(
-                          height: 45,
-                        ),
-                        Container(
-                          padding: const EdgeInsets.only(top: 10, bottom: 10),
-                          color: AppsColor.green,
-                          child: const Center(
-                            child: Text(
-                              'যম্মা/পেশ',
-                              style: TextStyle(
-                                  fontSize: 27,
-                                  fontWeight: FontWeight.w900,
-                                  color: Colors.white),
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          const HorkatText(
+                            text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
+                          ),
+                          const HorkatText(
+                            text: 'হরকত ছাড়া হরফ পড়া যায় না',
+                          ),
+                
+                          const SizedBox(height: 620, child: JerData()),
+                          const HorkatText(
+                            text: 'হরকত ছাড়া হরফ পড়া যায় না',
+                          ),
+                          // !Pesh
+                          const SizedBox(
+                            height: 45,
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(top: 10, bottom: 10),
+                            color: AppsColor.green,
+                            child: const Center(
+                              child: Text(
+                                'যম্মা/পেশ',
+                                style: TextStyle(
+                                    fontSize: 27,
+                                    fontWeight: FontWeight.w900,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-                        ),
-                        const SizedBox(
-                          height: 25,
-                        ),
-                        const HorkatText(
-                          text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
-                        ),
-                        const HorkatText(
-                          text: 'হরকত ছাড়া হরফ পড়া যায় না',
-                        ),
-
-                        const SizedBox(height: 620, child: PeshData()),
-
-                        const PreviousNextNavigations(
-                          previous: HoroferRupScreen(),
-                          next: JojomScreen(),
-                        )
-                      ],
-                    ),
-                  )
-                ]),
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          const HorkatText(
+                            text: 'হরকতের উচ্চারণ তাড়াতাড়ি পড়তে হয়',
+                          ),
+                          const HorkatText(
+                            text: 'হরকত ছাড়া হরফ পড়া যায় না',
+                          ),
+                
+                          const SizedBox(height: 620, child: PeshData()),
+                
+                          const PreviousNextNavigations(
+                            previous: HoroferRupScreen(),
+                            next: JojomScreen(),
+                          )
+                        ],
+                      ),
+                    )
+                  ]),
+                ),
               ),
             )));
   }

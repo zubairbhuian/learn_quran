@@ -168,11 +168,11 @@ class _WordDataState extends State<WordData> {
     super.dispose();
   }
 
-  // AudioCache? audioCache;
-  // String path = 'wordaudio/1.mp3';
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      shrinkWrap: true,
+      primary: false,
       controller: ScrollController(keepScrollOffset: false),
       itemCount: node.length,
       gridDelegate:

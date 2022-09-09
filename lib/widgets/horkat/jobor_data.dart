@@ -44,6 +44,8 @@ class JoborData extends StatelessWidget {
     ];
 
     return GridView.builder(
+      primary:false,
+      shrinkWrap: true,
       controller: ScrollController(keepScrollOffset: false),
       itemCount: data.length,
       gridDelegate:
