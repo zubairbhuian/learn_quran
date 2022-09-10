@@ -26,35 +26,37 @@ class TashdidScreen extends StatelessWidget {
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
                 thumbVisibility: true,
-                child: ListView(children: [
-                  Padding(
-                    padding: EdgeInsets.only(
-                        top: 35, bottom: 30, left: 20.h, right: 20.h),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        const Text(
-                            "তাশদীদ শিক্ষা  তাশদীদ শিক্ষা তাশদীদ শিক্ষা তাশদীদ শিক্ষা তাশদীদ শিক্ষা",
-                            style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w600)),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        const SizedBox(height: 630, child: TashdidGrid()),
-                        TashdidText(
-                          text:
-                              'কোন হরকত বিশিষ্ট হরফের পরে সাকিন ও তারপরের হরফে তাশদীদ থাকলে তাশদীদ প্রাধান্য পাবে',
-                        ),
-                        const PreviousNextNavigations(
-                          previous: KolkolahScreen(),
-                          next: MaadScreen(),
-                        )
-                      ],
-                    ),
-                  )
-                ]),
+                child: SingleChildScrollView(
+                  child: Column(children: [
+                    Padding(
+                      padding: EdgeInsets.only(
+                          top: 35, bottom: 30, left: 20.h, right: 20.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          const Text(
+                              "তাশদীদ শিক্ষা  তাশদীদ শিক্ষা তাশদীদ শিক্ষা তাশদীদ শিক্ষা তাশদীদ শিক্ষা",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600)),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          const TashdidGrid(),
+                          TashdidText(
+                            text:
+                                'কোন হরকত বিশিষ্ট হরফের পরে সাকিন ও তারপরের হরফে তাশদীদ থাকলে তাশদীদ প্রাধান্য পাবে',
+                          ),
+                          const PreviousNextNavigations(
+                            previous: KolkolahScreen(),
+                            next: MaadScreen(),
+                          )
+                        ],
+                      ),
+                    )
+                  ]),
+                ),
               ),
             )));
   }

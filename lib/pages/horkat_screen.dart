@@ -66,7 +66,7 @@ class Horkat extends StatelessWidget {
                               ),
                             ),
                           ),
-                
+
                           const SizedBox(
                             height: 25,
                           ),
@@ -76,8 +76,8 @@ class Horkat extends StatelessWidget {
                           const HorkatText(
                             text: 'হরকত ছাড়া হরফ পড়া যায় না',
                           ),
-                
-                         JoborData(),
+
+                          const JoborData(),
                           // !Jer
                           const SizedBox(
                             height: 45,
@@ -104,8 +104,8 @@ class Horkat extends StatelessWidget {
                           const HorkatText(
                             text: 'হরকত ছাড়া হরফ পড়া যায় না',
                           ),
-                
-                          const SizedBox(height: 620, child: JerData()),
+
+                          const JerData(),
                           const HorkatText(
                             text: 'হরকত ছাড়া হরফ পড়া যায় না',
                           ),
@@ -135,9 +135,7 @@ class Horkat extends StatelessWidget {
                           const HorkatText(
                             text: 'হরকত ছাড়া হরফ পড়া যায় না',
                           ),
-                
-                          const SizedBox(height: 620, child: PeshData()),
-                
+                          const PeshData(),
                           const PreviousNextNavigations(
                             previous: HoroferRupScreen(),
                             next: JojomScreen(),

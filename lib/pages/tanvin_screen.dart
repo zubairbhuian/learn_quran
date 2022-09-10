@@ -27,32 +27,34 @@ class TanvinScreen extends StatelessWidget {
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
                 thumbVisibility: true,
-                child: ListView(children: [
-                  Padding(
-                    padding: EdgeInsets.only(
-                        top: 35, bottom: 30, left: 20.h, right: 20.h),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Text("তানওয়ীন শিক্ষা",
-                            style: TextStyle(
-                                fontSize: 15.w,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w600)),
-                        const SizedBox(height: 20),
-                        const SizedBox(height: 620, child: DoubleJobor()),
-                        const SizedBox(height: 50),
-                        const SizedBox(height: 620, child: DoubleJer()),
-                        const SizedBox(height: 50),
-                        const SizedBox(height: 620, child: Doublepesh()),
-                        const PreviousNextNavigations(
-                          previous: JojomScreen(),
-                          next: KolkolahScreen(),
-                        )
-                      ],
-                    ),
-                  )
-                ]),
+                child: SingleChildScrollView(
+                  child: Column(children: [
+                    Padding(
+                      padding: EdgeInsets.only(
+                          top: 35, bottom: 30, left: 20.h, right: 20.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("তানওয়ীন শিক্ষা",
+                              style: TextStyle(
+                                  fontSize: 15.w,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600)),
+                          const SizedBox(height: 20),
+                          const DoubleJobor(),
+                          const SizedBox(height: 50),
+                          const DoubleJer(),
+                          const SizedBox(height: 50),
+                          const Doublepesh(),
+                          const PreviousNextNavigations(
+                            previous: JojomScreen(),
+                            next: KolkolahScreen(),
+                          )
+                        ],
+                      ),
+                    )
+                  ]),
+                ),
               ),
             )));
   }

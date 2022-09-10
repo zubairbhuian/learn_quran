@@ -34,19 +34,18 @@ class GunnahTwo extends StatelessWidget {
       {'word': 'tertert', 'url': 'fdssd'},
       {'word': 'tertert', 'url': 'fdssd'},
     ];
-    return SizedBox(
-      height: 720,
-      child: GridView.builder(
-          controller: ScrollController(keepScrollOffset: false),
-          itemCount: data.length,
-          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-              maxCrossAxisExtent: 200, childAspectRatio: 3 / 1),
-          itemBuilder: (_, index) => Container(
-                decoration: BoxDecoration(
-                    color: AppsColor.lightYellow,
-                    border: Border.all(width: 1, color: Colors.white)),
-                child: Center(child: Text('${data[index]['word']}')),
-              )),
-    );
+    return GridView.builder(
+      primary: false,
+      shrinkWrap: true,
+        controller: ScrollController(keepScrollOffset: false),
+        itemCount: data.length,
+        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+            maxCrossAxisExtent: 200, childAspectRatio: 3 / 1),
+        itemBuilder: (_, index) => Container(
+              decoration: BoxDecoration(
+                  color: AppsColor.lightYellow,
+                  border: Border.all(width: 1, color: Colors.white)),
+              child: Center(child: Text('${data[index]['word']}')),
+            ));
   }
 }
