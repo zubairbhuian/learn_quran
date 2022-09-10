@@ -62,11 +62,12 @@ class GunnahScreen extends StatelessWidget {
 
                         // !1
                         const SizedBox(
-                          height: 10,
+                          height: 40,
                         ),
                         const HeadText(
                           word: '১',
-                          text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ',
+                          text:
+                              ' নুন অথবা মিম হরফের তাশদীদ হলেন গুন্নাহ করে করতে হয়',
                           bgcolor: Color.fromARGB(255, 241, 111, 183),
                         ),
 
@@ -76,51 +77,44 @@ class GunnahScreen extends StatelessWidget {
                         const GunnahOne(),
                         // !২
                         const SizedBox(
-                          height: 10,
+                          height: 40,
                         ),
                         const HeadText(
                           word: '২',
-                          text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ',
+                          text:
+                              ' নুন সাকিন অথবা তানওয়ীনের পরে  اَ ء ه ع ح غ خ ر ل  এই আটটি হরফের কোন হরফ না আসলে নুন সাকিন অথবা তানওয়ীনের গুন্নাহ করে পড়তে হয়',
                           bgcolor: Color.fromARGB(255, 241, 111, 183),
                         ),
                         const SizedBox(
                           height: 10,
                         ),
-                        const MediamText(
-                            text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
-                        const SizedBox(
-                          height: 10,
-                        ),
                         const GunnahTwo(),
                         // !২.ba
-
                         const SizedBox(
-                          height: 10,
+                          height: 20,
                         ),
                         const MediamText(
-                            text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
+                            text:
+                                'নুন সাকিন অথবা তানওয়ীনের পরে ب হরফ আসলে নুন সাকিন অথবা তানওয়ীনকে মিম(م) দ্বারা বদল করে গুন্নাহ করে পড়তে হয় '),
                         const SizedBox(
-                          height: 10,
+                          height: 20,
                         ),
                         const TwoBaWord(),
                         // !২With out gunnah
 
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const MediamText(
-                            text: 'নুন সাকিন অথবা তানওয়ীনের গুন্নাহ'),
+                        const MediamText(text: 'এই চার শব্দে গুন্নাহ হবে না'),
                         const SizedBox(
                           height: 10,
                         ),
                         const WithoutGunnah(),
                         // !1
                         const SizedBox(
-                          height: 10,
+                          height: 40,
                         ),
                         const HeadText(
                           word: '৩',
-                          text: ' নুন সাকিন অথবা তানওয়ীনের গুন্নাহ',
+                          text:
+                              'মীম সাকিনের পরে ب  অথবা  م ফরক আসলে মীম সাকিনকে গুন্নাহ করে পড়তে হয়',
                           bgcolor: Color.fromARGB(255, 241, 111, 183),
                         ),
 
