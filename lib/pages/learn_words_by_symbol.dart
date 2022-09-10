@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/pages/horofer_rup_screen.dart';
 import 'package:learn_quran/pages/tomije_horof_screen.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/tomije_horof/row1.dart';
@@ -71,7 +72,7 @@ class LearnWordsBySymbol extends StatelessWidget {
                         ),
                         PreviousNextNavigations(
                           previous: TomijeHorofScreen(),
-                          next: TomijeHorofScreen(),
+                          next: HoroferRupScreen(),
                         )
                       ],
                     ),
