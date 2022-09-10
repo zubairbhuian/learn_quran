@@ -41,6 +41,7 @@ class Doublepesh extends StatelessWidget {
       {'word': 'ه', 'text': 'হা', 'path': 'ha2.mp3'},
       {'word': 'و', 'text': 'ওয়াও', 'path': 'waw.mp3'},
       {'word': 'ن', 'text': 'নুন', 'path': 'nun.mp3'},
+       {'word': 'يٌ', 'text': 'হামজা', 'path': 'hamza.mp3'}
     ];
 
     return GridView.builder(
@@ -64,12 +65,15 @@ class Doublepesh extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 10, bottom: 10),
                     color: AppsColor.lightYellow,
                     child: Center(
-                      child: Text(
-                        "${data[index]['word']}",
-                        style: const TextStyle(
-                            color: Color.fromARGB(255, 0, 0, 0),
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold),
+                      child: SizedBox(
+                        width: 30,
+                        child: Text(
+                          "${data[index]['word']}",
+                          style: const TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                   ),
