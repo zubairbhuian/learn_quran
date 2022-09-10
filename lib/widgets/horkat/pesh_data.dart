@@ -7,7 +7,7 @@ class PeshData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List data = [
-      {'word': 'جُ', 'text': 'জ', 'path': 'jim.mp3'},
+      {'word': 'جُ', 'text': 'জু', 'path': 'jim.mp3'},
       {'word': 'ثُ', 'text': 'ছু', 'path': 'cha.mp3'},
       {'word': 'تُ', 'text': 'তু', 'path': 'ta.mp3'},
       {'word': 'بُ', 'text': 'বু', 'path': 'ba.mp3'},

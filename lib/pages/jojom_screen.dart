@@ -27,29 +27,34 @@ class JojomScreen extends StatelessWidget {
                       fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
               child: Scrollbar(
                 thumbVisibility: true,
-                child: ListView(children: [
-                  Padding(
-                    padding: EdgeInsets.only(
-                        top: 35, bottom: 30, left: 20.h, right: 20.h),
-                    child: Column(
-                      // crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [
-                        JojomText(),
-                        JojomBox(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Text("জযম শিক্ষা",
-                            style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w500)),
-                        Wakfo(),
-                        PreviousNextNavigations(previous: Horkat(),next: TanvinScreen(),)
-                      ],
+                child: SingleChildScrollView(
+                  child: Column(children: [
+                    Padding(
+                      padding: EdgeInsets.only(
+                          top: 35, bottom: 30, left: 20.h, right: 20.h),
+                      child: Column(
+                        // crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: const [
+                          JojomText(),
+                          JojomBox(),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Text("জযম শিক্ষা",
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w500)),
+                          Wakfo(),
+                          PreviousNextNavigations(
+                            previous: Horkat(),
+                            next: TanvinScreen(),
+                          )
+                        ],
+                      ),
                     ),
-                  ),
-                ]),
+                  ]),
+                ),
               ),
             )));
   }

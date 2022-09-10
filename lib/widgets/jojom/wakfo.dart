@@ -22,10 +22,15 @@ class Wakfo extends StatelessWidget {
                   border:
                       Border(right: BorderSide(color: Colors.white, width: 2))),
               child: const Center(
-                  child: Text(
-                "ddsds",
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+                  child: SizedBox(
+                width: 60,
+                child: Text(
+                  "تَعْلَمُوْنَ",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 20),
+                ),
               )),
             ),
           ),
@@ -38,10 +43,15 @@ class Wakfo extends StatelessWidget {
                   border:
                       Border(right: BorderSide(color: Colors.white, width: 2))),
               child: const Center(
-                  child: Text(
-                "ddsds",
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+                  child: SizedBox(
+                width: 60,
+                child: Text(
+                  " يَفْعَلُوْنَ ",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 20),
+                ),
               )),
             ),
           ),
@@ -51,13 +61,21 @@ class Wakfo extends StatelessWidget {
               padding: const EdgeInsets.only(top: 8, bottom: 8),
               decoration: const BoxDecoration(
                   color: AppsColor.lightYellow,
-                  border:
-                      Border(right: BorderSide(color: Colors.white, width: 2))),
+                  border: Border(
+                      right: BorderSide(
+                    color: Colors.white,
+                    width: 2,
+                  ))),
               child: const Center(
-                  child: Text(
-                "ddsds",
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+                  child: SizedBox(
+                width: 45,
+                child: Text(
+                  "بَصِيْرٌ",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 20),
+                ),
               )),
             ),
           ),
@@ -67,9 +85,14 @@ class Wakfo extends StatelessWidget {
               padding: const EdgeInsets.only(top: 8, bottom: 8),
               color: AppsColor.lightYellow,
               child: const Center(
-                  child: Text("ddsds",
-                      style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.w600))),
+                  child: SizedBox(
+                width: 40,
+                child: Text("خَبِيْرٌ",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 20)),
+              )),
             ),
           )
         ],
