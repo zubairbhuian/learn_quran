@@ -30,25 +30,32 @@ class TashdidScreen extends StatelessWidget {
                   child: Column(children: [
                     Padding(
                       padding: EdgeInsets.only(
-                          top: 35, bottom: 30, left: 20.h, right: 20.h),
+                          top: 10, bottom: 30, left: 20.h, right: 20.h),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: const [
-                          Text(
-                              "তাশদীদ শিক্ষা  তাশদীদ শিক্ষা তাশদীদ শিক্ষা তাশদীদ শিক্ষা তাশদীদ শিক্ষা",
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w600)),
-                          SizedBox(
+                        children: [
+                          RichText(
+                              text: const TextSpan(children: [
+                            TextSpan(
+                                text: ' ــّـ ',
+                                style: TextStyle(
+                                    fontSize: 40, fontWeight: FontWeight.w400)),
+                            TextSpan(
+                                text:
+                                    'এই চিহ্নকে তাশদীদ বলে \n তাশদীদওয়ালা হরফ দুইবার পড়তে হয় । \n তার আগের হরফের সাথে একবার জযমের মত।আর নিজ হরফের সাথে একবার',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.w400))
+                          ])),
+                          const SizedBox(
                             height: 20,
                           ),
-                          TashdidGrid(),
-                          TashdidText(
+                          const TashdidGrid(),
+                          const SizedBox(height: 10),
+                          const TashdidText(
                             text:
                                 'কোন হরকত বিশিষ্ট হরফের পরে সাকিন ও তারপরের হরফে তাশদীদ থাকলে তাশদীদ প্রাধান্য পাবে',
                           ),
-                          PreviousNextNavigations(
+                          const PreviousNextNavigations(
                             previous: KolkolahScreen(),
                             next: MaadScreen(),
                           )
