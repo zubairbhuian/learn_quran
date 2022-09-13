@@ -31,7 +31,7 @@ class Others4box extends StatelessWidget {
                       width: 93.w,
                       child: Text('${data[index]['word']}',
                           style: TextStyle(
-                              fontSize: 20.sp, fontWeight: FontWeight.w600)))),
+                              fontSize: 22.sp, fontWeight: FontWeight.w700)))),
             ));
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
+import 'package:learn_quran/widgets/big_text.dart';
 import 'package:learn_quran/widgets/head_text.dart';
-import 'package:learn_quran/widgets/mediam_text.dart';
 
 class OthersCon extends StatelessWidget {
   const OthersCon({
@@ -41,8 +41,8 @@ class OthersCon extends StatelessWidget {
                     child: Center(
                         child: SizedBox(
                             width: 80.w,
-                            child: MediamText(
-                                text: exaple1, color: Colors.black))),
+                            child:
+                                BigText(text: exaple1, color: Colors.black))),
                   ),
                 ),
                 Flexible(
@@ -53,8 +53,8 @@ class OthersCon extends StatelessWidget {
                     child: Center(
                         child: SizedBox(
                             width: 80.w,
-                            child: MediamText(
-                                text: exaple2, color: Colors.black))),
+                            child:
+                                BigText(text: exaple2, color: Colors.black))),
                   ),
                 ),
               ],

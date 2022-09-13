@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/widgets/big_text.dart';
 
-class WakfoExample extends StatelessWidget {
+class WakfoExample2 extends StatelessWidget {
   final String text1;
 
-  const WakfoExample({
+  const WakfoExample2({
     Key? key,
     required this.text1,
   }) : super(key: key);
@@ -22,13 +21,11 @@ class WakfoExample extends StatelessWidget {
           Flexible(
             flex: 1,
             child: Container(
-              height: 50,
+              padding: const EdgeInsets.only(left: 7, top: 5, bottom: 5),
               color: AppsColor.lightYellow,
-              child: Center(
-                  child: SizedBox(
-                width: 180.w,
-                child: BigText(text: text1, color: Colors.black),
-              )),
+              child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: BigText(text: text1, color: Colors.black)),
             ),
           ),
         ],

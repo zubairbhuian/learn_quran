@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:learn_quran/const/apps_color.dart';
 
 class TashdidText extends StatelessWidget {
-  TashdidText({
+  const TashdidText({
     required this.text,
     Key? key,
   }) : super(key: key);
-  String text;
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -33,22 +33,22 @@ class TashdidScreen extends StatelessWidget {
                           top: 35, bottom: 30, left: 20.h, right: 20.h),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          const Text(
+                        children: const [
+                          Text(
                               "তাশদীদ শিক্ষা  তাশদীদ শিক্ষা তাশদীদ শিক্ষা তাশদীদ শিক্ষা তাশদীদ শিক্ষা",
                               style: TextStyle(
                                   fontSize: 16,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w600)),
-                          const SizedBox(
+                          SizedBox(
                             height: 20,
                           ),
-                          const TashdidGrid(),
+                          TashdidGrid(),
                           TashdidText(
                             text:
                                 'কোন হরকত বিশিষ্ট হরফের পরে সাকিন ও তারপরের হরফে তাশদীদ থাকলে তাশদীদ প্রাধান্য পাবে',
                           ),
-                          const PreviousNextNavigations(
+                          PreviousNextNavigations(
                             previous: KolkolahScreen(),
                             next: MaadScreen(),
                           )
