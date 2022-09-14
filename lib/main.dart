@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         minTextAdapt: true,
         builder: ((BuildContext context, Widget? widget) => MaterialApp(
-              debugShowCheckedModeBanner: false, 
+              debugShowCheckedModeBanner: false,
               theme: ThemeData(
                   primarySwatch: Colors.blue,
                   primaryColor: Colors.red,

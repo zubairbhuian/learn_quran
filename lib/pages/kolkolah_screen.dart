@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/tanvin_screen.dart';
 import 'package:learn_quran/pages/tashdid_screen.dart';
-import 'package:learn_quran/widgets/big_text.dart';
 import 'package:learn_quran/widgets/horkat_text.dart';
 import 'package:learn_quran/widgets/kolkola/kolkola_word.dart';
 import 'package:learn_quran/widgets/kolkola/kolkolah_example.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
+
+import '../widgets/example_title.dart';
 
 class KolkolahScreen extends StatelessWidget {
   const KolkolahScreen({Key? key}) : super(key: key);
@@ -37,43 +37,31 @@ class KolkolahScreen extends StatelessWidget {
                         top: 35, bottom: 30, left: 20.h, right: 20.h),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        const HorkatText(text: 'কলকলাহ  অর্থ প্রতিধ্বনি'),
-                        const HorkatText(text: 'কলকলাহ হরফ ৫ টি'),
-                        const HorkatText(
+                      children: const [
+                        HorkatText(text: 'কলকলাহ  অর্থ প্রতিধ্বনি'),
+                        HorkatText(text: 'কলকলাহ হরফ ৫ টি'),
+                        HorkatText(
                             text:
                                 'কলকলাহ হরফে সাকিন হলে ও তার পূর্বের হরফে হরকত হলে কলকলা করে পড়তে হয়'),
-                        const KolkolaWord(),
-                        const SizedBox(
+                        KolkolaWord(),
+                        SizedBox(
                           height: 20,
                         ),
-                        const TashdidText(
+                        TashdidText(
                             text:
                                 "কলকলাহ'র সময় ط  ق  এই ২ টি হরফের আওয়াজ উপরের দিকে যায়   "),
-                        const TashdidText(
+                        TashdidText(
                             text:
                                 "কলকলাহ'র সময়   د  ج  ب  এই ৩ টি হরফের আওয়াজ নিচের দিকে যায় "),
-                        const SizedBox(
+                        SizedBox(
                           height: 20,
                         ),
-                        Center(
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                top: 10, bottom: 10, left: 50, right: 50),
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(10)),
-                            child: const BigText(
-                              text: 'অনুশীলন',
-                              color: AppsColor.lightYellow,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
+                        ExampleTitle(),
+                        SizedBox(
                           height: 10,
                         ),
-                        const KolkolahExample(),
-                        const PreviousNextNavigations(
+                        KolkolahExample(),
+                        PreviousNextNavigations(
                           previous: TanvinScreen(),
                           next: TashdidScreen(),
                         )

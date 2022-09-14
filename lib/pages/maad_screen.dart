@@ -45,17 +45,17 @@ class MaadScreen extends StatelessWidget {
                         const SizedBox(
                           height: 20,
                         ),
-                        MadText(
+                        const MadText(
                           text1: 'ــَـ ا',
                           text2: 'যবরের পরে খালি আলিফ,',
                           text3: 'بَا',
                         ),
-                        MadText(
+                        const MadText(
                           text1: 'ــِـ يٛ',
                           text2: 'যবরের পরে খালি আলিফ,',
                           text3: 'بِيٛ',
                         ),
-                        MadText(
+                        const MadText(
                           text1: 'ــُـ وٛ',
                           text2: 'যবরের পরে খালি আলিফ,',
                           text3: 'بُوٛ',
@@ -66,6 +66,7 @@ class MaadScreen extends StatelessWidget {
                         ),
                         const MediamText(
                             text: 'মাদের হরফ এক আলিফ টেনে পড়তে হয় ।'),
+                        const SizedBox(height: 10),
                         Container(
                           decoration: BoxDecoration(
                               border:
@@ -75,25 +76,33 @@ class MaadScreen extends StatelessWidget {
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  padding: const EdgeInsets.only(top: 4),
                                   height: 50,
+                                  width: double.maxFinite,
                                   decoration: const BoxDecoration(
                                       color: AppsColor.lightYellow,
                                       border: Border(
                                           right: BorderSide(
                                               width: 2, color: Colors.white))),
-                                  child: const Center(
-                                      child: MediamText(
-                                          text: 'ere', color: AppsColor.red)),
+                                  child: const BigText(
+                                    text: 'بَا بِيٛ بُوٛ',
+                                    color: AppsColor.red,
+                                    center: true,
+                                  ),
                                 ),
                               ),
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  padding: const EdgeInsets.only(top: 4),
                                   height: 50,
+                                  width: double.maxFinite,
                                   color: AppsColor.lightYellow,
-                                  child: const Center(
-                                      child: MediamText(
-                                          text: 'ere', color: AppsColor.red)),
+                                  child: const BigText(
+                                    text: ' تَا تِيٛ تُوٛ',
+                                    color: AppsColor.red,
+                                    center: true,
+                                  ),
                                 ),
                               ),
                             ],
@@ -113,29 +122,33 @@ class MaadScreen extends StatelessWidget {
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  padding: const EdgeInsets.only(top: 4),
                                   height: 50,
+                                  width: double.maxFinite,
                                   decoration: const BoxDecoration(
                                       color: AppsColor.lightYellow,
                                       border: Border(
                                           right: BorderSide(
                                               width: 2, color: Colors.white))),
-                                  child: const Center(
-                                      child: MediamText(
-                                    text: 'ere',
+                                  child: const BigText(
+                                    text: 'ثَا ثِيٛ ثُوٛ',
                                     color: AppsColor.red,
-                                  )),
+                                    center: true,
+                                  ),
                                 ),
                               ),
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  padding: const EdgeInsets.only(top: 4),
                                   height: 50,
+                                  width: double.maxFinite,
                                   color: AppsColor.lightYellow,
-                                  child: const Center(
-                                      child: MediamText(
-                                    text: 'ere',
+                                  child: const BigText(
+                                    text: 'نُوٛحِيٛهَا ',
+                                    center: true,
                                     color: AppsColor.red,
-                                  )),
+                                  ),
                                 ),
                               ),
                             ],
@@ -246,12 +259,12 @@ class MaadScreen extends StatelessWidget {
                         const SizedBox(
                           height: 30,
                         ),
-                        MadText(
+                        const MadText(
                           text1: 'ــَـ ا',
                           text2: 'যবরের পরে খালি আলিফ,',
                           text3: 'بَا',
                         ),
-                        MadText(
+                        const MadText(
                           text1: 'ــِـ يٛ',
                           text2: 'যবরের পরে খালি আলিফ,',
                           text3: 'بِيٛ',
@@ -259,8 +272,8 @@ class MaadScreen extends StatelessWidget {
                         const SizedBox(
                           height: 30,
                         ),
-                        TashdidText(text: 'যবরের পরে খালি আলিফ'),
-                        TashdidText(text: 'যবরের পরে খালি আলিফ'),
+                        const TashdidText(text: 'যবরের পরে খালি আলিফ'),
+                        const TashdidText(text: 'যবরের পরে খালি আলিফ'),
                         // !
                         const SizedBox(
                           height: 30,
