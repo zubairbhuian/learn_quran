@@ -4,8 +4,11 @@ import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/gunnah_screen.dart';
 import 'package:learn_quran/pages/tashdid_screen.dart';
 import 'package:learn_quran/widgets/big_text.dart';
+import 'package:learn_quran/widgets/example_title.dart';
+import 'package:learn_quran/widgets/mad/mad_example.dart';
 import 'package:learn_quran/widgets/mad/mad_one_alif.dart';
 import 'package:learn_quran/widgets/mad/mad_text.dart';
+import 'package:learn_quran/widgets/mad/mad_three_alif.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
@@ -255,8 +258,8 @@ class MaadScreen extends StatelessWidget {
                         Center(
                           child: Container(
                             padding: const EdgeInsets.only(
-                                bottom: 20, top: 10, left: 10, right: 20),
-                            width: 200,
+                                bottom: 10, top: 10, left: 20, right: 20),
+                            width: 300,
                             color: AppsColor.green,
                             child: const Center(
                               child: BigText(
@@ -333,126 +336,17 @@ class MaadScreen extends StatelessWidget {
                         const SizedBox(
                           height: 20,
                         ),
-                        const MediamText(text: 'Some demoi text'),
+                        const MadThreeAlif(),
                         const SizedBox(
-                          height: 10,
+                          height: 40,
                         ),
-                        Container(
-                          decoration: BoxDecoration(
-                              border:
-                                  Border.all(width: 2, color: Colors.white)),
-                          child: Row(
-                            children: [
-                              Flexible(
-                                flex: 1,
-                                child: Container(
-                                  height: 50,
-                                  decoration: const BoxDecoration(
-                                      color: AppsColor.lightYellow,
-                                      border: Border(
-                                          right: BorderSide(
-                                              width: 2, color: Colors.white))),
-                                  child: const Center(
-                                      child: MediamText(
-                                          text: 'ere', color: AppsColor.red)),
-                                ),
-                              ),
-                              Flexible(
-                                flex: 1,
-                                child: Container(
-                                  height: 50,
-                                  color: AppsColor.lightYellow,
-                                  child: const Center(
-                                      child: MediamText(
-                                          text: 'ere', color: AppsColor.red)),
-                                ),
-                              ),
-                            ],
-                          ),
+                        const ExampleTitle(),
+                        const SizedBox(
+                          height: 20,
                         ),
-                        Container(
-                          decoration: const BoxDecoration(
-                              border: Border(
-                                  bottom:
-                                      BorderSide(width: 2, color: Colors.white),
-                                  left:
-                                      BorderSide(width: 2, color: Colors.white),
-                                  right: BorderSide(
-                                      width: 2, color: Colors.white))),
-                          child: Row(
-                            children: [
-                              Flexible(
-                                flex: 1,
-                                child: Container(
-                                  height: 50,
-                                  decoration: const BoxDecoration(
-                                      color: AppsColor.lightYellow,
-                                      border: Border(
-                                          right: BorderSide(
-                                              width: 2, color: Colors.white))),
-                                  child: const Center(
-                                      child: MediamText(
-                                    text: 'ere',
-                                    color: AppsColor.red,
-                                  )),
-                                ),
-                              ),
-                              Flexible(
-                                flex: 1,
-                                child: Container(
-                                  height: 50,
-                                  color: AppsColor.lightYellow,
-                                  child: const Center(
-                                      child: MediamText(
-                                    text: 'ere',
-                                    color: AppsColor.red,
-                                  )),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          decoration: const BoxDecoration(
-                              border: Border(
-                                  bottom:
-                                      BorderSide(width: 2, color: Colors.white),
-                                  left:
-                                      BorderSide(width: 2, color: Colors.white),
-                                  right: BorderSide(
-                                      width: 2, color: Colors.white))),
-                          child: Row(
-                            children: [
-                              Flexible(
-                                flex: 1,
-                                child: Container(
-                                  height: 50,
-                                  decoration: const BoxDecoration(
-                                      color: AppsColor.lightYellow,
-                                      border: Border(
-                                          right: BorderSide(
-                                              width: 2, color: Colors.white))),
-                                  child: const Center(
-                                      child: MediamText(
-                                    text: 'ere',
-                                    color: AppsColor.red,
-                                  )),
-                                ),
-                              ),
-                              Flexible(
-                                flex: 1,
-                                child: Container(
-                                  height: 50,
-                                  color: AppsColor.lightYellow,
-                                  child: const Center(
-                                      child: MediamText(
-                                    text: 'ere',
-                                    color: AppsColor.red,
-                                  )),
-                                ),
-                              ),
-                            ],
-                          ),
+                        const MadExample(),
+                        const SizedBox(
+                          height: 20,
                         ),
                         const PreviousNextNavigations(
                           previous: TashdidScreen(),
