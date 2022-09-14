@@ -17,46 +17,47 @@ class MadText extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 7),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
             width: 50,
             height: 40,
             color: AppsColor.skyBlue,
-            child: Center(
-                child: Text(
+            child: Text(
               text1,
+              textAlign: TextAlign.center,
               style: const TextStyle(
                   color: Colors.white,
                   fontSize: 22,
                   fontWeight: FontWeight.w600),
-            )),
+            ),
           ),
           Flexible(
             flex: 1,
             child: SizedBox(
               height: 40,
-              child: Center(
-                  child: Text(
+              child: Text(
                 text2,
+                textAlign: TextAlign.center,
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 14.sp,
                     fontWeight: FontWeight.w600),
-              )),
+              ),
             ),
           ),
           Container(
             width: 50,
             height: 40,
             color: AppsColor.skyBlue,
-            child: Center(
-                child: Text(
+            child: Text(
               text3,
+              textAlign: TextAlign.center,
               style: const TextStyle(
                   color: Colors.white,
                   fontSize: 22,
                   fontWeight: FontWeight.w600),
-            )),
+            ),
           )
         ],
       ),

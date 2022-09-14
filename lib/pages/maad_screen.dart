@@ -4,6 +4,7 @@ import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/gunnah_screen.dart';
 import 'package:learn_quran/pages/tashdid_screen.dart';
 import 'package:learn_quran/widgets/big_text.dart';
+import 'package:learn_quran/widgets/mad/mad_one_alif.dart';
 import 'package:learn_quran/widgets/mad/mad_text.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
@@ -177,11 +178,15 @@ class MaadScreen extends StatelessWidget {
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  width: double.infinity,
+                                  padding: const EdgeInsets.only(top: 4),
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: const Center(
-                                      child: MediamText(
-                                          text: 'ere', color: AppsColor.red)),
+                                  child: const BigText(
+                                    text: 'بَ  +  بَ  =  بَا',
+                                    color: AppsColor.red,
+                                    center: true,
+                                  ),
                                 ),
                               ),
                             ],
@@ -201,13 +206,15 @@ class MaadScreen extends StatelessWidget {
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  width: double.infinity,
+                                  padding: const EdgeInsets.only(top: 4),
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: const Center(
-                                      child: MediamText(
-                                    text: 'ere',
+                                  child: const BigText(
+                                    text: 'بِ  +  بِ  =  بِيٛ',
                                     color: AppsColor.red,
-                                  )),
+                                    center: true,
+                                  ),
                                 ),
                               ),
                             ],
@@ -227,13 +234,15 @@ class MaadScreen extends StatelessWidget {
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  width: double.infinity,
+                                  padding: const EdgeInsets.only(top: 4),
                                   height: 50,
                                   color: AppsColor.lightYellow,
-                                  child: const Center(
-                                      child: MediamText(
-                                    text: 'ere',
+                                  child: const BigText(
+                                    text: 'بُ  +  بُ  =  بُوٛ',
                                     color: AppsColor.red,
-                                  )),
+                                    center: true,
+                                  ),
                                 ),
                               ),
                             ],
@@ -246,12 +255,12 @@ class MaadScreen extends StatelessWidget {
                         Center(
                           child: Container(
                             padding: const EdgeInsets.only(
-                                bottom: 10, top: 10, left: 10),
+                                bottom: 20, top: 10, left: 10, right: 20),
                             width: 200,
                             color: AppsColor.green,
                             child: const Center(
                               child: BigText(
-                                text: 'Demo Text',
+                                text: 'লীনের হরফ দুইটি',
                               ),
                             ),
                           ),
@@ -262,12 +271,12 @@ class MaadScreen extends StatelessWidget {
                         const MadText(
                           text1: 'ــَـ ا',
                           text2: 'যবরের পরে খালি আলিফ,',
-                          text3: 'بَا',
+                          text3: 'بَوٛ',
                         ),
                         const MadText(
-                          text1: 'ــِـ يٛ',
+                          text1: 'ــَـ يٛ',
                           text2: 'যবরের পরে খালি আলিফ,',
-                          text3: 'بِيٛ',
+                          text3: 'بَيٛ',
                         ),
                         const SizedBox(
                           height: 30,
@@ -302,6 +311,7 @@ class MaadScreen extends StatelessWidget {
                         const SizedBox(
                           height: 50,
                         ),
+
                         Center(
                           child: Container(
                             padding: const EdgeInsets.only(
@@ -315,6 +325,10 @@ class MaadScreen extends StatelessWidget {
                             ),
                           ),
                         ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const MadOneAlif(),
                         // !
                         const SizedBox(
                           height: 20,
