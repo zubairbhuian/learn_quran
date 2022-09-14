@@ -35,7 +35,7 @@ class TanvinScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          Text("তানওয়ীন শিক্ষা",
+                          Text("দুই জবর,দুই যের,দুই পেশকে তানওয়ীন বলে।",
                               style: TextStyle(
                                   fontSize: 15.w,
                                   color: Colors.white,

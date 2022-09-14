@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 
 class DoubleJobor extends StatelessWidget {
@@ -37,12 +38,12 @@ class DoubleJobor extends StatelessWidget {
       {'word': 'كً', 'text': 'কাফ', 'path': 'kaf.mp3'},
       {'word': 'قً', 'text': 'ক্বফ', 'path': 'qof.mp3'},
       // !5
-     
+
       {'word': 'ءً', 'text': 'হামজা', 'path': 'hamza.mp3'},
       {'word': 'هً', 'text': 'হা', 'path': 'ha2.mp3'},
       {'word': 'وً', 'text': 'ওয়াও', 'path': 'waw.mp3'},
       {'word': 'نً', 'text': 'নুন', 'path': 'nun.mp3'},
-       {'word': 'يًاً', 'text': 'হামজা', 'path': 'hamza.mp3'}
+      {'word': 'يًا', 'text': 'হামজা', 'path': 'hamza.mp3'}
     ];
 
     return GridView.builder(
@@ -54,37 +55,18 @@ class DoubleJobor extends StatelessWidget {
           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
       itemBuilder: (_, index) {
         return InkWell(
-          child: SizedBox(
-            width: 80,
-            height: 80,
-            child: Column(
-              children: [
-                Padding(
-                  padding:
-                      const EdgeInsets.only(left: 10, right: 10, bottom: 4),
-                  child: Container(
-                    padding: const EdgeInsets.only(top: 10, bottom: 10),
-                    color: AppsColor.lightYellow,
-                    child: Center(
-                      child: SizedBox(
-                        width: 30,
-                        child: Text(
-                          "${data[index]['word']}",
-                          style: const TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
-                              fontSize: 25,
-                              fontWeight: FontWeight.w700),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Text("${data[index]['text']}",
-                    style: const TextStyle(
-                        fontSize: 14,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600)),
-              ],
+          child: Container(
+            padding: EdgeInsets.only(top: 14.w),
+            decoration: BoxDecoration(
+                color: AppsColor.lightYellow,
+                border: Border.all(width: 1, color: Colors.white)),
+            child: Text(
+              "${data[index]['word']}",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: const Color.fromARGB(255, 0, 0, 0),
+                  fontSize: 35.sp,
+                  fontWeight: FontWeight.w700),
             ),
           ),
           onTap: () {},
