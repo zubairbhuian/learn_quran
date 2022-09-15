@@ -3,7 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/const/apps_color.dart';
 import 'package:learn_quran/pages/horofer_rup_screen.dart';
 import 'package:learn_quran/pages/jojom_screen.dart';
+import 'package:learn_quran/widgets/example_title.dart';
 import 'package:learn_quran/widgets/horkat/horkat_img.dart';
+import 'package:learn_quran/widgets/horkat/horkot_example.dart';
 import 'package:learn_quran/widgets/horkat/jer_data.dart';
 import 'package:learn_quran/widgets/horkat/jobor_data.dart';
 import 'package:learn_quran/widgets/horkat/pesh_data.dart';
@@ -136,6 +138,10 @@ class Horkat extends StatelessWidget {
                             text: 'হরকত ছাড়া হরফ পড়া যায় না',
                           ),
                           const PeshData(),
+                          const SizedBox(height: 40),
+                          const ExampleTitle(),
+                          const SizedBox(height: 10),
+                          const HorkatExample(),
                           const PreviousNextNavigations(
                             previous: HoroferRupScreen(),
                             next: JojomScreen(),

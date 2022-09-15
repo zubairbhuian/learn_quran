@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:learn_quran/const/app.dart';
 import 'package:learn_quran/pages/aboutus-screen.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -108,7 +109,7 @@ class CustromDrawer extends StatelessWidget {
                               splashRadius: 20,
                               onPressed: () async {
                                 final Uri url =
-                                    Uri.parse('https://www.youtube.com');
+                                    Uri.parse(App.webLink);
                                 if (!await launchUrl(url)) {
                                   throw 'Could not launch $url';
                                 }
@@ -121,7 +122,7 @@ class CustromDrawer extends StatelessWidget {
                               splashRadius: 20,
                               onPressed: () async {
                                 final Uri url =
-                                    Uri.parse('https://www.facebook.com');
+                                    Uri.parse(App.fbLink);
                                 if (!await launchUrl(url)) {
                                   throw 'Could not launch $url';
                                 }
@@ -135,7 +136,7 @@ class CustromDrawer extends StatelessWidget {
                               splashRadius: 20,
                               onPressed: () async {
                                 final Uri url =
-                                    Uri.parse('https://www.youtube.com');
+                                    Uri.parse(App.youtubeLink);
                                 if (!await launchUrl(url)) {
                                   throw 'Could not launch $url';
                                 }

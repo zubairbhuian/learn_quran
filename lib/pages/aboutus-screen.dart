@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:learn_quran/const/app.dart';
 import 'package:learn_quran/widgets/mediam_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -90,7 +91,7 @@ class AboutUsScreen extends StatelessWidget {
                             ),
                             onTap: () async {
                               final Uri url =
-                                    Uri.parse('https://www.masteracademy.com.bd');
+                                    Uri.parse(App.webLink);
                                 if (!await launchUrl(url)) {
                                   throw 'Could not launch $url';
                                 }
@@ -107,7 +108,7 @@ class AboutUsScreen extends StatelessWidget {
                               ),
                               onTap: () async {
                                  final Uri url =
-                                    Uri.parse('https://www.facebook.com/masteracadmy');
+                                    Uri.parse(App.fbLink);
                                 if (!await launchUrl(url)) {
                                   throw 'Could not launch $url';
                                 }
@@ -123,7 +124,7 @@ class AboutUsScreen extends StatelessWidget {
                               ),
                               onTap: () async {
                                  final Uri url =
-                                    Uri.parse('https://www.youtube.com/MASTERACADEMY4');
+                                    Uri.parse(App.youtubeLink);
                                 if (!await launchUrl(url)) {
                                   throw 'Could not launch $url';
                                 }

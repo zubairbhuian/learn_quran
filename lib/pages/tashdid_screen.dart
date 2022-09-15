@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_quran/pages/kolkolah_screen.dart';
 import 'package:learn_quran/pages/maad_screen.dart';
+import 'package:learn_quran/widgets/example_title.dart';
 import 'package:learn_quran/widgets/previous_next_navigations.dart';
+import 'package:learn_quran/widgets/tashdid/tashdid_example.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_grid.dart';
 import 'package:learn_quran/widgets/tashdid/tashdid_text.dart';
 
@@ -55,6 +57,10 @@ class TashdidScreen extends StatelessWidget {
                             text:
                                 'কোন হরকত বিশিষ্ট হরফের পরে সাকিন ও তারপরের হরফে তাশদীদ থাকলে তাশদীদ প্রাধান্য পাবে',
                           ),
+                          const SizedBox(height: 40),
+                          const ExampleTitle(),
+                          const SizedBox(height: 10),
+                          const TashdidExample(),
                           const PreviousNextNavigations(
                             previous: KolkolahScreen(),
                             next: MaadScreen(),
