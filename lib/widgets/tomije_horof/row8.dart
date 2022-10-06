@@ -12,7 +12,7 @@ class Row8 extends StatelessWidget {
     return SizedBox(
       child: Column(
         children: [
-          HeadText(
+          const HeadText(
             word: 'فـ',
             text: 'দিয়ে দুইটি হরফ',
           ),
@@ -20,7 +20,7 @@ class Row8 extends StatelessWidget {
             height: 10,
           ),
           Row(
-            children: [
+            children: const [
               SymbolItem(
                 flex: 1,
                 rightBorder: 2,
