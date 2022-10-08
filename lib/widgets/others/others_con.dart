@@ -40,7 +40,7 @@ class OthersCon extends StatelessWidget {
                             right: BorderSide(width: 2, color: Colors.white))),
                     child: Center(
                         child: SizedBox(
-                            width: 80.w,
+                            width: 120.w,
                             child:
                                 BigText(text: exaple1, color: Colors.black))),
                   ),
@@ -52,7 +52,7 @@ class OthersCon extends StatelessWidget {
                     color: AppsColor.lightYellow,
                     child: Center(
                         child: SizedBox(
-                            width: 80.w,
+                            width: 120.w,
                             child:
                                 BigText(text: exaple2, color: Colors.black))),
                   ),

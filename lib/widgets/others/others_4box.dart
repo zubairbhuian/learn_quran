@@ -28,7 +28,7 @@ class Others4box extends StatelessWidget {
                   border: Border.all(width: 1, color: Colors.white)),
               child: Center(
                   child: SizedBox(
-                      width: 93.w,
+                      width: 120.w,
                       child: Text('${data[index]['word']}',
                           style: TextStyle(
                               fontSize: 22.sp, fontWeight: FontWeight.w700)))),

@@ -57,7 +57,7 @@ class AboutUsScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Text(
-                      'Md. Majharul islam\n Zubair Bhuian(Devoloper)\n Dr. Md. Tareq Ibna Rahman\n Anonna FerdausMd.\nMahmud ',
+                      'Md. Majharul islam\n Zubair Bhuian(Devoloper)\n Dr. Md. Tareq Ibna Rahman\n Anonna Ferdaus\n Md.Mahmud ',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 13.sp,
@@ -90,11 +90,10 @@ class AboutUsScreen extends StatelessWidget {
                               ),
                             ),
                             onTap: () async {
-                              final Uri url =
-                                    Uri.parse(App.webLink);
-                                if (!await launchUrl(url)) {
-                                  throw 'Could not launch $url';
-                                }
+                              final Uri url = Uri.parse(App.webLink);
+                              if (!await launchUrl(url)) {
+                                throw 'Could not launch $url';
+                              }
                             },
                           ),
                           GestureDetector(
@@ -107,8 +106,7 @@ class AboutUsScreen extends StatelessWidget {
                                 ),
                               ),
                               onTap: () async {
-                                 final Uri url =
-                                    Uri.parse(App.fbLink);
+                                final Uri url = Uri.parse(App.fbLink);
                                 if (!await launchUrl(url)) {
                                   throw 'Could not launch $url';
                                 }
@@ -123,8 +121,7 @@ class AboutUsScreen extends StatelessWidget {
                                 ),
                               ),
                               onTap: () async {
-                                 final Uri url =
-                                    Uri.parse(App.youtubeLink);
+                                final Uri url = Uri.parse(App.youtubeLink);
                                 if (!await launchUrl(url)) {
                                   throw 'Could not launch $url';
                                 }
