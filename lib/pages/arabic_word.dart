@@ -77,8 +77,8 @@ class _ArabicWordState extends State<ArabicWord> {
                                   Row(
                                     children: [
                                       Container(
-                                        width: 24.w,
-                                        height: 24.h,
+                                        width: 24,
+                                        height: 24,
                                         decoration: BoxDecoration(
                                             color: const Color(0xffC4C4C4),
                                             borderRadius:
@@ -101,8 +101,8 @@ class _ArabicWordState extends State<ArabicWord> {
                                   Row(
                                     children: [
                                       Container(
-                                        width: 24.w,
-                                        height: 24.h,
+                                        width: 24,
+                                        height: 24,
                                         decoration: BoxDecoration(
                                             color: const Color(0xffC4C4C4),
                                             borderRadius:
@@ -125,8 +125,8 @@ class _ArabicWordState extends State<ArabicWord> {
                                   Row(
                                     children: [
                                       Container(
-                                        width: 24.w,
-                                        height: 24.h,
+                                        width: 24,
+                                        height: 24,
                                         decoration: BoxDecoration(
                                             color: const Color(0xffC4C4C4),
                                             borderRadius:
