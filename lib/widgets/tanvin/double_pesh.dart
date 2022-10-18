@@ -43,8 +43,7 @@ class Doublepesh extends StatelessWidget {
       {'word': 'وٌ', 'text': 'ওয়াও', 'path': 'waw.mp3'},
       {'word': 'نٌ', 'text': 'নুন', 'path': 'nun.mp3'},
       {'word': 'يٌٌ', 'text': 'হামজা', 'path': 'hamza.mp3'}
-    ];
-git 
+    ]
     return GridView.builder(
       primary: false,
       shrinkWrap: true,
