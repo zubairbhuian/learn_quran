@@ -57,7 +57,7 @@ class AboutUsScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Text(
-                      'Md. Majharul islam\n Zubair Bhuian(Devoloper)\n Dr. Md. Tareq Ibna Rahman\n Anonna Ferdaus\n Md.Mahmud ',
+                      'Md. Majharul islam\n Zubair Bhuian\n Dr. Md. Tareq Ibna Rahman\n Anonna Ferdaus\n Md.Mahmud ',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 13.sp,
