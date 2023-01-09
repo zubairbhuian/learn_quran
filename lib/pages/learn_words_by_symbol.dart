@@ -18,67 +18,66 @@ class LearnWordsBySymbol extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
-            appBar: AppBar(title: const Text('চিহ্ন দিয়ে হরফ শিক্ষা')),
-            body: Container(
-              decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
-              child: Scrollbar(
-                thumbVisibility: true,
-                child: ListView(children: [
-                  Padding(
-                    padding: EdgeInsets.only(
-                        top: 35, bottom: 30, left: 20.h, right: 20.h),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [
-                        Row1(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Row2(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Row3(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Row4(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Row5(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Row6(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Row7(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Row8(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Row9(),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        PreviousNextNavigations(
-                          previous: TomijeHorofScreen(),
-                          next: HoroferRupScreen(),
-                        )
-                      ],
+    return Scaffold(
+        appBar: AppBar(title: const Text('চিহ্ন দিয়ে হরফ শিক্ষা')),
+        body: Container(
+          decoration: const BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: AssetImage('images/bg.png'))),
+          child: Scrollbar(
+            thumbVisibility: true,
+            child: ListView(children: [
+              Padding(
+                padding: EdgeInsets.only(
+                    top: 35, bottom: 30, left: 20.h, right: 20.h),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: const [
+                    Row1(),
+                    SizedBox(
+                      height: 30,
                     ),
-                  )
-                ]),
-              ),
-            )));
+                    Row2(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row3(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row4(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row5(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row6(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row7(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row8(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row9(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    PreviousNextNavigations(
+                      previous: TomijeHorofScreen(),
+                      next: HoroferRupScreen(),
+                    )
+                  ],
+                ),
+              )
+            ]),
+          ),
+        ));
   }
 }
